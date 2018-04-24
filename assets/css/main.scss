@@ -1,0 +1,30 @@
+
+
+/* ===== BASE STYLES ===== */
+
+
+@import 'base/variables';
+@import 'bootstrap/bootstrap'; // bootstrap framework
+@import 'base/mixins';
+@import 'base/icons';
+@import 'base/fonts';
+@import 'base/base';
+
+
+/* ===== REUSABLE BLOCKS OF CODE ===== */
+
+@import 'modules/buttons';
+@import 'modules/cookies';
+@import 'modules/sliders';
+
+
+
+/* ===== SPECIFIC PAGE LAYOUT AND NON-REUSABLE STYLES ===== */
+
+// @import 'layout/filename';
+
+
+
+/* ===== DEBUG HTML/CSS ===== */
+
+@import 'layout/debug';

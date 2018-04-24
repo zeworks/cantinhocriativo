@@ -1,0 +1,106 @@
+
+
+/* ===== DEBUG MODE ===== */
+// 0 - not on debug mode
+// 1 - highlights with red border
+
+$debugMode: 0;
+
+
+
+/* ===== GRID AND VIEWPORTS ===== */
+
+// Number of columns
+$grid-columns: 		12;
+
+// Column padding. Divided by two, between left and right
+$grid-gutter-width: 30px;
+
+$screen-xs:     320px;
+$screen-sm:     768px;
+$screen-md:     992px;
+$screen-lg:     1200px;
+$screen-xl:     1500px; // will be the maximum width of the site
+$screen-xs-min: $screen-xs;
+$screen-sm-min: $screen-sm;
+$screen-md-min: $screen-md;
+$screen-lg-min: $screen-lg;
+$screen-xl-min: $screen-xl;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+
+
+
+/* ===== COLORS ===== */
+
+$brand-primary:         #0298ae;
+$brand-primary-lighter: #0298ae;
+$brand-primary-darker:  #0298ae;
+$brand-accent:          #ffdf01;
+$brand-accent-lighter:  #feee82;
+$brand-accent-darker:   #ccb201;
+
+// Usually text color accross all site
+$brand-default:         #666;
+$brand-default-lighter: #999;
+$brand-default-darker:  #333;
+
+// Feedback colors - usually colors to be used on
+// messages of success, warning or error from forms.
+$brand-success:         #95db94;
+$brand-info:            #0298ae;
+$brand-warning:         #d7a436;
+$brand-danger:          #ff4301;
+
+$border-color:          #cc896f;
+
+
+/* ===== FONTS ===== */
+
+$font: 	 			'Montserrat', Arial, sans-serif;
+$font-variant: 		'Open-sans', Arial, sans-serif;
+$font-size: 	 	16px;
+$font-line-height:  22px;
+
+
+
+/* ===== BOOTSTRAP EXTRAS ===== */
+
+// 0 to disable
+// 1 to enable
+$bootstrap-code: 				 0;
+$bootstrap-print: 				 0;
+$bootstrap-tables: 				 0;
+$bootstrap-forms: 				 0;
+$bootstrap-glyphicons: 			 0;
+$bootstrap-component-animations: 0;
+$bootstrap-dropdowns: 			 0;
+$bootstrap-button-groups: 		 0;
+$bootstrap-input-groups: 		 0;
+$bootstrap-navs: 				 0;
+$bootstrap-navbar: 				 0;
+$bootstrap-breadcrumbs: 		 0;
+$bootstrap-pagination: 			 0;
+$bootstrap-pager: 				 0;
+$bootstrap-labels: 				 0;
+$bootstrap-badges: 				 0;
+$bootstrap-jumbotron: 			 0;
+$bootstrap-thumbnails: 			 0;
+$bootstrap-alerts: 				 1;
+$bootstrap-progress-bars: 		 0;
+$bootstrap-media: 				 0;
+$bootstrap-list-group: 			 0;
+$bootstrap-panels: 				 0;
+$bootstrap-responsive-embed: 	 0;
+$bootstrap-wells: 				 0;
+$bootstrap-close: 				 0;
+$bootstrap-modals: 				 0;
+$bootstrap-tooltip: 			 0;
+$bootstrap-popovers: 			 0;
+$bootstrap-carousel: 			 0;
+
+/* VARIABLES TO USE IN HTML STRUCTURE */
+
+$navbarH : 80px;

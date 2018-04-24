@@ -1,0 +1,14 @@
+.show-more {
+    background: transparent;
+    border: 1px solid $border-color;
+    font-size: 25px;
+    color: black;
+    display: table;
+    margin: 0 auto;
+    transition: all 200ms ease;
+    padding: 0px 10px;
+    &:hover {
+        background-color: $border-color;
+        color: white;
+    }
+}
