@@ -60,6 +60,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 1080px;
+    position: relative;
 }
 
 .institutional-banner .wrapper-slide {
@@ -74,7 +75,7 @@
     height: auto;
     transform: translateY(-50%);
     z-index: 1;
-    color: white;
+    color: $slider-text-color;
     opacity: 0;
 }
 
@@ -86,5 +87,5 @@
 .wrapper-slide p {
     font-size: 16px;
     font-weight: 100;
-    color: #fff;
+    color: $slider-text-color;
 }

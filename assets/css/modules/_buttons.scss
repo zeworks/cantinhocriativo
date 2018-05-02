@@ -1,12 +1,13 @@
+.btn{
+    border: $btn-border;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: $btn-text-color;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: all .2s ease-in-out;
+}
 
-/* ===== BUTTONS ===== */
-/* 
-/* Example:
-/* 
-/* .btn
-/* .btn--accent
-/* .btn--invert
-/*     .btn__icon
-/* 
-/* 
-/* =================== */
+.btn:hover{
+    border-color: $btn-border-hover;
+}

@@ -1,0 +1,107 @@
+/* elemento que contem todos os produtos adicionados ao carrinho */
+
+.side-cart {
+    background-color: #fff;
+    border-left: 1px solid #f2f2f2;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    height: 100%;
+    padding: 20px;
+    transition: right 400ms ease-in-out;
+    width: 400px;
+    -webkit-box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+}
+
+.side-cart.active {
+    right: 0;
+}
+
+.side-cart__list {
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side-cart__list>li {
+    padding: 10px 10px 10px 65px;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.side-cart__list>li img {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.cart-qty{
+    display: inline-block;
+}
+
+.cart-qty>* {
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+.cart-qty__input {
+    width: 40px;
+    text-align: center;
+}
+
+.side-cart__item{
+    border-top: 1px solid #d2d2d2;
+
+    &:last-child{
+        border-bottom: 1px solid #d2d2d2;
+    }
+}
+.cart-item__value{
+    float: right;
+}
+
+/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
+.cart-shopping span{
+    display: none;
+    background-color: $brand-danger;
+    position: absolute;
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    color: #fff;
+    font-family: $font;
+    font-size: 10px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+/* se tiver a class has-items o numero de items irá aparecer */
+.cart-shopping.has-items span{
+    display: flex;
+}
+.side-cart__total{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.side-cart__total-total{
+    float: left;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: $text-color;
+}
+.side-cart__total-value{
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+    color: $text-color;
+}

@@ -5,12 +5,18 @@
 /* ===== COLORS ===== */
 /* ===== FONTS ===== */
 /* ===== BOOTSTRAP EXTRAS ===== */
-/* VARIABLES TO USE IN HTML STRUCTURE */
+/* MENU */
+/* footer */
+/* headers and paragraphs */
+/* buttons */
+/* buttons - hover */
+/* sliders */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900");
 @media (max-width: 768px) {
   /* line 185, bootstrap/bootstrap/mixins/_grid.scss */
   .text-column-xs-1 {
@@ -782,7 +788,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #666;
+  color: #333;
   background-color: #fff;
 }
 
@@ -1379,7 +1385,7 @@ address {
 @media (min-width: 1500px) {
   /* line 10, bootstrap/bootstrap/_grid.scss */
   .container {
-    width: 1530px;
+    width: 1500px;
   }
 }
 
@@ -3667,6 +3673,42 @@ input[type="button"].btn-block {
   content: "";
 }
 
+/* line 3, base/_fonts.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, .btn {
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 14, base/_fonts.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #232323;
+}
+
+/* line 23, base/_fonts.scss */
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 28, base/_fonts.scss */
+p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #333;
+}
+
 /* line 1, base/_base.scss */
 .show-more {
   background: transparent;
@@ -3685,18 +3727,129 @@ input[type="button"].btn-block {
   color: white;
 }
 
+/* line 16, base/_base.scss */
+.empty-space-80 {
+  padding-bottom: 80px;
+}
+
+/* line 20, base/_base.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  min-height: 80px;
+}
+@media (max-width: 767px) {
+  /* line 20, base/_base.scss */
+  header {
+    min-height: 50px;
+  }
+}
+
+/* line 33, base/_base.scss */
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+@media (max-width: 767px) {
+  /* line 33, base/_base.scss */
+  .menu {
+    float: none;
+  }
+}
+
+/* line 43, base/_base.scss */
+.menu__item {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2.5px;
+}
+@media (max-width: 767px) {
+  /* line 43, base/_base.scss */
+  .menu__item {
+    line-height: normal;
+  }
+}
+
+/* line 55, base/_base.scss */
+.menu__item__link {
+  display: block;
+  padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* line 64, base/_base.scss */
+.menu__item__link i {
+  font-size: 16px;
+}
+
+/* line 69, base/_base.scss */
+main {
+  margin-top: 80px;
+}
+@media (max-width: 767px) {
+  /* line 69, base/_base.scss */
+  main {
+    margin-top: 50px;
+  }
+}
+
+/* line 76, base/_base.scss */
+footer {
+  background-color: #232323;
+  padding: 30px 0;
+}
+
+/* line 80, base/_base.scss */
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+/* line 87, base/_base.scss */
+.footer-item {
+  position: relative;
+  display: block;
+  margin: 3px 0;
+}
+
+/* line 92, base/_base.scss */
+.footer-link {
+  display: block;
+  width: 100%;
+}
+
 /* ===== REUSABLE BLOCKS OF CODE ===== */
-/* ===== BUTTONS ===== */
-/* 
-/* Example:
-/* 
-/* .btn
-/* .btn--accent
-/* .btn--invert
-/*     .btn__icon
-/* 
-/* 
-/* =================== */
+/* line 1, modules/_buttons.scss */
+.btn {
+  border: 1px solid #232323;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 700;
+  padding: 10px 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* line 11, modules/_buttons.scss */
+.btn:hover {
+  border-color: red;
+}
+
 /* Barra cookies */
 /* line 2, modules/_cookies.scss */
 .cookies-bar {
@@ -3881,14 +4034,15 @@ input[type="button"].btn-block {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 1080px;
+  position: relative;
 }
 
-/* line 65, modules/_sliders.scss */
+/* line 66, modules/_sliders.scss */
 .institutional-banner .wrapper-slide {
   opacity: 1;
 }
 
-/* line 69, modules/_sliders.scss */
+/* line 70, modules/_sliders.scss */
 .wrapper-slide {
   position: absolute;
   top: 50%;
@@ -3898,21 +4052,167 @@ input[type="button"].btn-block {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 1;
-  color: white;
+  color: #fff;
   opacity: 0;
 }
 
-/* line 81, modules/_sliders.scss */
+/* line 82, modules/_sliders.scss */
 .wrapper-slide strong {
   font-size: 45px;
   line-height: 50px;
 }
 
-/* line 86, modules/_sliders.scss */
+/* line 87, modules/_sliders.scss */
 .wrapper-slide p {
   font-size: 16px;
   font-weight: 100;
   color: #fff;
+}
+
+/* line 1, modules/_article.scss */
+.post-article h2 {
+  margin-bottom: 20px;
+}
+
+/* line 4, modules/_article.scss */
+.post-article .btn {
+  margin: 20px 0 0;
+}
+
+/* elemento que contem todos os produtos adicionados ao carrinho */
+/* line 3, modules/_cart.scss */
+.side-cart {
+  background-color: #fff;
+  border-left: 1px solid #f2f2f2;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 100;
+  height: 100%;
+  padding: 20px;
+  -webkit-transition: right 400ms ease-in-out;
+  transition: right 400ms ease-in-out;
+  width: 400px;
+  -webkit-box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* line 19, modules/_cart.scss */
+.side-cart.active {
+  right: 0;
+}
+
+/* line 23, modules/_cart.scss */
+.side-cart__list {
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 29, modules/_cart.scss */
+.side-cart__list > li {
+  padding: 10px 10px 10px 65px;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+/* line 36, modules/_cart.scss */
+.side-cart__list > li img {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+/* line 41, modules/_cart.scss */
+.cart-qty {
+  display: inline-block;
+}
+
+/* line 45, modules/_cart.scss */
+.cart-qty > * {
+  display: inline;
+  margin: 0;
+  float: left;
+}
+
+/* line 51, modules/_cart.scss */
+.cart-qty__input {
+  width: 40px;
+  text-align: center;
+}
+
+/* line 56, modules/_cart.scss */
+.side-cart__item {
+  border-top: 1px solid #d2d2d2;
+}
+/* line 59, modules/_cart.scss */
+.side-cart__item:last-child {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/* line 63, modules/_cart.scss */
+.cart-item__value {
+  float: right;
+}
+
+/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
+/* line 68, modules/_cart.scss */
+.cart-shopping span {
+  display: none;
+  background-color: #ff4301;
+  position: absolute;
+  top: calc(50% - 10px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* se tiver a class has-items o numero de items ir├í aparecer */
+/* line 87, modules/_cart.scss */
+.cart-shopping.has-items span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 90, modules/_cart.scss */
+.side-cart__total {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* line 95, modules/_cart.scss */
+.side-cart__total-total {
+  float: left;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* line 102, modules/_cart.scss */
+.side-cart__total-value {
+  float: right;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
 }
 
 /* ===== SPECIFIC PAGE LAYOUT AND NON-REUSABLE STYLES ===== */

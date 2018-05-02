@@ -59,7 +59,7 @@ $border-color:          #cc896f;
 
 /* ===== FONTS ===== */
 
-$font: 	 			'Montserrat', Arial, sans-serif;
+$font: 	 			'Roboto', sans-serif;
 $font-variant: 		'Open-sans', Arial, sans-serif;
 $font-size: 	 	16px;
 $font-line-height:  22px;
@@ -101,6 +101,24 @@ $bootstrap-tooltip: 			 0;
 $bootstrap-popovers: 			 0;
 $bootstrap-carousel: 			 0;
 
-/* VARIABLES TO USE IN HTML STRUCTURE */
-
+/* MENU */
+$header-backgroundColor: #fff;
 $navbarH : 80px;
+$navbarHM: 50px;
+
+/* footer */
+$footer-backgroundColor: #232323;
+
+/* headers and paragraphs */
+$text-color: #333;
+$head-title: #232323;
+
+/* buttons */
+$btn-border: 1px solid #232323;
+$btn-text-color: #232323;
+
+/* buttons - hover */
+$btn-border-hover: red;
+
+/* sliders */
+$slider-text-color: #fff;

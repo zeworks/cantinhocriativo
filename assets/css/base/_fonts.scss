@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, .btn {
+    font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: $head-title;
+}
+
+h2{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: $text-color;
+}
