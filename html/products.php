@@ -44,10 +44,10 @@
         <div class="row matchheight">
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -58,10 +58,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -72,10 +72,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -86,10 +86,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -100,10 +100,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -114,10 +114,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -128,10 +128,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -142,10 +142,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -156,10 +156,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -170,10 +170,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -184,10 +184,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -198,10 +198,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -212,10 +212,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>
@@ -226,10 +226,10 @@
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
                 <div class="product-card">
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
                     </a>
-                    <a href="#productTitle" title="product title">
+                    <a href="product.php" title="product title">
                         <span class="product-card__category">Category Product</span>
                         <h4 class="product-card__title">Product Name</h4>
                     </a>

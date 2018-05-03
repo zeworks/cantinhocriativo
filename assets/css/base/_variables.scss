@@ -52,7 +52,7 @@ $brand-default-darker:  #333;
 $brand-success:         #95db94;
 $brand-info:            #0298ae;
 $brand-warning:         #d7a436;
-$brand-danger:          #ff4301;
+$brand-danger:          #f74545;
 
 
 /* ===== FONTS ===== */
@@ -164,6 +164,6 @@ $productCard-fontSizePrice: 23px;
 $productCard-marginPrice: 0 5px 0 0;
 
 /* PRODUCT CARD - OLD PRICE */
-$productCard-colorOldPrice: red;
-$productCard-fontWeightOldPrice: 300;
+$productCard-colorOldPrice: $brand-danger;
+$productCard-fontWeightOldPrice: 400;
 $productCard-fontSizeOldPrice: 15px;

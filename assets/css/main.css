@@ -3898,7 +3898,7 @@ footer {
 /* line 86, modules/_cart.scss */
 .cart-shopping span {
   display: none;
-  background-color: #ff4301;
+  background-color: #f74545;
   position: absolute;
   top: calc(50% - 10px);
   -webkit-transform: translateY(-50%);
@@ -4068,11 +4068,93 @@ footer {
 
 /* line 50, modules/_product-card.scss */
 .product-card__oldprice {
-  color: red;
-  font-weight: 300;
+  color: #f74545;
+  font-weight: 400;
   font-size: 15px;
   text-decoration: line-through;
 }
 
 /* ===== SPECIFIC PAGE LAYOUT AND NON-REUSABLE STYLES ===== */
 /* ===== DEBUG HTML/CSS ===== */
+/* line 1, layout/_product.scss */
+.product-detail__tag {
+  background-color: #f74545;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+/* line 11, layout/_product.scss */
+.product-detail__rating {
+  position: relative;
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 0;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* line 20, layout/_product.scss */
+.product-detail__rating i {
+  font-size: 11px;
+}
+
+/* line 24, layout/_product.scss */
+.product-detail__rating p {
+  margin: 0;
+}
+
+/* line 28, layout/_product.scss */
+.product-detail__price span {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+/* line 34, layout/_product.scss */
+.product-detail__price .price {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/* line 39, layout/_product.scss */
+.product-detail__price .old-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f74545;
+  text-decoration: line-through;
+}
+
+/* line 46, layout/_product.scss */
+.discount-date {
+  background-color: #f74545;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* line 54, layout/_product.scss */
+.product-detail__buy {
+  margin: 30px 0;
+  display: block;
+}
+
+/* line 59, layout/_product.scss */
+.product-detail__buy .btn {
+  margin: 0 0 0 20px;
+}
+
+/* line 62, layout/_product.scss */
+.product-carousel-thumbs {
+  margin: 3px 0;
+}
+
+/* line 65, layout/_product.scss */
+.product-carousel-thumbs > a {
+  display: inline-block;
+  margin: 0;
+}

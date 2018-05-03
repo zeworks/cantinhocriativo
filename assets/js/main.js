@@ -4,11 +4,43 @@ $(document).ready(function () {
 	main();
 	cartActions();
 	updateCartItems();
-	showMore("[data-mh='product-item']",".view-more",12);
+	showMore("[data-mh='product-item']", ".view-more", 12);
 	showMoreText(".text-ellipses", 550);
 	$('.matchheight').matchHeight();
 	// Forms validation
 	initValidation();
+
+	var zoomOptions = {
+		// control zoom with mousewheel
+		scrollZoom: true,
+		// if zoom inside
+		zoomType: 'inner',
+		cursor: 'crosshair',
+	}
+
+	$(".product-carousel").owlCarousel({
+		loop: true,
+		margin: 0,
+		nav: false,
+		dots: false,
+		items: 1,
+		startPosition: 'URLHash',
+		URLhashListener: true,
+		smartSpeed: 800,
+	}).on('translated.owl.carousel', function (event) {
+		var screenSize = window.matchMedia('(min-width: 992px)');
+		if (screenSize.matches) {
+			$('.ZoomContainer').remove();
+			$('.owl-item.active .zoom-image').ezPlus(zoomOptions);
+		}
+	});
+
+	setTimeout(function () {
+		var screenSize = window.matchMedia('(min-width: 992px)');
+		if (screenSize.matches) {
+			$('.owl-item.active .zoom-image').ezPlus(zoomOptions);
+		}
+	}, 100);
 
 	// Show Cookies if not accepted already
 	if (!readCookie('eucookie')) {

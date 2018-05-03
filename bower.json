@@ -20,7 +20,8 @@
     "owl.carousel": "^2.2.1",
     "matchHeight": "matchheight#^0.7.2",
     "swiper": "^4.2.2",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "ez-plus": "^1.2.2"
   },
   "devDependencies": {}
 }
