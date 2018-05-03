@@ -19,7 +19,12 @@ h5,
 h6{
     color: $head-title;
 }
-
+h1{
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
 h2{
     text-transform: uppercase;
     font-weight: 700;

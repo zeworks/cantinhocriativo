@@ -8,9 +8,16 @@
 /* MENU */
 /* footer */
 /* headers and paragraphs */
-/* buttons */
-/* buttons - hover */
+/* buttons DEFAULT */
+/* buttons DEFAULT - hover */
+/* button HIGHLIGHT */
+/* button HIGHLIGHT - hover */
 /* sliders */
+/* BREADCRUMB */
+/* PRODUCT CARD - CATEGORY */
+/* PRODUCT CARD - TITLE */
+/* PRODUCT CARD - PRICE */
+/* PRODUCT CARD - OLD PRICE */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -2733,399 +2740,6 @@ address {
     margin-left: 100%;
   }
 }
-/* line 9, bootstrap/bootstrap/_buttons.scss */
-.btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-/* line 26, bootstrap/bootstrap/_buttons.scss */
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-/* line 32, bootstrap/bootstrap/_buttons.scss */
-.btn:hover, .btn:focus, .btn.focus {
-  color: #333;
-  text-decoration: none;
-}
-/* line 39, bootstrap/bootstrap/_buttons.scss */
-.btn:active, .btn.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-/* line 46, bootstrap/bootstrap/_buttons.scss */
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-  cursor: not-allowed;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-/* line 58, bootstrap/bootstrap/_buttons.scss */
-a.btn.disabled, fieldset[disabled] a.btn {
-  pointer-events: none;
-}
-
-/* line 68, bootstrap/bootstrap/_buttons.scss */
-.btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-}
-/* line 11, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default:focus, .btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
-}
-/* line 17, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-/* line 22, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-/* line 29, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
-  color: #333;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
-}
-/* line 37, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
-  background-image: none;
-}
-/* line 45, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus {
-  background-color: #fff;
-  border-color: #ccc;
-}
-/* line 53, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-default .badge {
-  color: #fff;
-  background-color: #333;
-}
-
-/* line 71, bootstrap/bootstrap/_buttons.scss */
-.btn-primary {
-  color: #fff;
-  background-color: #0298ae;
-  border-color: #028295;
-}
-/* line 11, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #016c7c;
-  border-color: #001417;
-}
-/* line 17, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary:hover {
-  color: #fff;
-  background-color: #016c7c;
-  border-color: #014d58;
-}
-/* line 22, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #016c7c;
-  border-color: #014d58;
-}
-/* line 29, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #014d58;
-  border-color: #001417;
-}
-/* line 37, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
-  background-image: none;
-}
-/* line 45, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-  background-color: #0298ae;
-  border-color: #028295;
-}
-/* line 53, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-primary .badge {
-  color: #0298ae;
-  background-color: #fff;
-}
-
-/* line 75, bootstrap/bootstrap/_buttons.scss */
-.btn-success {
-  color: #fff;
-  background-color: #95db94;
-  border-color: #82d581;
-}
-/* line 11, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success:focus, .btn-success.focus {
-  color: #fff;
-  background-color: #6fce6e;
-  border-color: #37a036;
-}
-/* line 17, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success:hover {
-  color: #fff;
-  background-color: #6fce6e;
-  border-color: #55c553;
-}
-/* line 22, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
-  color: #fff;
-  background-color: #6fce6e;
-  border-color: #55c553;
-}
-/* line 29, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #55c553;
-  border-color: #37a036;
-}
-/* line 37, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
-  background-image: none;
-}
-/* line 45, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus {
-  background-color: #95db94;
-  border-color: #82d581;
-}
-/* line 53, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-success .badge {
-  color: #95db94;
-  background-color: #fff;
-}
-
-/* line 79, bootstrap/bootstrap/_buttons.scss */
-.btn-info {
-  color: #fff;
-  background-color: #0298ae;
-  border-color: #028295;
-}
-/* line 11, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info:focus, .btn-info.focus {
-  color: #fff;
-  background-color: #016c7c;
-  border-color: #001417;
-}
-/* line 17, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info:hover {
-  color: #fff;
-  background-color: #016c7c;
-  border-color: #014d58;
-}
-/* line 22, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
-  color: #fff;
-  background-color: #016c7c;
-  border-color: #014d58;
-}
-/* line 29, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info:active:hover, .btn-info:active:focus, .btn-info:active.focus, .btn-info.active:hover, .btn-info.active:focus, .btn-info.active.focus, .open > .btn-info.dropdown-toggle:hover, .open > .btn-info.dropdown-toggle:focus, .open > .btn-info.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #014d58;
-  border-color: #001417;
-}
-/* line 37, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info:active, .btn-info.active, .open > .btn-info.dropdown-toggle {
-  background-image: none;
-}
-/* line 45, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info.disabled:hover, .btn-info.disabled:focus, .btn-info.disabled.focus, .btn-info[disabled]:hover, .btn-info[disabled]:focus, .btn-info[disabled].focus, fieldset[disabled] .btn-info:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .btn-info.focus {
-  background-color: #0298ae;
-  border-color: #028295;
-}
-/* line 53, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-info .badge {
-  color: #0298ae;
-  background-color: #fff;
-}
-
-/* line 83, bootstrap/bootstrap/_buttons.scss */
-.btn-warning {
-  color: #fff;
-  background-color: #d7a436;
-  border-color: #cb9828;
-}
-/* line 11, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning:focus, .btn-warning.focus {
-  color: #fff;
-  background-color: #b68824;
-  border-color: #614813;
-}
-/* line 17, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning:hover {
-  color: #fff;
-  background-color: #b68824;
-  border-color: #98711e;
-}
-/* line 22, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
-  color: #fff;
-  background-color: #b68824;
-  border-color: #98711e;
-}
-/* line 29, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning:active:hover, .btn-warning:active:focus, .btn-warning:active.focus, .btn-warning.active:hover, .btn-warning.active:focus, .btn-warning.active.focus, .open > .btn-warning.dropdown-toggle:hover, .open > .btn-warning.dropdown-toggle:focus, .open > .btn-warning.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #98711e;
-  border-color: #614813;
-}
-/* line 37, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
-  background-image: none;
-}
-/* line 45, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus {
-  background-color: #d7a436;
-  border-color: #cb9828;
-}
-/* line 53, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-warning .badge {
-  color: #d7a436;
-  background-color: #fff;
-}
-
-/* line 87, bootstrap/bootstrap/_buttons.scss */
-.btn-danger {
-  color: #fff;
-  background-color: #ff4301;
-  border-color: #e73c00;
-}
-/* line 11, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger:focus, .btn-danger.focus {
-  color: #fff;
-  background-color: #cd3500;
-  border-color: #671b00;
-}
-/* line 17, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger:hover {
-  color: #fff;
-  background-color: #cd3500;
-  border-color: #a92c00;
-}
-/* line 22, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
-  color: #fff;
-  background-color: #cd3500;
-  border-color: #a92c00;
-}
-/* line 29, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger:active:hover, .btn-danger:active:focus, .btn-danger:active.focus, .btn-danger.active:hover, .btn-danger.active:focus, .btn-danger.active.focus, .open > .btn-danger.dropdown-toggle:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .btn-danger.dropdown-toggle.focus {
-  color: #fff;
-  background-color: #a92c00;
-  border-color: #671b00;
-}
-/* line 37, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
-  background-image: none;
-}
-/* line 45, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus {
-  background-color: #ff4301;
-  border-color: #e73c00;
-}
-/* line 53, bootstrap/bootstrap/mixins/_buttons.scss */
-.btn-danger .badge {
-  color: #ff4301;
-  background-color: #fff;
-}
-
-/* line 96, bootstrap/bootstrap/_buttons.scss */
-.btn-link {
-  color: #0298ae;
-  font-weight: normal;
-  border-radius: 0;
-}
-/* line 101, bootstrap/bootstrap/_buttons.scss */
-.btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
-  background-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-/* line 109, bootstrap/bootstrap/_buttons.scss */
-.btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
-  border-color: transparent;
-}
-/* line 115, bootstrap/bootstrap/_buttons.scss */
-.btn-link:hover, .btn-link:focus {
-  color: #015662;
-  text-decoration: underline;
-  background-color: transparent;
-}
-/* line 123, bootstrap/bootstrap/_buttons.scss */
-.btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
-  color: #999;
-  text-decoration: none;
-}
-
-/* line 135, bootstrap/bootstrap/_buttons.scss */
-.btn-lg {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33333;
-  border-radius: 6px;
-}
-
-/* line 139, bootstrap/bootstrap/_buttons.scss */
-.btn-sm {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-
-/* line 143, bootstrap/bootstrap/_buttons.scss */
-.btn-xs {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-
-/* line 151, bootstrap/bootstrap/_buttons.scss */
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-/* line 157, bootstrap/bootstrap/_buttons.scss */
-.btn-block + .btn-block {
-  margin-top: 5px;
-}
-
-/* line 165, bootstrap/bootstrap/_buttons.scss */
-input[type="submit"].btn-block,
-input[type="reset"].btn-block,
-input[type="button"].btn-block {
-  width: 100%;
-}
-
 /* line 11, bootstrap/bootstrap/_alerts.scss */
 .alert {
   padding: 15px;
@@ -3695,13 +3309,21 @@ h6 {
   color: #232323;
 }
 
-/* line 23, base/_fonts.scss */
+/* line 22, base/_fonts.scss */
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+/* line 28, base/_fonts.scss */
 h2 {
   text-transform: uppercase;
   font-weight: 700;
 }
 
-/* line 28, base/_fonts.scss */
+/* line 33, base/_fonts.scss */
 p {
   font-weight: 400;
   font-size: 17px;
@@ -3712,27 +3334,25 @@ p {
 /* line 1, base/_base.scss */
 .show-more {
   background: transparent;
-  border: 1px solid #cc896f;
   font-size: 25px;
-  color: black;
+  color: #333;
   display: table;
   margin: 0 auto;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   padding: 0px 10px;
 }
-/* line 10, base/_base.scss */
+/* line 9, base/_base.scss */
 .show-more:hover {
-  background-color: #cc896f;
   color: white;
 }
 
-/* line 16, base/_base.scss */
+/* line 15, base/_base.scss */
 .empty-space-80 {
   padding-bottom: 80px;
 }
 
-/* line 20, base/_base.scss */
+/* line 19, base/_base.scss */
 header {
   position: fixed;
   top: 0;
@@ -3743,13 +3363,13 @@ header {
   min-height: 80px;
 }
 @media (max-width: 767px) {
-  /* line 20, base/_base.scss */
+  /* line 19, base/_base.scss */
   header {
     min-height: 50px;
   }
 }
 
-/* line 33, base/_base.scss */
+/* line 32, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3757,13 +3377,13 @@ header {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 33, base/_base.scss */
+  /* line 32, base/_base.scss */
   .menu {
     float: none;
   }
 }
 
-/* line 43, base/_base.scss */
+/* line 42, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
@@ -3771,13 +3391,13 @@ header {
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 43, base/_base.scss */
+  /* line 42, base/_base.scss */
   .menu__item {
     line-height: normal;
   }
 }
 
-/* line 55, base/_base.scss */
+/* line 52, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3787,30 +3407,65 @@ header {
   text-transform: uppercase;
   position: relative;
 }
-
+/* line 60, base/_base.scss */
+.menu__item__link:hover {
+  text-decoration: none;
+  color: #777;
+}
 /* line 64, base/_base.scss */
+.menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
+  text-decoration: none;
+  color: #333;
+}
+/* line 70, base/_base.scss */
+.menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
+  color: #777;
+}
+
+/* line 77, base/_base.scss */
+.menu__item__link:not(.menu__item__link--icon):hover:after {
+  width: 50%;
+}
+
+/* line 81, base/_base.scss */
+.menu__item__link:not(.menu__item__link--icon)::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 13px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  display: inline-block;
+  background-color: #777;
+  width: 0px;
+  height: 2px;
+  -webkit-transition: width .2s ease;
+  transition: width .2s ease;
+}
+
+/* line 95, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
-/* line 69, base/_base.scss */
+/* line 99, base/_base.scss */
 main {
   margin-top: 80px;
 }
 @media (max-width: 767px) {
-  /* line 69, base/_base.scss */
+  /* line 99, base/_base.scss */
   main {
     margin-top: 50px;
   }
 }
 
-/* line 76, base/_base.scss */
+/* line 106, base/_base.scss */
 footer {
   background-color: #232323;
   padding: 30px 0;
 }
 
-/* line 80, base/_base.scss */
+/* line 111, base/_base.scss */
 .footer-list {
   margin: 0;
   padding: 0;
@@ -3819,14 +3474,14 @@ footer {
           column-count: 2;
 }
 
-/* line 87, base/_base.scss */
+/* line 118, base/_base.scss */
 .footer-item {
   position: relative;
   display: block;
   margin: 3px 0;
 }
 
-/* line 92, base/_base.scss */
+/* line 124, base/_base.scss */
 .footer-link {
   display: block;
   width: 100%;
@@ -3835,19 +3490,74 @@ footer {
 /* ===== REUSABLE BLOCKS OF CODE ===== */
 /* line 1, modules/_buttons.scss */
 .btn {
-  border: 1px solid #232323;
-  border-radius: 0;
-  text-transform: uppercase;
-  color: #232323;
-  font-weight: 700;
   padding: 10px 20px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+}
+/* line 9, modules/_buttons.scss */
+.btn:hover, .btn:visited, .btn:focus, .btn:active {
+  text-decoration: none;
 }
 
-/* line 11, modules/_buttons.scss */
-.btn:hover {
-  border-color: red;
+/* line 16, modules/_buttons.scss */
+.btn-default {
+  border: 1px solid #c9c9c9;
+  color: #c9c9c9;
+  background-color: #fff;
+}
+/* line 20, modules/_buttons.scss */
+.btn-default:hover {
+  border-color: #c9c9c9;
+  color: #fff;
+  background-color: #c9c9c9;
+}
+/* line 25, modules/_buttons.scss */
+.btn-default:active, .btn-default:focus, .btn-default:visited {
+  color: #c9c9c9;
+}
+/* line 28, modules/_buttons.scss */
+.btn-default:active:hover, .btn-default:focus:hover, .btn-default:visited:hover {
+  color: #fff;
+}
+
+/* line 33, modules/_buttons.scss */
+.btn-primary {
+  border: 1px solid #232323;
+  background-color: #232323;
+  color: #fff;
+}
+/* line 37, modules/_buttons.scss */
+.btn-primary:hover {
+  border-color: #232323;
+  background-color: #fff;
+  color: #232323;
+}
+/* line 42, modules/_buttons.scss */
+.btn-primary:active, .btn-primary:focus, .btn-primary:visited {
+  color: #fff;
+}
+/* line 45, modules/_buttons.scss */
+.btn-primary:active:hover, .btn-primary:focus:hover, .btn-primary:visited:hover {
+  color: #232323;
+}
+
+/* line 50, modules/_buttons.scss */
+.btn-viewmore {
+  display: table;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+/* line 58, modules/_buttons.scss */
+.btn-viewmore i {
+  color: #333;
+  font-size: 35px;
 }
 
 /* Barra cookies */
@@ -3958,6 +3668,17 @@ footer {
 }
 /* Barra cookies END */
 /* line 1, modules/_sliders.scss */
+.institutional-banner {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 5, modules/_sliders.scss */
+.institutional-banner .wrapper-slide {
+  opacity: 1;
+}
+
+/* line 8, modules/_sliders.scss */
 .institutional-banner--masked::before {
   content: '';
   position: absolute;
@@ -3965,10 +3686,11 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 10, modules/_sliders.scss */
+/* line 18, modules/_sliders.scss */
 .swiper-container--masked .swiper-slide::before {
   content: '';
   position: absolute;
@@ -3980,54 +3702,54 @@ footer {
   z-index: 0;
 }
 
-/* line 21, modules/_sliders.scss */
+/* line 29, modules/_sliders.scss */
 .swiper-container .swiper-slide {
   position: relative;
 }
 
-/* line 25, modules/_sliders.scss */
+/* line 33, modules/_sliders.scss */
 .swiper-pagination-bullets {
   bottom: 20px !important;
 }
 
-/* line 29, modules/_sliders.scss */
+/* line 37, modules/_sliders.scss */
 .swiper-pagination-bullet {
   background: none;
   border: 1px solid white;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
 }
-/* line 33, modules/_sliders.scss */
+/* line 41, modules/_sliders.scss */
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: none;
   border-width: 2px;
 }
 
-/* line 39, modules/_sliders.scss */
+/* line 47, modules/_sliders.scss */
 .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23DDDDDD'%2F%3E%3C%2Fsvg%3E");
   left: 20px;
   -webkit-transition: left 200ms ease;
   transition: left 200ms ease;
 }
-/* line 43, modules/_sliders.scss */
+/* line 51, modules/_sliders.scss */
 .swiper-button-prev:hover {
   left: 10px;
 }
 
-/* line 48, modules/_sliders.scss */
+/* line 56, modules/_sliders.scss */
 .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 27 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23DDDDDD'%2F%3E%3C%2Fsvg%3E");
   right: 20px;
   -webkit-transition: right 200ms ease;
   transition: right 200ms ease;
 }
-/* line 52, modules/_sliders.scss */
+/* line 60, modules/_sliders.scss */
 .swiper-button-next:hover {
   right: 10px;
 }
 
-/* line 57, modules/_sliders.scss */
+/* line 65, modules/_sliders.scss */
 .image-bg {
   width: 100%;
   background-position: center;
@@ -4037,12 +3759,7 @@ footer {
   position: relative;
 }
 
-/* line 66, modules/_sliders.scss */
-.institutional-banner .wrapper-slide {
-  opacity: 1;
-}
-
-/* line 70, modules/_sliders.scss */
+/* line 74, modules/_sliders.scss */
 .wrapper-slide {
   position: absolute;
   top: 50%;
@@ -4056,13 +3773,13 @@ footer {
   opacity: 0;
 }
 
-/* line 82, modules/_sliders.scss */
+/* line 86, modules/_sliders.scss */
 .wrapper-slide strong {
   font-size: 45px;
   line-height: 50px;
 }
 
-/* line 87, modules/_sliders.scss */
+/* line 91, modules/_sliders.scss */
 .wrapper-slide p {
   font-size: 16px;
   font-weight: 100;
@@ -4076,6 +3793,7 @@ footer {
 
 /* line 4, modules/_article.scss */
 .post-article .btn {
+  display: inline-block;
   margin: 20px 0 0;
 }
 
@@ -4095,21 +3813,41 @@ footer {
   width: 400px;
   -webkit-box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
   box-shadow: -2px 0px 12px 0px rgba(0, 0, 0, 0.35);
+  overflow-y: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+/* line 18, modules/_cart.scss */
+.side-cart::-webkit-scrollbar {
+  width: 5px;
+}
+/* line 22, modules/_cart.scss */
+.side-cart::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* line 26, modules/_cart.scss */
+.side-cart::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* line 30, modules/_cart.scss */
+.side-cart::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-/* line 19, modules/_cart.scss */
+/* line 35, modules/_cart.scss */
 .side-cart.active {
   right: 0;
 }
 
-/* line 23, modules/_cart.scss */
+/* line 39, modules/_cart.scss */
 .side-cart__list {
   margin: 30px 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 29, modules/_cart.scss */
+/* line 45, modules/_cart.scss */
 .side-cart__list > li {
   padding: 10px 10px 10px 65px;
   display: block;
@@ -4117,47 +3855,47 @@ footer {
   position: relative;
 }
 
-/* line 36, modules/_cart.scss */
+/* line 52, modules/_cart.scss */
 .side-cart__list > li img {
   position: absolute;
   top: 10px;
   left: 0;
 }
 
-/* line 41, modules/_cart.scss */
+/* line 58, modules/_cart.scss */
 .cart-qty {
   display: inline-block;
 }
 
-/* line 45, modules/_cart.scss */
+/* line 62, modules/_cart.scss */
 .cart-qty > * {
   display: inline;
   margin: 0;
   float: left;
 }
 
-/* line 51, modules/_cart.scss */
+/* line 68, modules/_cart.scss */
 .cart-qty__input {
   width: 40px;
   text-align: center;
 }
 
-/* line 56, modules/_cart.scss */
+/* line 73, modules/_cart.scss */
 .side-cart__item {
   border-top: 1px solid #d2d2d2;
 }
-/* line 59, modules/_cart.scss */
+/* line 75, modules/_cart.scss */
 .side-cart__item:last-child {
   border-bottom: 1px solid #d2d2d2;
 }
 
-/* line 63, modules/_cart.scss */
+/* line 80, modules/_cart.scss */
 .cart-item__value {
   float: right;
 }
 
 /* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
-/* line 68, modules/_cart.scss */
+/* line 86, modules/_cart.scss */
 .cart-shopping span {
   display: none;
   background-color: #ff4301;
@@ -4184,21 +3922,21 @@ footer {
 }
 
 /* se tiver a class has-items o numero de items ir├í aparecer */
-/* line 87, modules/_cart.scss */
+/* line 107, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 90, modules/_cart.scss */
+/* line 111, modules/_cart.scss */
 .side-cart__total {
   position: relative;
   display: block;
   width: 100%;
 }
 
-/* line 95, modules/_cart.scss */
+/* line 117, modules/_cart.scss */
 .side-cart__total-total {
   float: left;
   font-weight: 700;
@@ -4207,12 +3945,133 @@ footer {
   color: #333;
 }
 
-/* line 102, modules/_cart.scss */
+/* line 125, modules/_cart.scss */
 .side-cart__total-value {
   float: right;
   font-size: 16px;
   font-weight: 500;
   color: #333;
+}
+
+/* line 132, modules/_cart.scss */
+.side-cart__buttons {
+  margin: 30px 0 0;
+  position: relative;
+}
+
+/* line 137, modules/_cart.scss */
+.side-cart__buttons .btn {
+  float: left;
+}
+/* line 139, modules/_cart.scss */
+.side-cart__buttons .btn:last-child {
+  float: right;
+}
+
+/* line 1, modules/_breadcrumb.scss */
+.breadcrumb {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 7, modules/_breadcrumb.scss */
+.breadcrumb li {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 12, modules/_breadcrumb.scss */
+.breadcrumb li:after {
+  content: "/";
+  position: relative;
+  display: inline-block;
+  margin: 0 7.5px;
+}
+
+/* line 19, modules/_breadcrumb.scss */
+.breadcrumb li:last-child:after {
+  display: none;
+}
+
+/* line 23, modules/_breadcrumb.scss */
+.breadcrumb li > a {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 30, modules/_breadcrumb.scss */
+.breadcrumb li:last-child > a {
+  font-weight: 700;
+}
+
+/* line 1, modules/_product-card.scss */
+.product-card {
+  position: relative;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  /* line 1, modules/_product-card.scss */
+  .product-card {
+    text-align: center;
+  }
+  /* line 6, modules/_product-card.scss */
+  .product-card img {
+    margin: 0 auto;
+  }
+}
+
+/* line 12, modules/_product-card.scss */
+.product-card .btn {
+  display: table;
+  margin: 30px auto;
+}
+
+/* line 17, modules/_product-card.scss */
+.product-card a:hover,
+.product-card a:active:hover,
+.product-card a:focus:hover,
+.product-card a:visited:hover,
+.product-card a:active,
+.product-card a:focus,
+.product-card a:visited {
+  text-decoration: none;
+}
+
+/* line 27, modules/_product-card.scss */
+.product-card__category {
+  margin: 10px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
+
+/* line 35, modules/_product-card.scss */
+.product-card__title {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* line 43, modules/_product-card.scss */
+.product-card__price {
+  margin: 0 5px 0 0;
+  font-size: 23px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* line 50, modules/_product-card.scss */
+.product-card__oldprice {
+  color: red;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: line-through;
 }
 
 /* ===== SPECIFIC PAGE LAYOUT AND NON-REUSABLE STYLES ===== */

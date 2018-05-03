@@ -56,19 +56,19 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="row matchheight">
-				<div class="col-sm-2 col-xs-6" data-mh="header-group">
+			<div class="row">
+				<div class="col-sm-2 col-xs-6">
 					<!-- website logo -->
-					<img src="https://dummyimage.com/200x80/000/fff" alt="">
+					<a href="../html/"><img src="https://dummyimage.com/200x80/000/fff" alt=""></a>
 				</div>
-				<div class="col-sm-10 hidden-xs" data-mh="header-group">
+				<div class="col-sm-10 hidden-xs">
 					<!-- menu links -->
 					<ul class="menu">
 						<li class="menu__item">
-							<a href="#link" title="menu link" class="menu__item__link">sobre</a>
+							<a href="about.php" title="menu link" class="menu__item__link">sobre</a>
 						</li>
 						<li class="menu__item">
-							<a href="#link" title="menu link" class="menu__item__link">produtos</a>
+							<a href="products.php" title="menu link" class="menu__item__link">produtos</a>
 						</li>
 						<li class="menu__item">
 							<a href="#link" title="menu link" class="menu__item__link">blog</a>
@@ -77,14 +77,14 @@
 							<a href="#link" title="menu link" class="menu__item__link">Contacto</a>
 						</li>
 						<li class="menu__item">
-							<a href="#accountUser" title="User Account" class="menu__item__link"><i class="fas fa-user"></i></a>
+							<a href="#accountUser" title="User Account" class="menu__item__link menu__item__link--icon"><i class="fas fa-user"></i></a>
 						</li>
 						<li class="menu__item">
-							<a href="#cartShopping" title="Cart Shopping" class="menu__item__link cart-shopping has-items"><i class="fas fa-shopping-cart"><span>2</span></i></a>
+							<a href="#cartShopping" title="Cart Shopping" class="menu__item__link menu__item__link--icon cart-shopping"><i class="fas fa-shopping-cart"><span></span></i></a>
 						</li>
 					</ul>
 				</div>
-				<div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl" data-mh="header-group">
+				<div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl">
 					menu hamburger
 					<!-- menu hamburger -->
 				</div>

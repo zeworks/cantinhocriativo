@@ -112,6 +112,7 @@ function showMore(element, button, max) {
     if (nowShowing >= numInList) {
       button.hide();
     }
+    return false;
   });
 }
 // function to only add the ellipses to the text, this doesnt toggle.

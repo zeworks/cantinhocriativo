@@ -41,7 +41,7 @@
 	<!-- cart items total ends -->
 	<div class="clearfix"></div>
 	<div class="side-cart__buttons">
-		<a href="#gotocheckout" title="go to checkout" class="btn btn-primary">Go to checkout</a>
+		<a href="#gotoCheckout" title="go to checkout" class="btn btn-primary">Go to checkout</a>
 		<a href="#keepshopping" title="Keep Shopping" class="btn btn-default">Keep Shopping</a>
 	</div>
 </aside>
@@ -66,7 +66,7 @@
 				</ul>
 			</div>
 			<div class="col-sm-4">
-				<p>website social links</p>
+				<p>website ddddd links</p>
 			</div>
 		</div>
 	</div>
@@ -95,9 +95,8 @@
 <?php } ?>
 
 <!-- inject:js -->
-<script src="../assets/vendor.min.js"></script>
-<script src="../assets/js/functions.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="../assets/vendor.min.js" defer></script>
+<script src="../assets/js/app.js" defer></script>
 <!-- endinject -->
 
 

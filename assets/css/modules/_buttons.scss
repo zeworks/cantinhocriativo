@@ -1,13 +1,61 @@
 .btn{
-    border: $btn-border;
-    border-radius: 0;
-    text-transform: uppercase;
-    color: $btn-text-color;
-    font-weight: 700;
     padding: 10px 20px;
     transition: all .2s ease-in-out;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+
+    &:hover,
+    &:visited,
+    &:focus,
+    &:active{
+        text-decoration: none;
+    }
+}
+.btn-default {
+    border: $btnDefault-border $btnDefault-borderColor;
+    color: $btnDefault-textColor;
+    background-color: $btnDefault-bgColor;
+    &:hover {
+        border-color: $btnDefault-borderColor-hover;
+        color: $btnDefault-textColor-hover;
+        background-color: $btnDefault-bgColor-hover;
+    }
+    &:active, &:focus, &:visited{
+        color: $btnDefault-textColor;
+    }
+    &:active:hover, &:focus:hover, &:visited:hover{
+        color: $btnDefault-textColor-hover;
+    }
 }
 
-.btn:hover{
-    border-color: $btn-border-hover;
+.btn-primary {
+    border: $btnHightlight-border $btnHightlight-borderColor;
+    background-color: $btnHightlight-bgColor;
+    color: $btnHightlight-textColor;
+    &:hover {
+        border-color: $btnHightlight-borderColor-hover;
+        background-color: $btnHightlight-bgColor-hover;
+        color: $btnHightlight-textColor-hover;
+    }
+    &:active, &:focus, &:visited{
+        color: $btnHightlight-textColor;
+    }
+    &:active:hover, &:focus:hover, &:visited:hover{
+        color: $btnHightlight-textColor-hover;
+    }
+}
+
+.btn-viewmore{
+    display: table;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+.btn-viewmore i{
+    color: #333;
+    font-size: 35px;
 }

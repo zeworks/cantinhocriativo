@@ -1,0 +1,32 @@
+.breadcrumb {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    margin: 0;
+}
+
+.breadcrumb li:after {
+    content: "/";
+    position: relative;
+    display: inline-block;
+    margin: 0 7.5px;
+}
+
+.breadcrumb li:last-child:after {
+    display: none;
+}
+
+.breadcrumb li>a {
+    font-size: $breadcrumb-fontSize;
+    color: $breadcrumb-textColor;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.breadcrumb li:last-child>a {
+    font-weight: 700;
+}

@@ -62,7 +62,9 @@
         <div class="container">
             <div class="row matchheight">
                 <div class="col-sm-6 col-xs-12" data-mh="post-article">
-                    <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                    <a href="#link" title="view more">
+                        <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                    </a>
                 </div>
                 <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12" data-mh="post-article">
                     <h2>Article Title</h2>
@@ -83,7 +85,7 @@
                             vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
                             rerum aspernatur unde?</p>
                     </div>
-                    <a href="#link" class="btn" title="view more">View More</a>
+                    <a href="#link" class="btn btn-primary" title="view more">View More</a>
                 </div>
             </div>
         </div>
@@ -94,7 +96,9 @@
         <div class="container">
             <div class="row matchheight">
                 <div class="col-sm-6 col-xs-12 col-sm-push-6" data-mh="post-article">
-                    <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                    <a href="#link" title="view more">
+                        <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                    </a>
                 </div>
                 <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-7" data-mh="post-article">
                     <h2>Article Title</h2>
@@ -115,7 +119,75 @@
                             vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
                             rerum aspernatur unde?</p>
                     </div>
-                    <a href="#link" class="btn" title="view more">View More</a>
+                    <a href="#link" class="btn btn-primary" title="view more">View More</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="empty-space-80"></div>
+    <!-- este article vai estar alinhado à esquerda -->
+    <article class="post-article">
+        <div class="container">
+            <div class="row matchheight">
+                <div class="col-sm-6 col-xs-12" data-mh="post-article">
+                    <a href="#link" title="view more">
+                        <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12" data-mh="post-article">
+                    <h2>Article Title</h2>
+                    <div class="text-ellipses">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                    </div>
+                    <a href="#link" class="btn btn-primary" title="view more">View More</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="empty-space-80"></div>
+    <!-- este article vai estar alinhado à direita -->
+    <article class="post-article">
+        <div class="container">
+            <div class="row matchheight">
+                <div class="col-sm-6 col-xs-12 col-sm-push-6" data-mh="post-article">
+                    <a href="#link" title="view more">
+                        <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-7" data-mh="post-article">
+                    <h2>Article Title</h2>
+                    <div class="text-ellipses">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
+                            vitae adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta
+                            rerum aspernatur unde?</p>
+                    </div>
+                    <a href="#link" class="btn btn-primary" title="view more">View More</a>
                 </div>
             </div>
         </div>
@@ -123,4 +195,5 @@
     <div class="empty-space-80"></div>
 </section>
 <!-- /ARTICLES -->
+
 <?php include 'html_final.php' ?>

@@ -1,14 +1,13 @@
 .show-more {
-    background: transparent;
-    border: 1px solid $border-color;
+    background: transparent; // border: 1px solid $border-color;
     font-size: 25px;
-    color: black;
+    color: $text-color;
     display: table;
     margin: 0 auto;
     transition: all 200ms ease;
     padding: 0px 10px;
     &:hover {
-        background-color: $border-color;
+        // background-color: $border-color;
         color: white;
     }
 }
@@ -35,7 +34,7 @@ header {
     padding: 0;
     list-style: none;
     float: right;
-    @include max-xs{
+    @include max-xs {
         float: none;
     }
 }
@@ -45,26 +44,57 @@ header {
     display: inline-block;
     line-height: $navbarH;
     margin: 0 2.5px;
-
-    @include max-xs{
+    @include max-xs {
         line-height: normal;
     }
 }
 
-
-.menu__item__link{
+.menu__item__link {
     display: block;
     padding: 0 10px;
     font-family: $font;
     font-weight: 700;
-    color: $text-color;
+    color: $menu-link-textColor;
     text-transform: uppercase;
     position: relative;
-}
-.menu__item__link i{
-    font-size: 16px;
+    &:hover {
+        text-decoration: none;
+        color: $menu-link-textColor-hover;
+    }
+    &:active,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+        color: $menu-link-textColor;
+    }
+    &:active:hover,
+    &:focus:hover,
+    &:visited:hover {
+        color: $menu-link-textColor-hover;
+    }
 }
 
+.menu__item__link:not(.menu__item__link--icon):hover:after {
+    width: 50%;
+}
+
+.menu__item__link:not(.menu__item__link--icon)::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 13px);
+    transform: translateY(-50%);
+    left: 10px;
+    display: inline-block;
+    background-color: $menu-link-textColor-hover;
+    ;
+    width: 0px;
+    height: 2px;
+    transition: width .2s ease;
+}
+
+.menu__item__link i {
+    font-size: 16px;
+}
 
 main {
     margin-top: $navbarH;
@@ -73,23 +103,25 @@ main {
     }
 }
 
-footer{
+footer {
     background-color: $footer-backgroundColor;
     padding: 30px 0;
 }
-.footer-list{
+
+.footer-list {
     margin: 0;
     padding: 0;
     list-style: none;
     column-count: 2;
 }
 
-.footer-item{
+.footer-item {
     position: relative;
     display: block;
     margin: 3px 0;
 }
-.footer-link{
+
+.footer-link {
     display: block;
     width: 100%;
 }

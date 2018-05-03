@@ -54,8 +54,6 @@ $brand-info:            #0298ae;
 $brand-warning:         #d7a436;
 $brand-danger:          #ff4301;
 
-$border-color:          #cc896f;
-
 
 /* ===== FONTS ===== */
 
@@ -70,6 +68,7 @@ $font-line-height:  22px;
 
 // 0 to disable
 // 1 to enable
+$bootstrap-buttons: 		     0;
 $bootstrap-code: 				 0;
 $bootstrap-print: 				 0;
 $bootstrap-tables: 				 0;
@@ -106,6 +105,9 @@ $header-backgroundColor: #fff;
 $navbarH : 80px;
 $navbarHM: 50px;
 
+$menu-link-textColor: #333;
+$menu-link-textColor-hover: #777;
+
 /* footer */
 $footer-backgroundColor: #232323;
 
@@ -113,12 +115,55 @@ $footer-backgroundColor: #232323;
 $text-color: #333;
 $head-title: #232323;
 
-/* buttons */
-$btn-border: 1px solid #232323;
-$btn-text-color: #232323;
+/* buttons DEFAULT */
+$btnDefault-border: 1px solid;
+$btnDefault-borderColor: #c9c9c9;
+$btnDefault-bgColor: #fff;
+$btnDefault-textColor: #c9c9c9;
 
-/* buttons - hover */
-$btn-border-hover: red;
+    /* buttons DEFAULT - hover */
+    $btnDefault-borderColor-hover: #c9c9c9;
+    $btnDefault-bgColor-hover: #c9c9c9;
+    $btnDefault-textColor-hover: #fff;
+
+/* button HIGHLIGHT */
+$btnHightlight-border: 1px solid;
+$btnHightlight-borderColor: #232323;
+$btnHightlight-bgColor: #232323;
+$btnHightlight-borderColor: #232323;
+$btnHightlight-textColor: #fff;
+
+    /* button HIGHLIGHT - hover */
+    $btnHightlight-bgColor-hover: #fff;
+    $btnHightlight-borderColor-hover: #232323;
+    $btnHightlight-textColor-hover: #232323;
 
 /* sliders */
 $slider-text-color: #fff;
+
+/* BREADCRUMB */
+$breadcrumb-fontSize: 12px;
+$breadcrumb-textColor: #333;
+
+/* PRODUCT CARD - CATEGORY */
+$productCard-fontSizeCategory: 13px;
+$productCard-marginCategory: 10px 0;
+$productCard-fontWeightCategory: 500;
+$productCard-colorCategory: #333;
+
+/* PRODUCT CARD - TITLE */
+$productCard-fontSizeTitle: 18px;
+$productCard-marginTitle: 0 0 20px;
+$productCard-fontWeightTitle: 900;
+$productCard-colorTitle: #333;
+
+/* PRODUCT CARD - PRICE */
+$productCard-colorPrice: #333;
+$productCard-fontWeightPrice: 700;
+$productCard-fontSizePrice: 23px;
+$productCard-marginPrice: 0 5px 0 0;
+
+/* PRODUCT CARD - OLD PRICE */
+$productCard-colorOldPrice: red;
+$productCard-fontWeightOldPrice: 300;
+$productCard-fontSizeOldPrice: 15px;
