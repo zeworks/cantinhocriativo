@@ -10,7 +10,7 @@
 	<meta name="theme-color" content="#000">
 
 	<!-- Website desc -->
-	<title>LOBA starter</title>
+	<title>LOBA</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -77,7 +77,10 @@
 							<a href="#link" title="menu link" class="menu__item__link">Contacto</a>
 						</li>
 						<li class="menu__item">
-							<a href="#accountUser" title="User Account" class="menu__item__link menu__item__link--icon"><i class="fas fa-user"></i></a>
+							<a href="#" title="User Account" class="menu__item__link menu__item__link--icon"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="menu__item">
+							<a href="#wishlist" title="Your Wishlist" class="menu__item__link menu__item__link--icon"><i class="fas fa-heart"></i></a>
 						</li>
 						<li class="menu__item">
 							<a href="#cartShopping" title="Cart Shopping" class="menu__item__link menu__item__link--icon cart-shopping"><i class="fas fa-shopping-cart"><span></span></i></a>

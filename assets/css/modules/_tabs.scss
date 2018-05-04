@@ -1,0 +1,64 @@
+.tabs {
+    position: relative;
+}
+
+// id da div para dar o paddin g e o background color
+#tabs{
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+.tabs__head {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs__head .item-selected {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    height: 2px;
+    width: 50px;
+    transition: transform .2s ease-in;
+}
+
+.tabs__btn {
+    margin: 0 40px 0 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: $head-title;
+    &:hover{
+        color: $menu-link-textColor;
+        text-decoration: none;
+    }
+
+    &:active, &:visited, &:focus{
+        color: $head-title;
+        text-decoration: none;
+    }
+
+    &:active:hover, &:visited:hover, &:focus:hover{
+        color: $menu-link-textColor;
+    }
+}
+
+// esconder os items das tabs
+.tabs__body_item {
+    display: none; 
+    padding: 20px 0;
+    // por defeito o primeiro não está escondido
+    &:first-child {
+        display: block;
+    }
+}
+.tabs__body_item h4{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tabs__body_item ul{
+    margin: 0;
+    padding: 0 20px;
+}
