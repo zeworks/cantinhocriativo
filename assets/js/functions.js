@@ -168,22 +168,22 @@ function initValidation() {
             // not empty fields
             if (currentObject.hasClass('required')) {
                 //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
-                setState(currentObject, !currentObject.val().length );
+                setState(currentParent, !currentObject.val().length );
             }
             // radio button
             if (currentObject.hasClass('required-radio')) {
-                var name = currentObject.attr('name');
+                var name = currentParent.attr('name');
                 //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
-                setState(currentObject, !$('input[name="' + name + '"]:checked').length );
+                setState(currentParent, !$('input[name="' + name + '"]:checked').length );
             }
             // correct email fields
             if (currentObject.hasClass('required-email')) {
-                setState(currentObject, !regEmail.test(currentObject.val()));
+                setState(currentParent, !regEmail.test(currentObject.val()));
             }
             
             if (currentObject.hasClass('confirm-password')) {
                 if(currentObject.closest('form').find('.password').val() != currentObject.val()){
-                    setState(currentObject, true);
+                    setState(currentParent, true);
                 }
             }
             // correct input file fields

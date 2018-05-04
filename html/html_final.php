@@ -13,6 +13,7 @@
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
 			</form>
+			<a href="#" class="side-cart__del">delete</a>
 			<span class="cart-item__value">100€</span>
 		</li>
 		<li class="side-cart__item">
@@ -24,6 +25,7 @@
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
 			</form>
+			<a href="#" class="side-cart__del">delete</a>
 			<span class="cart-item__value">100€</span>
 		</li>
 	</ul>
@@ -93,7 +95,7 @@
 	var sitekey = <?php echo BO_RECAPTCHA_SITEKEY; ?>;
 </script>
 <?php } ?>
-
+<script id="dsq-count-scr" src="//teste-j3wyksvwj1.disqus.com/count.js" async></script>
 <!-- inject:js -->
 <script src="../assets/vendor.min.js" defer></script>
 <script src="../assets/js/app.js" defer></script>

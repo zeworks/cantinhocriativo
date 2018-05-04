@@ -140,6 +140,10 @@ $(window).resize(function () {
 	main();
 });
 
+$(window).scroll(function () {
+	floatBar();
+});
+
 function main() {
 	var image_banner_size = $(".image-bg");
 
@@ -201,4 +205,48 @@ function cartActions() {
 			$(this).closest('.cart-qty').find('.cart-qty__input').val(1);
 		}
 	});
+
+	// para remover os items do carrinho
+	$(".side-cart__del").click(function(){
+		$(this).parent().remove();
+		updateCartItems();
+		return false;		
+	})
 }
+
+// esta variavel é declarada fora do scroll para nao sofrer alterações nos valores ao fazer scroll
+var footerPosition = $("footer").offset().top - $("footer").outerHeight();
+var floatBar = () => {
+	var windowPosition = $(window).scrollTop();
+	var buyButtonPosition = $('.product-detail__buy').offset().top / 2;
+
+	var screenSize = window.matchMedia('(min-width: 768px)');
+	if (screenSize.matches) {
+		if (windowPosition > buyButtonPosition && windowPosition < footerPosition) {
+			$('.float-bar').slideDown();
+		} else {
+			$('.float-bar').slideUp();
+		}
+	}else{
+		$('.float-bar').slideUp();
+	}
+}
+
+
+$(".tabs__btn").click(function (e) {
+	// para mover a span para indicar o item activo
+	$(this).closest(".tabs__head").find(".item-selected").css({
+		transform: "translateX(" + $(this).position().left + "px)"
+	});
+
+	// para mostrar o item activo
+	var target = $(this).attr("href");
+	$(".tabs__body_item").hide();
+	$(target).show();
+	return false;
+});
+// metodos de pagamento
+$(".payment-methods li").click(function(){
+	$(".payment-methods li").removeClass("active");
+	$(this).addClass("active");
+});
