@@ -6,7 +6,9 @@ $(document).ready(function () {
 	updateCartItems();
 	showMore("[data-mh='product-item']", ".view-more", 12);
 	showMoreText(".text-ellipses", 550);
+	showMoreText(".float-bar h2", 20);
 	$('.matchheight').matchHeight();
+	tabsSystem();
 	// Forms validation
 	initValidation();
 
@@ -135,23 +137,47 @@ $(document).ready(function () {
 			$(".swiper-slide-active .wrapper-slide").addClass("animated fadeInUp");
 		}, 800);
 	});
+
+	
 });
+
 $(window).resize(function () {
 	main();
+
+	if($(window).width() < 768){
+		$(".menu").css({ top : $("header").outerHeight() });
+	}else{
+		$(".menu").removeAttr("style");
+	}
 });
 
 $(window).scroll(function () {
-	floatBar();
+	if($(".float-bar").length){
+		floatBar();
+	}
 });
 
 function main() {
-	var image_banner_size = $(".image-bg");
+	var image_banner_size = $(".institutional-banner .image-bg");
+	var swiper_banner_size = $(".swiper-container .image-bg");
 
+	$("main").css({ "margin-top" : $("header").outerHeight() });
+	
 	if ($(window).width() < 768) {
+		// mobile
+		// se for apenas uma imagem institucional
 		image_banner_size.css({
+			"min-height": 175 + "px"
+		});
+		// se for um carrousel
+		swiper_banner_size.css({
 			"min-height": $(window).height() - $("header").outerHeight()
 		});
 	} else {
+		// desktop
+		swiper_banner_size.css({
+			"min-height": $(window).height() / 2 + 100 - $("header").outerHeight()
+		});
 		image_banner_size.css({
 			"min-height": $(window).height() / 2 + 100 - $("header").outerHeight()
 		});
@@ -232,21 +258,49 @@ var floatBar = () => {
 	}
 }
 
-
-$(".tabs__btn").click(function (e) {
-	// para mover a span para indicar o item activo
-	$(this).closest(".tabs__head").find(".item-selected").css({
-		transform: "translateX(" + $(this).position().left + "px)"
-	});
-
-	// para mostrar o item activo
-	var target = $(this).attr("href");
-	$(".tabs__body_item").hide();
-	$(target).show();
-	return false;
-});
 // metodos de pagamento
 $(".payment-methods li").click(function(){
 	$(".payment-methods li").removeClass("active");
 	$(this).addClass("active");
 });
+
+$(".btn-menu").click(function(){
+	$(this).toggleClass("active");
+	$("header").toggleClass("open");
+	$(".menu").css({ top : $("header").outerHeight() });
+});
+
+var tabsSystem = () => {
+	// toggle the active tab
+	$(".tabs__btn").click(function (e) {
+		// para mover a span para indicar o item activo
+		$(this).closest(".tabs__head").find(".item-selected").css({
+			transform: "translateX(" + $(this).position().left + "px)"
+		});
+	
+		// para mostrar o item activo
+		var target = $(this).attr("href");
+		$(".tabs__body_item").hide();
+		$(target).show();
+		return false;
+	});
+	if($(window).width() < 768){
+		$(".tabs__head").click(function(){
+			$(this).toggleClass("open");
+		});
+
+		$(".tabs__btn").click(function(){
+			// set all unselected
+			$(".tabs__btn").removeClass("selected");
+			// open the tabs select
+			$(".tabs__head").toggleClass("open");
+			// set the selected tab item
+			$(this).addClass("selected");
+		});
+
+		$("body,html").click(function (e) {
+			if ($(".tabs__head").hasClass("open")) $(".tabs__head").removeClass("open");
+		});
+	}
+
+}

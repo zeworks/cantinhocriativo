@@ -45,7 +45,8 @@
 	<link href="../assets/img/favicon-180x180.png" rel="apple-touch-icon" sizes="180x180">
 
 	<!-- Font Awesome icons -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+	    crossorigin="anonymous">
 
 	<!-- inject:css -->
 	<link rel="stylesheet" href="../assets/vendor.min.css">
@@ -56,14 +57,16 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-2 col-xs-6">
+			<div class="row matchheight">
+				<div class="col-sm-2 col-xs-6" data-mh="height-menu">
 					<!-- website logo -->
-					<a href="../html/"><img src="https://dummyimage.com/200x80/000/fff" alt=""></a>
+					<a href="../html/">
+						<img class="logo-image" src="https://dummyimage.com/200x80/000/fff" alt="">
+					</a>
 				</div>
-				<div class="col-sm-10 hidden-xs">
+				<div class="col-sm-10">
 					<!-- menu links -->
-					<ul class="menu">
+					<ul class="menu hidden-xs">
 						<li class="menu__item">
 							<a href="about.php" title="menu link" class="menu__item__link">sobre</a>
 						</li>
@@ -77,18 +80,49 @@
 							<a href="#link" title="menu link" class="menu__item__link">Contacto</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" title="User Account" class="menu__item__link menu__item__link--icon"><i class="fas fa-user"></i></a>
+							<a href="#" title="User Account" class="menu__item__link menu__item__link--icon">
+								<i class="fas fa-user"></i>
+							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#wishlist" title="Your Wishlist" class="menu__item__link menu__item__link--icon"><i class="fas fa-heart"></i></a>
+							<a href="#wishlist" title="Your Wishlist" class="menu__item__link menu__item__link--icon">
+								<i class="fas fa-heart"></i>
+							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#cartShopping" title="Cart Shopping" class="menu__item__link menu__item__link--icon cart-shopping"><i class="fas fa-shopping-cart"><span></span></i></a>
+							<a href="#cartShopping" title="Cart Shopping" class="menu__item__link menu__item__link--icon cart-shopping">
+								<i class="fas fa-shopping-cart">
+									<span></span>
+								</i>
+							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl">
-					menu hamburger
+				<div class="col-xs-6 hidden-sm hidden-md hidden-lg hidden-xl" data-mh="height-menu">
+					<button type="button" class="btn-menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<ul class="menu--mobile">
+						<li class="menu__item">
+							<a href="#" title="User Account" class="menu__item__link menu__item__link--icon">
+								<i class="fas fa-user"></i>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#wishlist" title="Your Wishlist" class="menu__item__link menu__item__link--icon">
+								<i class="fas fa-heart"></i>
+							</a>
+						</li>
+						<li class="menu__item">
+							<a href="#cartShopping" title="Cart Shopping" class="menu__item__link menu__item__link--icon cart-shopping">
+								<i class="fas fa-shopping-cart">
+									<span></span>
+								</i>
+							</a>
+						</li>
+					</ul>
 					<!-- menu hamburger -->
 				</div>
 			</div>

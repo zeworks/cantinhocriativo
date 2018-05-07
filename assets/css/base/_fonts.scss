@@ -46,4 +46,8 @@ p{
     font-size: 17px;
     line-height: 24px;
     color: $text-color;
+    @include max-xs{
+        font-size: 15px;
+        line-height: 22px;
+    }
 }

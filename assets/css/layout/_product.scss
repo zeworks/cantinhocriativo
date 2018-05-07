@@ -64,6 +64,10 @@
 
 .product-detail__buy .btn {
     margin: 0 0 0 20px;
+    @include max-sm{
+        margin: 0;
+        float: right;
+    }
 }
 .product-carousel-thumbs{
     margin: 3px 0;

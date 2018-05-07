@@ -4,7 +4,12 @@
     border-radius: 0;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 14px;
     display: inline-block;
+    
+    @include max-xs{
+        font-size: 12px;
+    }
 
     &:hover,
     &:visited,
@@ -58,4 +63,48 @@
 .btn-viewmore i{
     color: #333;
     font-size: 35px;
+}
+
+.btn-menu{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    width: $navbarHM;
+    height: $navbarHM;
+    outline-color: transparent;
+    
+    &.active{
+        /* general style to iconbar items */
+            > .icon-bar:before{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: 0;
+                transform: translate(-50%,-50%); 
+            }
+        /* hidding the second icon bar on button */
+            > .icon-bar:nth-child(2):before{ opacity: 0; visibility: hidden; }
+        /* changing position of icon bar items */
+            > .icon-bar:first-child:before{
+                transform: rotate(45deg);
+            }
+            > .icon-bar:last-child:before{
+                transform: rotate(-45deg);
+            }
+    }   
+    > .icon-bar{ position: relative; }
+    
+    > .icon-bar:before{
+        content: '';
+        width: 30px;
+        height: 2px;    
+        background-color: #333;
+        display: block;
+        margin: 5px auto;
+        transition: transform 300ms ease;
+    }
+
 }

@@ -3,15 +3,37 @@
 }
 
 // id da div para dar o paddin g e o background color
-#tabs{
+#tabs {
     padding: 50px 0;
     background-color: #f1f1f1;
+    @include max-xs {
+        padding: 25px 0;
+    }
 }
 
 .tabs__head {
     position: relative;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
+    @include max-xs {
+        padding: 10px;
+        border: 1px solid #ddd;
+        &.open {
+            >.tabs__btn {
+                display: block;
+                margin: 0 0 5px 0
+            }
+            >.caret-down {
+                transform: rotate(-180deg)
+            }
+        }
+        .caret-down {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            transition: transform 200ms ease;
+        }
+    }
 }
 
 .tabs__head .item-selected {
@@ -22,6 +44,9 @@
     height: 2px;
     width: 50px;
     transition: transform .2s ease-in;
+    @include max-xs {
+        display: none;
+    }
 }
 
 .tabs__btn {
@@ -29,36 +54,47 @@
     font-size: 17px;
     font-weight: 700;
     color: $head-title;
-    &:hover{
+    &:hover {
         color: $menu-link-textColor;
         text-decoration: none;
     }
-
-    &:active, &:visited, &:focus{
+    &:active,
+    &:visited,
+    &:focus {
         color: $head-title;
         text-decoration: none;
     }
-
-    &:active:hover, &:visited:hover, &:focus:hover{
+    &:active:hover,
+    &:visited:hover,
+    &:focus:hover {
         color: $menu-link-textColor;
+    }
+    /* mobile */
+    @include max-xs {
+        display: none;
+        font-weight: 400;
+    }
+    &.selected {
+        display: block;
+        font-weight: 700;
     }
 }
 
 // esconder os items das tabs
 .tabs__body_item {
-    display: none; 
-    padding: 20px 0;
-    // por defeito o primeiro não está escondido
+    display: none;
+    padding: 20px 0; // por defeito o primeiro não está escondido
     &:first-child {
         display: block;
     }
 }
-.tabs__body_item h4{
+
+.tabs__body_item h4 {
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.tabs__body_item ul{
+.tabs__body_item ul {
     margin: 0;
     padding: 0 20px;
 }

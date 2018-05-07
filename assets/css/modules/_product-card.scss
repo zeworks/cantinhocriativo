@@ -4,6 +4,7 @@
     height: 100%;
     @include max-xs {
         text-align: center;
+        margin-bottom: 20px;
         img {
             margin: 0 auto;
         }
@@ -14,6 +15,9 @@
     display: inline-block;
     margin: 30px 0 30px 10px;
     float: right;
+    @include max-xs{
+        float: none;
+    }
 }
 
 .product-card a:hover,

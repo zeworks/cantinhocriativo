@@ -1,24 +1,4 @@
 <?php include 'html_inicial.php' ?>
-<!-- banner - large -->
-<section>
-    <!-- <div class="institutional-banner institutional-banner--masked">
-        <div class="image-bg" style="background-image: url(https://dummyimage.com/1920x900/fff/000)">
-            <div class="wrapper-slide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <strong>SOBRE NÓS</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="institutional-banner">
-        <div class="image-bg" style="background-image: url(https://dummyimage.com/1920x900/f2f2f2/000)"></div>
-    </div>
-</section>
-<!-- banner - large ends -->
 <!-- BREADCRUMB -->
 <section>
     <div class="container">
@@ -73,22 +53,22 @@
                 <div class="product-detail__rating">
                     <div class="row">
                         <!-- product reference -->
-                        <div class="col-sm-12 col-md-3">
+                        <div class="col-sm-4 col-md-3">
                             <p>ref: 10237126</p>
                         </div>
                         <!-- number of comments -->
-                        <div class="col-sm-12 col-md-5">
+                        <div class="col-sm-4 col-md-5">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
-                            <a href="#" title="0 Comentarios">(0) Comentários</a>
+                            <a href="#" title="0 Comentarios" class="hidden-sm">(0) Comentários</a>
                         </div>
                         <!-- wishlist -->
-                        <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-4 col-md-4">
                             <a href="#addWishlist" title>
-                                <i class="far fa-heart"></i> Adicionar à Wishlist</a>
+                                <i class="far fa-heart"></i> <span class="hidden-sm">Adicionar à Wishlist</span></a>
                         </div>
                     </div>
                 </div>
@@ -136,11 +116,12 @@
             <div class="col-xs-12">
                 <div class="tabs">
                     <div class="tabs__head">
+                        <span class="hidden-sm hidden-md hidden-lg hidden-xl caret-down"><i class="fas fa-caret-down"></i></span>
                         <span class="item-selected"></span>
-                        <a href="#details" class="tabs__btn" title>Detalhes</a>
+                        <a href="#details" class="tabs__btn selected" title>Detalhes</a>
                         <a href="#mpagamento" class="tabs__btn" title>Métodos de Pagamento</a>
                         <a href="#way_delivery" class="tabs__btn" title>Métodos de Entrega</a>
-                        <span class="fright">Encomendar por telefone: +351 912 333 211</span>
+                        <span class="fright hidden-xs">Encomendar por e-mail: <strong>info@cantinhocriativo.pt</strong></span>
                     </div>
                     <div class="tabs__body">
                         <div id="details" class="tabs__body_item">
@@ -340,7 +321,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4  text-left">
-                <h2>Nome do Produto</h2>
+                <h2>Nome do Produto s s s</h2>
             </div>
             <div class="col-sm-3  text-center">
                 <div class="product-detail__price">
