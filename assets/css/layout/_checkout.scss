@@ -1,0 +1,18 @@
+.checkout-cart {
+    position: relative;
+    border: $checkoutCart-border;
+    border-radius: $checkoutCart-borderRadius;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.checkout-cart-title,
+.checkout-cart-body {
+    padding: $checkoutCart-padding;
+}
+
+.checkout-cart-title {
+    background-color: $checkoutCart-titleBgColor;
+}

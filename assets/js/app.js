@@ -518,22 +518,21 @@ var tabsSystem = function tabsSystem() {
 		var target = $(this).attr("href");
 		$(".tabs__body_item").hide();
 		$(target).show();
+
+		// set all unselected
+		$(".tabs__btn").removeClass("selected");
+		// open the tabs select
+		$(".tabs__head").toggleClass("open");
+		// set the selected tab item
+		$(this).addClass("selected");
+
 		return false;
 	});
+	// MOBILE
 	if ($(window).width() < 768) {
 		$(".tabs__head").click(function () {
 			$(this).toggleClass("open");
 		});
-
-		$(".tabs__btn").click(function () {
-			// set all unselected
-			$(".tabs__btn").removeClass("selected");
-			// open the tabs select
-			$(".tabs__head").toggleClass("open");
-			// set the selected tab item
-			$(this).addClass("selected");
-		});
-
 		$("body,html").click(function (e) {
 			if ($(".tabs__head").hasClass("open")) $(".tabs__head").removeClass("open");
 		});

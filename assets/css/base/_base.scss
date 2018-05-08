@@ -20,11 +20,19 @@ input[type="radio"] {
     }
 }
 
+.empty-space-20 {
+    padding-bottom: 20px;
+}
+
 .empty-space-80 {
     padding-bottom: 80px;
-    @include max-xs{
+    @include max-xs {
         padding-bottom: 20px;
     }
+}
+
+hr{
+    border-color: #f2f2f2;
 }
 
 header {
@@ -215,7 +223,7 @@ header {
     display: inline-block;
     width: 50%;
     float: left;
-    @include max-xs{
+    @include max-xs {
         width: 100%;
         float: none;
     }
