@@ -13,7 +13,8 @@
                 <!-- table items -->
                 <hr>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-7">
+                        <!-- morada de faturacao -->
                         <div class="checkout-cart">
                             <div class="checkout-cart-title">
                                 <h4>1. Morada de Faturação</h4>
@@ -27,34 +28,62 @@
                                 </form>
                             </div>
                         </div>
+                        <!-- morada de envio -->
                         <div class="checkout-cart">
-                                <div class="checkout-cart-title">
-                                    <h4>1. Morada de Faturação</h4>
-                                </div>
-                                <div class="checkout-cart-body">
-                                    <form action="">
-                                        <div class="form-field">
-                                            <label for="complete_name">Nome Completo</label>
-                                            <input type="text" class="form-control required" id="complete_name" name="complete_name">
-                                        </div>
-                                    </form>
-                                </div>
+                            <div class="checkout-cart-title">
+                                <h4>2. Morada de Envio</h4>
                             </div>
+                            <div class="checkout-cart-body">
+
+                            </div>
+                        </div>
+                        <!-- metodo de envio -->
+                        <div class="checkout-cart">
+                            <div class="checkout-cart-title">
+                                <h4>3. Método de Envio</h4>
+                            </div>
+                            <div class="checkout-cart-body">
+
+                            </div>
+                        </div>
+                        <!-- metodo de pagamento -->
+                        <div class="checkout-cart">
+                            <div class="checkout-cart-title">
+                                <h4>4. Método de Pagamento</h4>
+                            </div>
+                            <div class="checkout-cart-body">
+
+                            </div>
+                        </div>
+                        <!-- comentario -->
+                        <div class="checkout-cart">
+                            <div class="checkout-cart-title">
+                                <h4>5. Deixe o seu comentário</h4>
+                            </div>
+                            <div class="checkout-cart-body">
+
+                            </div>
+                        </div>
+                        <!-- termos e condições -->
+
+                        <!-- finalizar compra -->
+                        <button type="submit" class="btn btn-primary">Finalizar Compra</button>
                     </div>
-                    <div class="col-sm-6">
-                            <div class="checkout-cart">
-                                    <div class="checkout-cart-title">
-                                        <h4>1. Morada de Faturação</h4>
+                    <div class="col-sm-5">
+                        <!-- Order Summary -->
+                        <div class="checkout-cart">
+                            <div class="checkout-cart-title">
+                                <h4>A sua encomenda</h4>
+                            </div>
+                            <div class="checkout-cart-body">
+                                <form action="">
+                                    <div class="form-field">
+                                        <label for="complete_name">Nome Completo</label>
+                                        <input type="text" class="form-control required" id="complete_name" name="complete_name">
                                     </div>
-                                    <div class="checkout-cart-body">
-                                        <form action="">
-                                            <div class="form-field">
-                                                <label for="complete_name">Nome Completo</label>
-                                                <input type="text" class="form-control required" id="complete_name" name="complete_name">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
