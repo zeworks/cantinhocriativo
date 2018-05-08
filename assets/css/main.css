@@ -3501,26 +3501,31 @@ header.open .menu {
   color: #777;
 }
 
+/* line 111, base/_base.scss */
+.logo-link {
+  display: block;
+}
+
 @media (max-width: 767px) {
-  /* line 112, base/_base.scss */
+  /* line 116, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 116, base/_base.scss */
+  /* line 120, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
     height: auto;
   }
 }
-/* line 123, base/_base.scss */
+/* line 127, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 127, base/_base.scss */
+/* line 131, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3536,13 +3541,13 @@ header.open .menu {
   transition: width .2s ease;
 }
 
-/* line 141, base/_base.scss */
+/* line 145, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 147, base/_base.scss */
+/* line 151, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3555,47 +3560,47 @@ header.open .menu {
   text-align: right;
 }
 
-/* line 158, base/_base.scss */
+/* line 162, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 164, base/_base.scss */
+/* line 168, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 170, base/_base.scss */
+/* line 174, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 170, base/_base.scss */
+  /* line 174, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 177, base/_base.scss */
+/* line 181, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 177, base/_base.scss */
+  /* line 181, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 184, base/_base.scss */
+/* line 188, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 188, base/_base.scss */
+/* line 192, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3604,12 +3609,12 @@ header.open .menu {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 194, base/_base.scss */
+/* line 198, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 199, base/_base.scss */
+/* line 203, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3619,7 +3624,7 @@ header.open .menu {
   display: inline-block;
 }
 
-/* line 208, base/_base.scss */
+/* line 212, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3628,12 +3633,12 @@ header.open .menu {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 214, base/_base.scss */
+/* line 218, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 220, base/_base.scss */
+/* line 224, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3642,27 +3647,27 @@ header.open .menu {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 220, base/_base.scss */
+  /* line 224, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 232, base/_base.scss */
+/* line 236, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 238, base/_base.scss */
+/* line 242, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 243, base/_base.scss */
+/* line 247, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3671,7 +3676,7 @@ header.open .menu {
   left: 10px;
 }
 
-/* line 251, base/_base.scss */
+/* line 255, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3679,18 +3684,18 @@ header.open .menu {
   text-transform: uppercase;
 }
 
-/* line 259, base/_base.scss */
+/* line 263, base/_base.scss */
 #pArea {
   padding: 50px 0;
   background-color: #ddd;
 }
-/* line 262, base/_base.scss */
+/* line 266, base/_base.scss */
 #pArea .account-item {
   background-color: #fff;
   padding: 20px;
   height: 100%;
 }
-/* line 267, base/_base.scss */
+/* line 271, base/_base.scss */
 #pArea .account-item h2 {
   margin: 0;
 }
@@ -4264,7 +4269,7 @@ header.open .menu {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
 /* line 159, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4291,7 +4296,7 @@ header.open .menu {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items ir├í aparecer */
+/* se tiver a class has-items o numero de items irá aparecer */
 /* line 180, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;

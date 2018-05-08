@@ -60,7 +60,7 @@
 			<div class="row matchheight">
 				<div class="col-sm-2 col-xs-6" data-mh="height-menu">
 					<!-- website logo -->
-					<a href="../html/">
+					<a class="logo-link" href="../html/" title>
 						<img class="logo-image" src="https://dummyimage.com/200x80/000/fff" alt="">
 					</a>
 				</div>
