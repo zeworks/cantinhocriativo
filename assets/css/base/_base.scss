@@ -1,9 +1,19 @@
-input[type="radio"] {
+input[type="radio"]:not(.radio) {
     opacity: 0;
     visibility: hidden;
     width: 0;
     height: 0;
     position: absolute;
+}
+
+.radio{
+    position: absolute;
+    margin-left: -26px;
+    margin-top: 3px;
+}
+
+input[type="checkbox"]{
+    margin-right: 10px;
 }
 
 .show-more {
@@ -49,6 +59,27 @@ header {
     }
     &.open .menu {
         display: flex !important;
+    }
+}
+
+table {
+    width: 100%;
+    th{
+        padding: $table-padding;
+        font-weight: $table-fontWeightTH; 
+        color: $table-textColorTH;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    td {
+        vertical-align: top;
+        padding: 10px;
+    }
+    tr{
+        border-bottom: 1px solid #ddd;
+        &:last-child{
+            border: 0;
+        }
     }
 }
 
@@ -111,7 +142,10 @@ header {
 .logo-link {
     display: block;
 }
-
+.logo-image{
+    height: 80px;
+    width: auto;
+}
 @include max-xs {
     .menu .menu__item__link--icon {
         display: none
@@ -120,7 +154,7 @@ header {
     .logo-image {
         display: block;
         max-width: 100%;
-        height: auto;
+        height: 50px;
     }
 }
 

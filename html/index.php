@@ -196,4 +196,35 @@
 </section>
 <!-- /ARTICLES -->
 
+<!-- TESTIMONIALS -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-8">
+                <div class="text-center">
+                    <h1>Testimonials</h1>
+                    <div class="owl-carousel owl-theme testimonials">
+                        <div class="item">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, alias incidunt repudiandae
+                                commodi ea obcaecati iure amet quia? Commodi quo illum excepturi tempora ullam asperiores
+                                deleniti omnis voluptatem eos doloribus?</p>
+                            <br>
+                            <span>Tom Sperri</span>
+                        </div>
+                        <div class="item">
+                            <p>Lorem ipsum duptatem eos doloribus?</p>
+                            <br>
+                            <span>Tom Sperri 2</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="empty-space-80"></div>
+<!-- TESTIMONIALS ENDS -->
+
 <?php include 'html_final.php' ?>

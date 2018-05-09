@@ -248,6 +248,7 @@ $(document).ready(function () {
 	showMoreText(".float-bar h2", 20);
 	$('.matchheight').matchHeight();
 	tabsSystem();
+	sliders();
 	// Forms validation
 	initValidation();
 
@@ -481,8 +482,8 @@ var footerPosition = $("footer").offset().top - $("footer").outerHeight();
 var floatBar = function floatBar() {
 	var windowPosition = $(window).scrollTop();
 	var buyButtonPosition = $('.product-detail__buy').offset().top / 2;
-
 	var screenSize = window.matchMedia('(min-width: 768px)');
+
 	if (screenSize.matches) {
 		if (windowPosition > buyButtonPosition && windowPosition < footerPosition) {
 			$('.float-bar').slideDown();
@@ -537,4 +538,16 @@ var tabsSystem = function tabsSystem() {
 			if ($(".tabs__head").hasClass("open")) $(".tabs__head").removeClass("open");
 		});
 	}
+};
+
+var sliders = function sliders() {
+	$(".owl-carousel").owlCarousel({
+		items: 1,
+		loop: true,
+		autoplay: true,
+		smartSpeed: 800,
+		autoplayTimeout: 5000,
+		autoHeight: true,
+		dots: true
+	});
 };

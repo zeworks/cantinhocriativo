@@ -6,13 +6,19 @@
     overflow: hidden;
     margin-bottom: 20px;
     display: block;
+    
 }
 
 .checkout-cart-title,
-.checkout-cart-body {
+.checkout-cart-body,
+.checkout-cart-footer {
     padding: $checkoutCart-padding;
 }
 
 .checkout-cart-title {
     background-color: $checkoutCart-titleBgColor;
+}
+
+.checkout-cart-footer {
+    background-color: $checkoutCart-footerBgColor;
 }

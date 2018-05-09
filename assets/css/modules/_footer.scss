@@ -1,6 +1,8 @@
 footer {
     background-color: $footer-backgroundColor;
     padding: 30px 0;
+    z-index: 1000;
+    position: relative;
     @include max-xs{
         padding: 20px 0;
     }
@@ -28,4 +30,8 @@ footer {
 .footer-link {
     display: block;
     width: 100%;
+}
+
+footer img:first-child{
+    height: 165px;
 }

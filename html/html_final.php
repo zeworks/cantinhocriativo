@@ -43,8 +43,8 @@
 	<!-- cart items total ends -->
 	<div class="clearfix"></div>
 	<div class="side-cart__buttons">
-		<a href="checkout.php" title="go to checkout" class="btn btn-primary">Go to checkout</a>
-		<a href="#keepshopping" title="Keep Shopping" class="btn btn-default">Keep Shopping</a>
+		<a href="checkout.php" title="Ir para o checkout" class="btn btn-primary">Ir para o checkout</a>
+		<a href="#keepshopping" title="Fechar" class="btn btn-default">Fechar</a>
 	</div>
 </aside>
 <footer>
@@ -52,7 +52,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<!-- website logo -->
-				<img src="https://dummyimage.com/200x80/000/fff" alt="">
+				<img class="img-responsive" src="../assets/img/occ_logo.png" alt="">
 			</div>
 			<div class="col-sm-4">
 				<ul class="footer-list">

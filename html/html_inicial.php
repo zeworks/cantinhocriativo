@@ -61,7 +61,7 @@
 				<div class="col-sm-2 col-xs-6" data-mh="height-menu">
 					<!-- website logo -->
 					<a class="logo-link" href="../html/" title>
-						<img class="logo-image" src="https://dummyimage.com/200x80/000/fff" alt="">
+						<img class="logo-image" src="../assets/img/occ_logo.png" alt="">
 					</a>
 				</div>
 				<div class="col-sm-10">
@@ -77,7 +77,7 @@
 							<a href="#link" title="menu link" class="menu__item__link">blog</a>
 						</li>
 						<li class="menu__item">
-							<a href="#link" title="menu link" class="menu__item__link">Contacto</a>
+							<a href="contact.php" title="menu link" class="menu__item__link">Contacto</a>
 						</li>
 						<li class="menu__item">
 							<a href="#" title="User Account" class="menu__item__link menu__item__link--icon">

@@ -1,0 +1,9 @@
+.testimonials{
+    span{
+        font-style: $testimonial-fontStyle;
+        color: $testimonial-textColor;
+        font-weight: $testimonial-fontWeight;
+        font-size: $testimonial-fontSize;
+        text-transform: $testimonial-textTransform;
+    }
+}

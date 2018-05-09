@@ -1,26 +1,19 @@
-
-
 /* ===== DEBUG MODE ===== */
+
 // 0 - not on debug mode
 // 1 - highlights with red border
-
 $debugMode: 0;
-
-
-
 /* ===== GRID AND VIEWPORTS ===== */
 
 // Number of columns
-$grid-columns: 		12;
-
+$grid-columns: 12;
 // Column padding. Divided by two, between left and right
 $grid-gutter-width: 30px;
-
-$screen-xs:     320px;
-$screen-sm:     768px;
-$screen-md:     992px;
-$screen-lg:     1200px;
-$screen-xl:     1500px; // will be the maximum width of the site
+$screen-xs : 320px;
+$screen-sm : 768px;
+$screen-md : 992px;
+$screen-lg : 1200px;
+$screen-xl : 1500px; // will be the maximum width of the site
 $screen-xs-min: $screen-xs;
 $screen-sm-min: $screen-sm;
 $screen-md-min: $screen-md;
@@ -30,163 +23,167 @@ $screen-xs-max: ($screen-sm-min - 1);
 $screen-sm-max: ($screen-md-min - 1);
 $screen-md-max: ($screen-lg-min - 1);
 $screen-lg-max: ($screen-xl-min - 1);
-
-
-
 /* ===== COLORS ===== */
 
-$brand-primary:         #0298ae;
+$brand-primary : #0298ae;
 $brand-primary-lighter: #0298ae;
-$brand-primary-darker:  #0298ae;
-$brand-accent:          #ffdf01;
-$brand-accent-lighter:  #feee82;
-$brand-accent-darker:   #ccb201;
-
+$brand-primary-darker : #0298ae;
+$brand-accent : #ffdf01;
+$brand-accent-lighter : #feee82;
+$brand-accent-darker : #ccb201;
 // Usually text color accross all site
-$brand-default:         #666;
+$brand-default : #666;
 $brand-default-lighter: #999;
-$brand-default-darker:  #333;
-
+$brand-default-darker : #333;
 // Feedback colors - usually colors to be used on
 // messages of success, warning or error from forms.
-$brand-success:         #95db94;
-$brand-info:            #0298ae;
-$brand-warning:         #d7a436;
-$brand-danger:          #f74545;
-
-
+$brand-success : #95db94;
+$brand-info : #0298ae;
+$brand-warning : #d7a436;
+$brand-danger : #f74545;
 /* ===== FONTS ===== */
 
-$font: 	 			'Roboto', sans-serif;
-$font-variant: 		'Open-sans', Arial, sans-serif;
-$font-size: 	 	16px;
-$font-line-height:  22px;
-
-
-
+$font: 'Roboto',
+sans-serif;
+$font-variant: 'Open-sans',
+Arial,
+sans-serif;
+$font-size : 16px;
+$font-line-height : 22px;
 /* ===== BOOTSTRAP EXTRAS ===== */
 
 // 0 to disable
 // 1 to enable
-$bootstrap-buttons: 		     0;
-$bootstrap-code: 				 0;
-$bootstrap-print: 				 0;
-$bootstrap-tables: 				 0;
-$bootstrap-forms: 				 0;
-$bootstrap-glyphicons: 			 0;
+$bootstrap-buttons : 0;
+$bootstrap-code: 0;
+$bootstrap-print: 0;
+$bootstrap-tables: 0;
+$bootstrap-forms: 0;
+$bootstrap-glyphicons: 0;
 $bootstrap-component-animations: 0;
-$bootstrap-dropdowns: 			 0;
-$bootstrap-button-groups: 		 0;
-$bootstrap-input-groups: 		 0;
-$bootstrap-navs: 				 0;
-$bootstrap-navbar: 				 0;
-$bootstrap-breadcrumbs: 		 0;
-$bootstrap-pagination: 			 0;
-$bootstrap-pager: 				 0;
-$bootstrap-labels: 				 0;
-$bootstrap-badges: 				 0;
-$bootstrap-jumbotron: 			 0;
-$bootstrap-thumbnails: 			 0;
-$bootstrap-alerts: 				 1;
-$bootstrap-progress-bars: 		 0;
-$bootstrap-media: 				 0;
-$bootstrap-list-group: 			 0;
-$bootstrap-panels: 				 0;
-$bootstrap-responsive-embed: 	 0;
-$bootstrap-wells: 				 0;
-$bootstrap-close: 				 0;
-$bootstrap-modals: 				 0;
-$bootstrap-tooltip: 			 0;
-$bootstrap-popovers: 			 0;
-$bootstrap-carousel: 			 0;
-
+$bootstrap-dropdowns: 0;
+$bootstrap-button-groups: 0;
+$bootstrap-input-groups: 0;
+$bootstrap-navs: 0;
+$bootstrap-navbar: 0;
+$bootstrap-breadcrumbs: 0;
+$bootstrap-pagination: 0;
+$bootstrap-pager: 0;
+$bootstrap-labels: 0;
+$bootstrap-badges: 0;
+$bootstrap-jumbotron: 0;
+$bootstrap-thumbnails: 0;
+$bootstrap-alerts: 1;
+$bootstrap-progress-bars: 0;
+$bootstrap-media: 0;
+$bootstrap-list-group: 0;
+$bootstrap-panels: 0;
+$bootstrap-responsive-embed: 0;
+$bootstrap-wells: 0;
+$bootstrap-close: 0;
+$bootstrap-modals: 0;
+$bootstrap-tooltip: 0;
+$bootstrap-popovers: 0;
+$bootstrap-carousel: 0;
 /* MENU */
-$header-backgroundColor: #fff;
-$navbarH : 80px;
-$navbarHM: 50px;
 
+$header-backgroundColor: #fff;
+$navbarH: 80px;
+$navbarHM: 50px;
 $menu-link-textColor: #333;
 $menu-link-textColor-hover: #777;
-
 /* footer */
-$footer-backgroundColor: #232323;
 
+$footer-backgroundColor: #232323;
 /* headers and paragraphs */
+
 $text-color: #333;
 $head-title: #232323;
-
 /* buttons DEFAULT */
+
 $btnDefault-border: 1px solid;
 $btnDefault-borderColor: #c9c9c9;
 $btnDefault-bgColor: #fff;
 $btnDefault-textColor: #c9c9c9;
+/* buttons DEFAULT - hover */
 
-    /* buttons DEFAULT - hover */
-    $btnDefault-borderColor-hover: #c9c9c9;
-    $btnDefault-bgColor-hover: #c9c9c9;
-    $btnDefault-textColor-hover: #fff;
-
+$btnDefault-borderColor-hover: #c9c9c9;
+$btnDefault-bgColor-hover: #c9c9c9;
+$btnDefault-textColor-hover: #fff;
 /* button HIGHLIGHT */
+
 $btnHightlight-border: 1px solid;
 $btnHightlight-borderColor: #232323;
 $btnHightlight-bgColor: #232323;
 $btnHightlight-borderColor: #232323;
 $btnHightlight-textColor: #fff;
+/* button HIGHLIGHT - hover */
 
-    /* button HIGHLIGHT - hover */
-    $btnHightlight-bgColor-hover: #fff;
-    $btnHightlight-borderColor-hover: #232323;
-    $btnHightlight-textColor-hover: #232323;
-
+$btnHightlight-bgColor-hover: #fff;
+$btnHightlight-borderColor-hover: #232323;
+$btnHightlight-textColor-hover: #232323;
 /* sliders */
-$slider-text-color: #fff;
 
+$slider-text-color: #fff;
 /* BREADCRUMB */
+
 $breadcrumb-fontSize: 12px;
 $breadcrumb-textColor: #333;
-
 /* PRODUCT CARD - CATEGORY */
+
 $productCard-fontSizeCategory: 13px;
 $productCard-marginCategory: 10px 0;
 $productCard-fontWeightCategory: 500;
 $productCard-colorCategory: #333;
-
 /* PRODUCT CARD - TITLE */
+
 $productCard-fontSizeTitle: 18px;
 $productCard-marginTitle: 0 0 20px;
 $productCard-fontWeightTitle: 900;
 $productCard-colorTitle: #333;
-
 /* PRODUCT CARD - PRICE */
+
 $productCard-colorPrice: #333;
 $productCard-fontWeightPrice: 700;
 $productCard-fontSizePrice: 23px;
 $productCard-marginPrice: 0 5px 0 0;
-
 /* PRODUCT CARD - OLD PRICE */
+
 $productCard-colorOldPrice: $brand-danger;
 $productCard-fontWeightOldPrice: 400;
 $productCard-fontSizeOldPrice: 15px;
-
-
 /* FLOAT BAR - PRODUCT PAGE */
+
 $floatBar-bgColor: #f2f2f2;
 $floatBar-padding: 10px 0;
-
 /* SHARE SOCIAL NETWORKS */
+
 $share-fontSize: 20px;
 $share-textColor: #232323;
 $share-textColor-hover: #777;
 $share-display: inline-block;
 $share-margin: 0 25px 0 0;
-
 /* INPUTS */
+
 $input-border: 1px solid #ddd;
 $input-padding: 7px;
 $input-textColor: #333;
-
 /* CHECKOUT CART */
+
 $checkoutCart-padding: 10px;
 $checkoutCart-titleBgColor: #f2f2f2;
 $checkoutCart-border: 1px solid #ddd;
 $checkoutCart-borderRadius: 6px;
+$checkoutCart-footerBgColor: $checkoutCart-titleBgColor;
+/* CHECKOUT TABLE */
+
+$table-padding: 10px;
+$table-textColorTH: #888;
+$table-fontWeightTH: 400;
+/* TESTIMONIALS */
+
+$testimonial-fontStyle: italic;
+$testimonial-textColor: #8d7772;
+$testimonial-fontWeight: 500;
+$testimonial-fontSize: 13px;
+$testimonial-textTransform: none;

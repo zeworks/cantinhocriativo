@@ -22,6 +22,8 @@
 /* SHARE SOCIAL NETWORKS */
 /* INPUTS */
 /* CHECKOUT CART */
+/* CHECKOUT TABLE */
+/* TESTIMONIALS */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -3344,8 +3346,14 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  /* line 39, base/_fonts.scss */
+  h2 {
+    font-size: 25px;
+  }
+}
 
-/* line 44, base/_fonts.scss */
+/* line 48, base/_fonts.scss */
 p {
   font-weight: 400;
   font-size: 17px;
@@ -3353,7 +3361,7 @@ p {
   color: #333;
 }
 @media (max-width: 767px) {
-  /* line 44, base/_fonts.scss */
+  /* line 48, base/_fonts.scss */
   p {
     font-size: 15px;
     line-height: 22px;
@@ -3361,7 +3369,7 @@ p {
 }
 
 /* line 1, base/_base.scss */
-input[type="radio"] {
+input[type="radio"]:not(.radio) {
   opacity: 0;
   visibility: hidden;
   width: 0;
@@ -3370,6 +3378,18 @@ input[type="radio"] {
 }
 
 /* line 9, base/_base.scss */
+.radio {
+  position: absolute;
+  margin-left: -26px;
+  margin-top: 3px;
+}
+
+/* line 15, base/_base.scss */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* line 19, base/_base.scss */
 .show-more {
   background: transparent;
   font-size: 25px;
@@ -3380,33 +3400,33 @@ input[type="radio"] {
   transition: all 200ms ease;
   padding: 0px 10px;
 }
-/* line 17, base/_base.scss */
+/* line 27, base/_base.scss */
 .show-more:hover {
   color: white;
 }
 
-/* line 23, base/_base.scss */
+/* line 33, base/_base.scss */
 .empty-space-20 {
   padding-bottom: 20px;
 }
 
-/* line 27, base/_base.scss */
+/* line 37, base/_base.scss */
 .empty-space-80 {
   padding-bottom: 80px;
 }
 @media (max-width: 767px) {
-  /* line 27, base/_base.scss */
+  /* line 37, base/_base.scss */
   .empty-space-80 {
     padding-bottom: 20px;
   }
 }
 
-/* line 34, base/_base.scss */
+/* line 44, base/_base.scss */
 hr {
   border-color: #f2f2f2;
 }
 
-/* line 38, base/_base.scss */
+/* line 48, base/_base.scss */
 header {
   position: fixed;
   top: 0;
@@ -3417,20 +3437,46 @@ header {
   min-height: 80px;
 }
 @media (max-width: 767px) {
-  /* line 38, base/_base.scss */
+  /* line 48, base/_base.scss */
   header {
     min-height: 50px;
     background-color: rgba(255, 255, 255, 0.9);
   }
 }
-/* line 50, base/_base.scss */
+/* line 60, base/_base.scss */
 header.open .menu {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
 
-/* line 55, base/_base.scss */
+/* line 65, base/_base.scss */
+table {
+  width: 100%;
+}
+/* line 67, base/_base.scss */
+table th {
+  padding: 10px;
+  font-weight: 400;
+  color: #888;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 74, base/_base.scss */
+table td {
+  vertical-align: top;
+  padding: 10px;
+}
+/* line 78, base/_base.scss */
+table tr {
+  border-bottom: 1px solid #ddd;
+}
+/* line 80, base/_base.scss */
+table tr:last-child {
+  border: 0;
+}
+
+/* line 86, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3438,7 +3484,7 @@ header.open .menu {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 55, base/_base.scss */
+  /* line 86, base/_base.scss */
   .menu {
     float: none;
     position: fixed;
@@ -3460,7 +3506,7 @@ header.open .menu {
   }
 }
 
-/* line 74, base/_base.scss */
+/* line 105, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
@@ -3468,7 +3514,7 @@ header.open .menu {
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 74, base/_base.scss */
+  /* line 105, base/_base.scss */
   .menu__item {
     line-height: normal;
     display: table;
@@ -3476,7 +3522,7 @@ header.open .menu {
   }
 }
 
-/* line 86, base/_base.scss */
+/* line 117, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3486,46 +3532,52 @@ header.open .menu {
   text-transform: uppercase;
   position: relative;
 }
-/* line 94, base/_base.scss */
+/* line 125, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
   color: #777;
 }
-/* line 98, base/_base.scss */
+/* line 129, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
   text-decoration: none;
   color: #333;
 }
-/* line 104, base/_base.scss */
+/* line 135, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
   color: #777;
 }
 
-/* line 111, base/_base.scss */
+/* line 142, base/_base.scss */
 .logo-link {
   display: block;
 }
 
+/* line 145, base/_base.scss */
+.logo-image {
+  height: 80px;
+  width: auto;
+}
+
 @media (max-width: 767px) {
-  /* line 116, base/_base.scss */
+  /* line 150, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 120, base/_base.scss */
+  /* line 154, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 50px;
   }
 }
-/* line 127, base/_base.scss */
+/* line 161, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 131, base/_base.scss */
+/* line 165, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3541,13 +3593,13 @@ header.open .menu {
   transition: width .2s ease;
 }
 
-/* line 145, base/_base.scss */
+/* line 179, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 151, base/_base.scss */
+/* line 185, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3560,47 +3612,47 @@ header.open .menu {
   text-align: right;
 }
 
-/* line 162, base/_base.scss */
+/* line 196, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 168, base/_base.scss */
+/* line 202, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 174, base/_base.scss */
+/* line 208, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 174, base/_base.scss */
+  /* line 208, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 181, base/_base.scss */
+/* line 215, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 181, base/_base.scss */
+  /* line 215, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 188, base/_base.scss */
+/* line 222, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 192, base/_base.scss */
+/* line 226, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3609,12 +3661,12 @@ header.open .menu {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 198, base/_base.scss */
+/* line 232, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 203, base/_base.scss */
+/* line 237, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3624,7 +3676,7 @@ header.open .menu {
   display: inline-block;
 }
 
-/* line 212, base/_base.scss */
+/* line 246, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3633,12 +3685,12 @@ header.open .menu {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 218, base/_base.scss */
+/* line 252, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 224, base/_base.scss */
+/* line 258, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3647,27 +3699,27 @@ header.open .menu {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 224, base/_base.scss */
+  /* line 258, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 236, base/_base.scss */
+/* line 270, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 242, base/_base.scss */
+/* line 276, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 247, base/_base.scss */
+/* line 281, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3676,7 +3728,7 @@ header.open .menu {
   left: 10px;
 }
 
-/* line 255, base/_base.scss */
+/* line 289, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3684,18 +3736,18 @@ header.open .menu {
   text-transform: uppercase;
 }
 
-/* line 263, base/_base.scss */
+/* line 297, base/_base.scss */
 #pArea {
   padding: 50px 0;
   background-color: #ddd;
 }
-/* line 266, base/_base.scss */
+/* line 300, base/_base.scss */
 #pArea .account-item {
   background-color: #fff;
   padding: 20px;
   height: 100%;
 }
-/* line 271, base/_base.scss */
+/* line 305, base/_base.scss */
 #pArea .account-item h2 {
   margin: 0;
 }
@@ -4067,6 +4119,20 @@ header.open .menu {
   color: #fff;
 }
 
+/*  owl carousel */
+/* line 99, modules/_sliders.scss */
+.owl-carousel .owl-dot span {
+  background-color: transparent !important;
+  border: 2px solid #333;
+  opacity: .2;
+}
+/* line 104, modules/_sliders.scss */
+.owl-carousel .owl-dot:hover span,
+.owl-carousel .owl-dot.active span {
+  opacity: 1;
+  background-color: transparent !important;
+}
+
 /* line 1, modules/_article.scss */
 .post-article h2 {
   margin-bottom: 20px;
@@ -4086,7 +4152,7 @@ header.open .menu {
   position: fixed;
   top: 0;
   right: -100%;
-  z-index: 100;
+  z-index: 1001;
   height: 100%;
   padding: 20px;
   -webkit-transition: right 400ms ease-in-out;
@@ -4269,7 +4335,7 @@ header.open .menu {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
 /* line 159, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4296,7 +4362,7 @@ header.open .menu {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items irá aparecer */
+/* se tiver a class has-items o numero de items ir├í aparecer */
 /* line 180, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
@@ -4611,9 +4677,10 @@ header.open .menu {
   font-weight: 500;
   text-transform: uppercase;
   color: #333;
+  position: relative;
 }
 
-/* line 17, modules/_form.scss */
+/* line 18, modules/_form.scss */
 .form-field .form-control {
   width: 100%;
   border-radius: 3px;
@@ -4622,10 +4689,29 @@ header.open .menu {
   color: #333;
 }
 
+/* line 27, modules/_form.scss */
+.form-field--radio label {
+  padding-left: 36px;
+}
+/* line 30, modules/_form.scss */
+.form-field--radio small {
+  margin-left: 10px;
+  font-size: 11px;
+}
+@media (max-width: 767px) {
+  /* line 30, modules/_form.scss */
+  .form-field--radio small {
+    display: block;
+    margin: 0;
+  }
+}
+
 /* line 1, modules/_footer.scss */
 footer {
   background-color: #232323;
   padding: 30px 0;
+  z-index: 1000;
+  position: relative;
 }
 @media (max-width: 767px) {
   /* line 1, modules/_footer.scss */
@@ -4634,7 +4720,7 @@ footer {
   }
 }
 
-/* line 9, modules/_footer.scss */
+/* line 11, modules/_footer.scss */
 .footer-list {
   margin: 0;
   padding: 0;
@@ -4643,30 +4729,44 @@ footer {
           column-count: 2;
 }
 @media (max-width: 767px) {
-  /* line 9, modules/_footer.scss */
+  /* line 11, modules/_footer.scss */
   .footer-list {
     -webkit-column-count: 1;
             column-count: 1;
   }
 }
 
-/* line 19, modules/_footer.scss */
+/* line 21, modules/_footer.scss */
 .footer-item {
   position: relative;
   display: block;
   margin: 3px 0;
 }
 @media (max-width: 767px) {
-  /* line 19, modules/_footer.scss */
+  /* line 21, modules/_footer.scss */
   .footer-item {
     margin: 10px 0;
   }
 }
 
-/* line 28, modules/_footer.scss */
+/* line 30, modules/_footer.scss */
 .footer-link {
   display: block;
   width: 100%;
+}
+
+/* line 35, modules/_footer.scss */
+footer img:first-child {
+  height: 165px;
+}
+
+/* line 2, modules/_testimonials.scss */
+.testimonials span {
+  font-style: italic;
+  color: #8d7772;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: none;
 }
 
 /* ===== SPECIFIC PAGE LAYOUT AND NON-REUSABLE STYLES ===== */
@@ -4806,13 +4906,28 @@ footer {
   display: block;
 }
 
-/* line 11, layout/_checkout.scss */
+/* line 12, layout/_checkout.scss */
 .checkout-cart-title,
-.checkout-cart-body {
+.checkout-cart-body,
+.checkout-cart-footer {
   padding: 10px;
 }
 
-/* line 16, layout/_checkout.scss */
+/* line 18, layout/_checkout.scss */
 .checkout-cart-title {
   background-color: #f2f2f2;
+}
+
+/* line 22, layout/_checkout.scss */
+.checkout-cart-footer {
+  background-color: #f2f2f2;
+}
+
+/* line 1, layout/_contact.scss */
+.contact-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }

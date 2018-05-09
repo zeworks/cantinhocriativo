@@ -12,81 +12,194 @@
                     </a> a sessão de forma segura.</p>
                 <!-- table items -->
                 <hr>
-                <div class="row">
-                    <div class="col-sm-7">
-                        <!-- morada de faturacao -->
-                        <div class="checkout-cart">
-                            <div class="checkout-cart-title">
-                                <h4>1. Morada de Faturação</h4>
+                <form action method class="validate-form">
+                    <div class="row">
+                        <!-- ORDER SUMMARY -->
+                        <div class="col-sm-5 col-sm-push-7">
+                            <div class="checkout-cart">
+                                <div class="checkout-cart-title">
+                                    <h4>A sua encomenda</h4>
+                                </div>
+                                <div class="checkout-cart-body">
+                                    <table cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <th>Produto</th>
+                                            <th class="text-right">Preço</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Nome do Produto</span>
+                                                <br>
+                                                <span>x 2</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <span>15,00€</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Nome do Produto</span>
+                                                <br>
+                                                <span>x 5</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <span>77,00€</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="checkout-cart-footer">
+                                    <table cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <span>Sub-total</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <span>15,00€</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Personalização</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <span>0,00€</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Custos de Envio</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <span>0,00€</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Cupões de Desconto</span>
+                                            </td>
+                                            <td class="text-right">
+                                                <span>0,00€</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Total (IVA incluído)</strong>
+                                            </td>
+                                            <td class="text-right">
+                                                <strong>17,00€</strong>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="checkout-cart-body">
-                                <form action="">
+                        </div>
+                        <!-- ORDER SUMMARY ENDS -->
+                        <!-- ORDER DETAILS -->
+                        <div class="col-sm-7 col-sm-pull-5">
+                            <!-- morada de faturacao -->
+                            <div class="checkout-cart">
+                                <div class="checkout-cart-title">
+                                    <h4>1. Morada de Faturação</h4>
+                                </div>
+                                <div class="checkout-cart-body">
                                     <div class="form-field">
                                         <label for="complete_name">Nome Completo</label>
                                         <input type="text" class="form-control required" id="complete_name" name="complete_name">
                                     </div>
-                                </form>
+                                </div>
                             </div>
-                        </div>
-                        <!-- morada de envio -->
-                        <div class="checkout-cart">
-                            <div class="checkout-cart-title">
-                                <h4>2. Morada de Envio</h4>
-                            </div>
-                            <div class="checkout-cart-body">
+                            <!-- morada de envio -->
+                            <div class="checkout-cart">
+                                <div class="checkout-cart-title">
+                                    <h4>2. Morada de Envio</h4>
+                                </div>
+                                <div class="checkout-cart-body">
 
+                                </div>
                             </div>
-                        </div>
-                        <!-- metodo de envio -->
-                        <div class="checkout-cart">
-                            <div class="checkout-cart-title">
-                                <h4>3. Método de Envio</h4>
-                            </div>
-                            <div class="checkout-cart-body">
-
-                            </div>
-                        </div>
-                        <!-- metodo de pagamento -->
-                        <div class="checkout-cart">
-                            <div class="checkout-cart-title">
-                                <h4>4. Método de Pagamento</h4>
-                            </div>
-                            <div class="checkout-cart-body">
-
-                            </div>
-                        </div>
-                        <!-- comentario -->
-                        <div class="checkout-cart">
-                            <div class="checkout-cart-title">
-                                <h4>5. Deixe o seu comentário</h4>
-                            </div>
-                            <div class="checkout-cart-body">
-
-                            </div>
-                        </div>
-                        <!-- termos e condições -->
-
-                        <!-- finalizar compra -->
-                        <button type="submit" class="btn btn-primary">Finalizar Compra</button>
-                    </div>
-                    <div class="col-sm-5">
-                        <!-- Order Summary -->
-                        <div class="checkout-cart">
-                            <div class="checkout-cart-title">
-                                <h4>A sua encomenda</h4>
-                            </div>
-                            <div class="checkout-cart-body">
-                                <form action="">
-                                    <div class="form-field">
-                                        <label for="complete_name">Nome Completo</label>
-                                        <input type="text" class="form-control required" id="complete_name" name="complete_name">
+                            <!-- metodo de envio -->
+                            <div class="checkout-cart">
+                                <div class="checkout-cart-title">
+                                    <h4>3. Método de Envio</h4>
+                                </div>
+                                <div class="checkout-cart-body">
+                                    <div class="form-field form-field--radio">
+                                        <label for="ctt">
+                                            <input type="radio" name="send_method" id="ctt" class="radio">
+                                            <strong>Envio por CTT</strong>
+                                            <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
+                                        </label>
                                     </div>
-                                </form>
+                                    <div class="form-field form-field--radio">
+                                        <label for="ss">
+                                            <input type="radio" name="send_method" id="ss" class="radio">
+                                            <strong>Envio por CTT</strong>
+                                            <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- metodo de pagamento -->
+                            <div class="checkout-cart">
+                                <div class="checkout-cart-title">
+                                    <h4>4. Método de Pagamento</h4>
+                                </div>
+                                <div class="checkout-cart-body">
+                                    <div class="form-field form-field--radio">
+                                        <label for="paypal_payment">
+                                            <input type="radio" name="send_method" id="paypal_payment" class="radio">
+                                            <strong>Paypal</strong>
+                                            <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-field form-field--radio">
+                                        <label for="transf_bank_payment">
+                                            <input type="radio" name="send_method" id="transf_bank_payment" class="radio">
+                                            <strong>Transferência Bancária</strong>
+                                            <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
+                                        </label>
+                                    </div>
+                                    <div class="form-field form-field--radio">
+                                        <label for="multb_payment">
+                                            <input type="radio" name="send_method" id="multb_payment" class="radio">
+                                            <strong>Multibanco</strong>
+                                            <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- comentario -->
+                            <div class="checkout-cart">
+                                <div class="checkout-cart-title">
+                                    <h4>5. Deixe o seu comentário</h4>
+                                </div>
+                                <div class="checkout-cart-body">
+                                    <div class="form-field">
+                                        <label for="comment">A sua mensagem</label>
+                                        <textarea name="comment" id="comment" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- termos e condições -->
+                            <div class="form-field">
+                                <label for="newsletter">
+                                    <input type="checkbox" name="terms" id="newsletter" checked>
+                                    Quero subscrever a newsletter
+                                </label>
+                            </div>
+                            <div class="form-field">
+                                <label for="terms">
+                                    <input type="checkbox" name="terms" id="terms">
+                                    Li e concordo com os <a href="#" title>Termos e Condições</a>
+                                </label>
+                            </div>
+                            <!-- finalizar compra -->
+                            <button type="submit" class="btn btn-primary">Finalizar Compra</button>
                         </div>
+                        <!-- ORDER DETAILS ENDS -->
                     </div>
-                </div>
-
+                </form>
                 <!-- table items ends -->
             </div>
         </div>

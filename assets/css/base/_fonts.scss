@@ -39,6 +39,10 @@ h1{
 h2{
     text-transform: uppercase;
     font-weight: 700;
+
+    @include max-xs{
+        font-size: 25px;
+    }
 }
 
 p{
