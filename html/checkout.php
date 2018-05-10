@@ -103,9 +103,49 @@
                                     <h4>1. Morada de Faturação</h4>
                                 </div>
                                 <div class="checkout-cart-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="complete_name">Nome Completo</label>
+                                                <input type="text" class="form-control required" id="complete_name" name="complete_name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control required" id="email" name="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="phone">Telefone</label>
+                                                <input type="text" class="form-control required" id="phone" name="phone">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="n_cont">Nº Cont.</label>
+                                                <input type="text" class="form-control" id="n_cont" name="n_cont">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="form-field">
-                                        <label for="complete_name">Nome Completo</label>
-                                        <input type="text" class="form-control required" id="complete_name" name="complete_name">
+                                        <label for="address">Morada</label>
+                                        <input type="text" class="form-control required" id="address" name="address">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="city">Cidade</label>
+                                                <input type="text" class="form-control required" id="city" name="city">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="cod_postal">Código Postal</label>
+                                                <input type="text" class="form-control required" id="cod_postal" name="cod_postal">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +155,38 @@
                                     <h4>2. Morada de Envio</h4>
                                 </div>
                                 <div class="checkout-cart-body">
-
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="complete_name_send">Nome Completo</label>
+                                                <input type="text" class="form-control required" id="complete_name_send" name="complete_name_send">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="phone_send">Telefone</label>
+                                                <input type="text" class="form-control required" id="phone_send" name="phone_send">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="address_send">Morada</label>
+                                        <input type="text" class="form-control required" id="address_send" name="address_send">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="city_send">Cidade</label>
+                                                <input type="text" class="form-control required" id="city_send" name="city_send">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-field">
+                                                <label for="cod_postal_send">Código Postal</label>
+                                                <input type="text" class="form-control required" id="cod_postal_send" name="cod_postal_send">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- metodo de envio -->
@@ -184,14 +255,13 @@
                             <!-- termos e condições -->
                             <div class="form-field">
                                 <label for="newsletter">
-                                    <input type="checkbox" name="terms" id="newsletter" checked>
-                                    Quero subscrever a newsletter
+                                    <input type="checkbox" name="terms" id="newsletter" checked> Quero subscrever a newsletter
                                 </label>
                             </div>
                             <div class="form-field">
                                 <label for="terms">
-                                    <input type="checkbox" name="terms" id="terms">
-                                    Li e concordo com os <a href="#" title>Termos e Condições</a>
+                                    <input type="checkbox" name="terms" id="terms"> Li e concordo com os
+                                    <a href="#" title>Termos e Condições</a>
                                 </label>
                             </div>
                             <!-- finalizar compra -->
