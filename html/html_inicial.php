@@ -74,7 +74,7 @@
 							<a href="products.php" title="menu link" class="menu__item__link">produtos</a>
 						</li>
 						<li class="menu__item">
-							<a href="#link" title="menu link" class="menu__item__link">blog</a>
+							<a href="blog.php" title="menu link" class="menu__item__link">blog</a>
 						</li>
 						<li class="menu__item">
 							<a href="contact.php" title="menu link" class="menu__item__link">Contacto</a>
