@@ -1,4 +1,11 @@
 <?php include 'html_inicial.php' ?>
+<!-- banner - large -->
+<section>
+    <div class="institutional-banner">
+        <div class="image-bg" style="background-image: url(https://dummyimage.com/1920x900/f2f2f2/000)"></div>
+    </div>
+</section>
+<!-- banner - large ends -->
 <div class="empty-space-20"></div>
 <!-- BREADCRUMB -->
 <section>

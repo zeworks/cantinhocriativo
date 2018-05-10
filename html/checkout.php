@@ -8,7 +8,7 @@
                 <h2>Está quase a terminar...</h2>
                 <p>Pedimos, por favor, que preencha os dados abaixo para poder finalizar a sua compra.
                     <br> Já é nosso cliente?
-                    <a href="#iniciarSessao" title>Inicie aqui
+                    <a href="login.php" title>Inicie aqui
                     </a> a sessão de forma segura.</p>
                 <!-- table items -->
                 <hr>

@@ -72,7 +72,6 @@
     /* mobile */
     @include max-xs {
         display: none;
-        font-weight: 400;
         &.selected {
             display: block;
             font-weight: 700;
@@ -80,7 +79,7 @@
     }
 
     &.selected {
-        font-weight: 700;
+        // font-weight: 700;
     }
     
 }

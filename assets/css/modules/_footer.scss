@@ -1,7 +1,7 @@
 footer {
     background-color: $footer-backgroundColor;
     padding: 30px 0;
-    z-index: 1000;
+    // z-index: 1000;
     position: relative;
     @include max-xs{
         padding: 20px 0;

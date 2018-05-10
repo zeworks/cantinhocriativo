@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Website theme color -->
@@ -61,7 +61,7 @@
 				<div class="col-sm-2 col-xs-6" data-mh="height-menu">
 					<!-- website logo -->
 					<a class="logo-link" href="../html/" title>
-						<img class="logo-image" src="../assets/img/occ_logo.png" alt="">
+						<img class="logo-image" src="../assets/img/occ_logoBIG.png" alt="">
 					</a>
 				</div>
 				<div class="col-sm-10">

@@ -3435,26 +3435,28 @@ header {
   width: 100%;
   background-color: #fff;
   min-height: 80px;
+  padding: 10px 0;
 }
 @media (max-width: 767px) {
   /* line 48, base/_base.scss */
   header {
     min-height: 50px;
     background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 0;
   }
 }
-/* line 60, base/_base.scss */
+/* line 62, base/_base.scss */
 header.open .menu {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
 
-/* line 65, base/_base.scss */
+/* line 67, base/_base.scss */
 table {
   width: 100%;
 }
-/* line 67, base/_base.scss */
+/* line 69, base/_base.scss */
 table th {
   padding: 10px;
   font-weight: 400;
@@ -3462,21 +3464,21 @@ table th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 74, base/_base.scss */
+/* line 76, base/_base.scss */
 table td {
   vertical-align: top;
   padding: 10px;
 }
-/* line 78, base/_base.scss */
+/* line 80, base/_base.scss */
 table tr {
   border-bottom: 1px solid #ddd;
 }
-/* line 80, base/_base.scss */
+/* line 82, base/_base.scss */
 table tr:last-child {
   border: 0;
 }
 
-/* line 86, base/_base.scss */
+/* line 88, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3484,7 +3486,7 @@ table tr:last-child {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 86, base/_base.scss */
+  /* line 88, base/_base.scss */
   .menu {
     float: none;
     position: fixed;
@@ -3506,7 +3508,7 @@ table tr:last-child {
   }
 }
 
-/* line 105, base/_base.scss */
+/* line 107, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
@@ -3514,7 +3516,7 @@ table tr:last-child {
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 105, base/_base.scss */
+  /* line 107, base/_base.scss */
   .menu__item {
     line-height: normal;
     display: table;
@@ -3522,7 +3524,7 @@ table tr:last-child {
   }
 }
 
-/* line 117, base/_base.scss */
+/* line 119, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3532,52 +3534,52 @@ table tr:last-child {
   text-transform: uppercase;
   position: relative;
 }
-/* line 125, base/_base.scss */
+/* line 127, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
   color: #777;
 }
-/* line 129, base/_base.scss */
+/* line 131, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
   text-decoration: none;
   color: #333;
 }
-/* line 135, base/_base.scss */
+/* line 137, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
   color: #777;
 }
 
-/* line 142, base/_base.scss */
+/* line 144, base/_base.scss */
 .logo-link {
   display: block;
 }
 
-/* line 145, base/_base.scss */
+/* line 147, base/_base.scss */
 .logo-image {
-  height: 80px;
+  height: 90px;
   width: auto;
 }
 
 @media (max-width: 767px) {
-  /* line 150, base/_base.scss */
+  /* line 152, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 154, base/_base.scss */
+  /* line 156, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
     height: 50px;
   }
 }
-/* line 161, base/_base.scss */
+/* line 163, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 165, base/_base.scss */
+/* line 167, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3593,13 +3595,13 @@ table tr:last-child {
   transition: width .2s ease;
 }
 
-/* line 179, base/_base.scss */
+/* line 181, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 185, base/_base.scss */
+/* line 187, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3612,47 +3614,47 @@ table tr:last-child {
   text-align: right;
 }
 
-/* line 196, base/_base.scss */
+/* line 198, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 202, base/_base.scss */
+/* line 204, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 208, base/_base.scss */
+/* line 210, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 208, base/_base.scss */
+  /* line 210, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 215, base/_base.scss */
+/* line 217, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 215, base/_base.scss */
+  /* line 217, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 222, base/_base.scss */
+/* line 224, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 226, base/_base.scss */
+/* line 228, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3661,12 +3663,12 @@ table tr:last-child {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 232, base/_base.scss */
+/* line 234, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 237, base/_base.scss */
+/* line 239, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3676,7 +3678,7 @@ table tr:last-child {
   display: inline-block;
 }
 
-/* line 246, base/_base.scss */
+/* line 248, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3685,12 +3687,12 @@ table tr:last-child {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 252, base/_base.scss */
+/* line 254, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 258, base/_base.scss */
+/* line 260, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3699,27 +3701,27 @@ table tr:last-child {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 258, base/_base.scss */
+  /* line 260, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 270, base/_base.scss */
+/* line 272, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 276, base/_base.scss */
+/* line 278, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 281, base/_base.scss */
+/* line 283, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3728,7 +3730,7 @@ table tr:last-child {
   left: 10px;
 }
 
-/* line 289, base/_base.scss */
+/* line 291, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3736,20 +3738,25 @@ table tr:last-child {
   text-transform: uppercase;
 }
 
-/* line 297, base/_base.scss */
+/* line 299, base/_base.scss */
 #pArea {
   padding: 50px 0;
   background-color: #ddd;
 }
-/* line 300, base/_base.scss */
+/* line 302, base/_base.scss */
 #pArea .account-item {
   background-color: #fff;
   padding: 20px;
   height: 100%;
 }
-/* line 305, base/_base.scss */
+/* line 307, base/_base.scss */
 #pArea .account-item h2 {
   margin: 0;
+}
+
+/* line 312, base/_base.scss */
+textarea {
+  resize: vertical;
 }
 
 /* ===== REUSABLE BLOCKS OF CODE ===== */
@@ -4121,14 +4128,14 @@ table tr:last-child {
 
 /*  owl carousel */
 /* line 99, modules/_sliders.scss */
-.owl-carousel .owl-dot span {
+.owl-carousel:not(.product-carousel) .owl-dot span {
   background-color: transparent !important;
   border: 2px solid #333;
   opacity: .2;
 }
 /* line 104, modules/_sliders.scss */
-.owl-carousel .owl-dot:hover span,
-.owl-carousel .owl-dot.active span {
+.owl-carousel:not(.product-carousel) .owl-dot:hover span,
+.owl-carousel:not(.product-carousel) .owl-dot.active span {
   opacity: 1;
   background-color: transparent !important;
 }
@@ -4621,36 +4628,31 @@ table tr:last-child {
   /* line 52, modules/_tabs.scss */
   .tabs__btn {
     display: none;
-    font-weight: 400;
   }
-  /* line 76, modules/_tabs.scss */
+  /* line 75, modules/_tabs.scss */
   .tabs__btn.selected {
     display: block;
     font-weight: 700;
   }
 }
-/* line 82, modules/_tabs.scss */
-.tabs__btn.selected {
-  font-weight: 700;
-}
 
-/* line 89, modules/_tabs.scss */
+/* line 88, modules/_tabs.scss */
 .tabs__body_item {
   display: none;
   padding: 20px 0;
 }
-/* line 92, modules/_tabs.scss */
+/* line 91, modules/_tabs.scss */
 .tabs__body_item:first-child {
   display: block;
 }
 
-/* line 97, modules/_tabs.scss */
+/* line 96, modules/_tabs.scss */
 .tabs__body_item h4 {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 102, modules/_tabs.scss */
+/* line 101, modules/_tabs.scss */
 .tabs__body_item ul {
   margin: 0;
   padding: 0 20px;
@@ -4710,7 +4712,6 @@ table tr:last-child {
 footer {
   background-color: #232323;
   padding: 30px 0;
-  z-index: 1000;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -4921,13 +4922,4 @@ footer img:first-child {
 /* line 22, layout/_checkout.scss */
 .checkout-cart-footer {
   background-color: #f2f2f2;
-}
-
-/* line 1, layout/_contact.scss */
-.contact-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }

@@ -1,19 +1,6 @@
 <?php include 'html_inicial.php' ?>
 <!-- banner - large -->
 <section>
-    <!-- <div class="institutional-banner institutional-banner--masked">
-        <div class="image-bg" style="background-image: url(https://dummyimage.com/1920x900/fff/000)">
-            <div class="wrapper-slide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 text-center">
-                            <strong>SOBRE NÓS</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="institutional-banner">
         <div class="image-bg" style="background-image: url(https://dummyimage.com/1920x900/f2f2f2/000)"></div>
     </div>
@@ -45,8 +32,8 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1>Contacto</h1>
-                <div class="row matchheight">
-                    <div class="col-sm-12 col-md-6" data-mh="contact-group">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
                         <p>Tem alguma questão e não encontra a informação no site?
                             <br> Contacte-nos! Teremos todo o gosto em esclarecer todas as suas dúvidas.</p>
                         <div class="empty-space-80"></div>
@@ -86,9 +73,9 @@
                             </div>
                         </form>
                     </div>
-                    <div class="hidden-xs hidden-sm col-md-offset-1 col-md-5" data-mh="contact-group">
+                    <div class="hidden-xs hidden-sm col-md-offset-1 col-md-5">
                         <div class="text-center">
-                            <img src="../assets/img/occ_logoBIG.png" alt="O Cantinho Criativo Logotipo" class="img-responsive contact-image">
+                            <img src="../assets/img/occ_logoBIG.png" alt="O Cantinho Criativo Logotipo" class="img-responsive">
                         </div>
                     </div>
                 </div>

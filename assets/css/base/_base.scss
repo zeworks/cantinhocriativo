@@ -53,9 +53,11 @@ header {
     width: 100%;
     background-color: $header-backgroundColor;
     min-height: $navbarH;
+    padding: 10px 0;
     @include max-xs {
         min-height: $navbarHM;
         background-color: rgba($color: #fff, $alpha: .9);
+        padding: 5px 0;
     }
     &.open .menu {
         display: flex !important;
@@ -143,7 +145,7 @@ table {
     display: block;
 }
 .logo-image{
-    height: 80px;
+    height: 90px;
     width: auto;
 }
 @include max-xs {
@@ -305,4 +307,8 @@ table {
     .account-item h2 {
         margin: 0;
     }
+}
+
+textarea{
+    resize: vertical;
 }
