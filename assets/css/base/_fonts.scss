@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 
 body,
 h1,
@@ -39,6 +40,7 @@ h1{
 h2{
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 45px;
 
     @include max-xs{
         font-size: 25px;

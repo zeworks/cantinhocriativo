@@ -12,7 +12,9 @@
             <div class="col-sm-7">
                 <article class="post-article">
                     <h1>Article Title</h1>
-                    <small>13/05/2018</small>
+                    <small>13/05/2018</small> 
+                    <br>
+                    <span>Posted by: <strong>Diana Pampols</strong> </span>
                     <br><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum vitae
                         adipisci nobis laudantium veritatis! Cupiditate neque facilis laborum eveniet quo ad dicta rerum

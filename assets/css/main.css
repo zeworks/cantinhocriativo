@@ -30,6 +30,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script");
 @media (max-width: 768px) {
   /* line 185, bootstrap/bootstrap/mixins/_grid.scss */
   .text-column-xs-1 {
@@ -3293,7 +3294,7 @@ address {
   content: "";
 }
 
-/* line 3, base/_fonts.scss */
+/* line 4, base/_fonts.scss */
 body,
 h1,
 h2,
@@ -3305,7 +3306,7 @@ p, .btn {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 14, base/_fonts.scss */
+/* line 15, base/_fonts.scss */
 h1,
 h2,
 h3,
@@ -3315,7 +3316,7 @@ h6 {
   color: #232323;
 }
 
-/* line 22, base/_fonts.scss */
+/* line 23, base/_fonts.scss */
 h1 {
   font-size: 50px;
   font-weight: 900;
@@ -3323,37 +3324,38 @@ h1 {
   margin-bottom: 25px;
 }
 @media (max-width: 1199px) {
-  /* line 22, base/_fonts.scss */
+  /* line 23, base/_fonts.scss */
   h1 {
     font-size: 40px;
   }
 }
 @media (max-width: 991px) {
-  /* line 22, base/_fonts.scss */
+  /* line 23, base/_fonts.scss */
   h1 {
     font-size: 35px;
   }
 }
 @media (max-width: 767px) {
-  /* line 22, base/_fonts.scss */
+  /* line 23, base/_fonts.scss */
   h1 {
     font-size: 29px;
   }
 }
 
-/* line 39, base/_fonts.scss */
+/* line 40, base/_fonts.scss */
 h2 {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 45px;
 }
 @media (max-width: 767px) {
-  /* line 39, base/_fonts.scss */
+  /* line 40, base/_fonts.scss */
   h2 {
     font-size: 25px;
   }
 }
 
-/* line 48, base/_fonts.scss */
+/* line 50, base/_fonts.scss */
 p {
   font-weight: 400;
   font-size: 17px;
@@ -3361,7 +3363,7 @@ p {
   color: #333;
 }
 @media (max-width: 767px) {
-  /* line 48, base/_fonts.scss */
+  /* line 50, base/_fonts.scss */
   p {
     font-size: 15px;
     line-height: 22px;
@@ -3477,8 +3479,12 @@ table tr {
 table tr:last-child {
   border: 0;
 }
-
 /* line 88, base/_base.scss */
+table.cart-table td {
+  vertical-align: middle;
+}
+
+/* line 94, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3486,7 +3492,7 @@ table tr:last-child {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 88, base/_base.scss */
+  /* line 94, base/_base.scss */
   .menu {
     float: none;
     position: fixed;
@@ -3508,7 +3514,7 @@ table tr:last-child {
   }
 }
 
-/* line 107, base/_base.scss */
+/* line 113, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
@@ -3516,7 +3522,7 @@ table tr:last-child {
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 107, base/_base.scss */
+  /* line 113, base/_base.scss */
   .menu__item {
     line-height: normal;
     display: table;
@@ -3524,7 +3530,7 @@ table tr:last-child {
   }
 }
 
-/* line 119, base/_base.scss */
+/* line 125, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3534,52 +3540,52 @@ table tr:last-child {
   text-transform: uppercase;
   position: relative;
 }
-/* line 127, base/_base.scss */
+/* line 133, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
   color: #777;
 }
-/* line 131, base/_base.scss */
+/* line 137, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
   text-decoration: none;
   color: #333;
 }
-/* line 137, base/_base.scss */
+/* line 143, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
   color: #777;
 }
 
-/* line 144, base/_base.scss */
+/* line 150, base/_base.scss */
 .logo-link {
   display: block;
 }
 
-/* line 147, base/_base.scss */
+/* line 153, base/_base.scss */
 .logo-image {
   height: 90px;
   width: auto;
 }
 
 @media (max-width: 767px) {
-  /* line 152, base/_base.scss */
+  /* line 158, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 156, base/_base.scss */
+  /* line 162, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
     height: 50px;
   }
 }
-/* line 163, base/_base.scss */
+/* line 169, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 167, base/_base.scss */
+/* line 173, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3595,13 +3601,13 @@ table tr:last-child {
   transition: width .2s ease;
 }
 
-/* line 181, base/_base.scss */
+/* line 187, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 187, base/_base.scss */
+/* line 193, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3614,47 +3620,47 @@ table tr:last-child {
   text-align: right;
 }
 
-/* line 198, base/_base.scss */
+/* line 204, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 204, base/_base.scss */
+/* line 210, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 210, base/_base.scss */
+/* line 216, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 210, base/_base.scss */
+  /* line 216, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 217, base/_base.scss */
+/* line 223, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 217, base/_base.scss */
+  /* line 223, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 224, base/_base.scss */
+/* line 230, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 228, base/_base.scss */
+/* line 234, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3663,12 +3669,12 @@ table tr:last-child {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 234, base/_base.scss */
+/* line 240, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 239, base/_base.scss */
+/* line 245, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3678,7 +3684,7 @@ table tr:last-child {
   display: inline-block;
 }
 
-/* line 248, base/_base.scss */
+/* line 254, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3687,12 +3693,12 @@ table tr:last-child {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 254, base/_base.scss */
+/* line 260, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 260, base/_base.scss */
+/* line 266, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3701,27 +3707,27 @@ table tr:last-child {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 260, base/_base.scss */
+  /* line 266, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 272, base/_base.scss */
+/* line 278, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 278, base/_base.scss */
+/* line 284, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 283, base/_base.scss */
+/* line 289, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3730,7 +3736,7 @@ table tr:last-child {
   left: 10px;
 }
 
-/* line 291, base/_base.scss */
+/* line 297, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3738,23 +3744,23 @@ table tr:last-child {
   text-transform: uppercase;
 }
 
-/* line 299, base/_base.scss */
+/* line 305, base/_base.scss */
 #pArea {
   padding: 50px 0;
   background-color: #ddd;
 }
-/* line 302, base/_base.scss */
+/* line 308, base/_base.scss */
 #pArea .account-item {
   background-color: #fff;
   padding: 20px;
   height: 100%;
 }
-/* line 307, base/_base.scss */
+/* line 313, base/_base.scss */
 #pArea .account-item h2 {
   margin: 0;
 }
 
-/* line 312, base/_base.scss */
+/* line 318, base/_base.scss */
 textarea {
   resize: vertical;
 }
@@ -4145,7 +4151,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* line 4, modules/_article.scss */
+/* line 7, modules/_article.scss */
 .post-article .btn {
   display: inline-block;
   margin: 20px 0 0;

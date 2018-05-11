@@ -80,12 +80,12 @@
 							<a href="contact.php" title="menu link" class="menu__item__link">Contacto</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" title="User Account" class="menu__item__link menu__item__link--icon">
+							<a href="login.php" title="User Account" class="menu__item__link menu__item__link--icon">
 								<i class="fas fa-user"></i>
 							</a>
 						</li>
 						<li class="menu__item">
-							<a href="#wishlist" title="Your Wishlist" class="menu__item__link menu__item__link--icon">
+							<a href="wishlist.php" title="Your Wishlist" class="menu__item__link menu__item__link--icon">
 								<i class="fas fa-heart"></i>
 							</a>
 						</li>

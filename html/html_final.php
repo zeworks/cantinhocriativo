@@ -43,7 +43,7 @@
 	<!-- cart items total ends -->
 	<div class="clearfix"></div>
 	<div class="side-cart__buttons">
-		<a href="checkout.php" title="Ir para o checkout" class="btn btn-primary">Ir para o checkout</a>
+		<a href="cart.php" title="Ir para o checkout" class="btn btn-primary">Ir para o checkout</a>
 		<a href="#keepshopping" title="Fechar" class="btn btn-default">Fechar</a>
 	</div>
 </aside>
