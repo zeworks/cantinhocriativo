@@ -245,7 +245,7 @@ $(document).ready(function () {
 	updateCartItems();
 	showMore("[data-mh='product-item']", ".view-more", 12);
 	showMoreText(".text-ellipses", 550);
-	showMoreText(".float-bar h2", 20);
+	showMoreText(".float-bar h3", 30);
 	$('.matchheight').matchHeight();
 	tabsSystem();
 	sliders();

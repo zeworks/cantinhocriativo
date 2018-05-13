@@ -43,7 +43,7 @@
     <div class="empty-space-80"></div>
     <div class="container">
         <div class="row matchheight">
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                 <div class="product-card">
                     <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -59,7 +59,7 @@
                     <button type="button" class="btn btn-primary buy-item">Comprar</button>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                 <div class="product-card">
                     <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -75,7 +75,7 @@
                     <button type="button" class="btn btn-primary buy-item">Comprar</button>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                 <div class="product-card">
                     <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -91,184 +91,7 @@
                     <button type="button" class="btn btn-primary buy-item">Comprar</button>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <span class="discount-date discount-date--highlight fright">-10% até 19/07/2018</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
-                <div class="product-card">
-                    <a href="product.php" title="product title">
-                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                    </a>
-                    <a href="product.php" title="product title">
-                        <span class="product-card__category">Category Product</span>
-                        <h4 class="product-card__title">Product Name</h4>
-                    </a>
-                    <span class="product-card__price">10€</span>
-                    <span class="product-card__oldprice">19€</span>
-                    <div class="clearfix"></div>
-                    <a href="product.php" class="btn btn-default">Visualizar</a>
-                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                 <div class="product-card">
                     <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -285,7 +108,184 @@
                     <button type="button" class="btn btn-primary buy-item">Comprar</button>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" data-mh="product-item">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                <div class="product-card">
+                    <a href="product.php" title="product title">
+                        <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                    </a>
+                    <a href="product.php" title="product title">
+                        <span class="product-card__category">Category Product</span>
+                        <h4 class="product-card__title">Product Name</h4>
+                    </a>
+                    <span class="product-card__price">10€</span>
+                    <span class="product-card__oldprice">19€</span>
+                    <span class="discount-date discount-date--highlight fright">-10% até 19/07/2018</span>
+                    <div class="clearfix"></div>
+                    <a href="product.php" class="btn btn-default">Visualizar</a>
+                    <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                 <div class="product-card">
                     <a href="product.php" title="product title">
                         <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">

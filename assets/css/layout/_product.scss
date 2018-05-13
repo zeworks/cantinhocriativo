@@ -96,7 +96,8 @@
 .float-bar .buy-item{
     float: right;
 }
-
-.float-bar h2, .float-bar .price{
-    // color: #fff;
+.float-bar h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 23px;
 }

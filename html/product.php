@@ -328,10 +328,10 @@
 <div class="float-bar">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4  text-left">
-                <h2>Nome do Produto s s s</h2>
+            <div class="col-sm-4 text-left">
+                <h3>Nome do Produto s s ss ss ss s ss ss</h3>
             </div>
-            <div class="col-sm-3  text-center">
+            <div class="col-sm-3 text-center">
                 <div class="product-detail__price">
                     <span class="price">10€</span>
                     <span class="old-price">19€</span>

@@ -4348,7 +4348,7 @@ textarea {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
 /* line 159, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4375,7 +4375,7 @@ textarea {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items ir├í aparecer */
+/* se tiver a class has-items o numero de items irá aparecer */
 /* line 180, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
@@ -4899,6 +4899,13 @@ footer img:first-child {
 /* line 96, layout/_product.scss */
 .float-bar .buy-item {
   float: right;
+}
+
+/* line 99, layout/_product.scss */
+.float-bar h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 23px;
 }
 
 /* line 1, layout/_checkout.scss */
