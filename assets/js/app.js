@@ -383,7 +383,9 @@ $(window).resize(function () {
 	main();
 
 	if ($(window).width() < 768) {
-		$(".menu").css({ top: $("header").outerHeight() });
+		$(".menu").css({
+			top: $("header").outerHeight()
+		});
 
 		$('.ZoomContainer').remove();
 	} else {
@@ -401,7 +403,10 @@ function main() {
 	var image_banner_size = $(".institutional-banner .image-bg");
 	var swiper_banner_size = $(".swiper-container .image-bg");
 
-	$("main").css({ "margin-top": $("header").outerHeight() });
+	$("main").css({
+		"margin-top": $("header").outerHeight(),
+		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
+	});
 	if ($(window).width() < 768) {
 		// mobile
 
@@ -507,7 +512,9 @@ $(".payment-methods li").click(function () {
 $(".btn-menu").click(function () {
 	$(this).toggleClass("active");
 	$("header").toggleClass("open");
-	$(".menu").css({ top: $("header").outerHeight() });
+	$(".menu").css({
+		top: $("header").outerHeight()
+	});
 });
 
 var tabsSystem = function tabsSystem() {

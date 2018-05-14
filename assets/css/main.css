@@ -4348,7 +4348,7 @@ textarea {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
 /* line 159, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4375,7 +4375,7 @@ textarea {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items irá aparecer */
+/* se tiver a class has-items o numero de items ir├í aparecer */
 /* line 180, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;

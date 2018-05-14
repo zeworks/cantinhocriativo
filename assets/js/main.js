@@ -139,23 +139,25 @@ $(document).ready(function () {
 		}, 800);
 	});
 
-	
+
 });
 
 $(window).resize(function () {
 	main();
 
-	if($(window).width() < 768){
-		$(".menu").css({ top : $("header").outerHeight() });
+	if ($(window).width() < 768) {
+		$(".menu").css({
+			top: $("header").outerHeight()
+		});
 
 		$('.ZoomContainer').remove();
-	}else{
+	} else {
 		$(".menu").removeAttr("style");
 	}
 });
 
 $(window).scroll(function () {
-	if($(".float-bar").length){
+	if ($(".float-bar").length) {
 		floatBar();
 	}
 });
@@ -164,13 +166,16 @@ function main() {
 	var image_banner_size = $(".institutional-banner .image-bg");
 	var swiper_banner_size = $(".swiper-container .image-bg");
 
-	$("main").css({ "margin-top" : $("header").outerHeight() });
+	$("main").css({
+		"margin-top": $("header").outerHeight(),
+		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
+	});
 	if ($(window).width() < 768) {
 		// mobile
-		
+
 		// se for apenas uma imagem institucional
 		image_banner_size.css({
-			"min-height": 175 + "px" 
+			"min-height": 175 + "px"
 		});
 		// se for um carrousel
 		swiper_banner_size.css({
@@ -178,7 +183,7 @@ function main() {
 		});
 	} else {
 		// desktop
-	
+
 		swiper_banner_size.css({
 			"min-height": $(window).height() / 2 + 100 - $("header").outerHeight()
 		});
@@ -237,10 +242,10 @@ function cartActions() {
 	});
 
 	// para remover os items do carrinho
-	$(".side-cart__del").click(function(){
+	$(".side-cart__del").click(function () {
 		$(this).parent().remove();
 		updateCartItems();
-		return false;		
+		return false;
 	})
 }
 
@@ -250,28 +255,30 @@ var floatBar = () => {
 	var windowPosition = $(window).scrollTop();
 	var buyButtonPosition = $('.product-detail__buy').offset().top / 2;
 	var screenSize = window.matchMedia('(min-width: 768px)');
-	
+
 	if (screenSize.matches) {
 		if (windowPosition > buyButtonPosition && windowPosition < footerPosition) {
 			$('.float-bar').slideDown();
-		}else{
+		} else {
 			$('.float-bar').slideUp();
 		}
-	}else{
+	} else {
 		$('.float-bar').slideUp();
 	}
 }
 
 // metodos de pagamento
-$(".payment-methods li").click(function(){
+$(".payment-methods li").click(function () {
 	$(".payment-methods li").removeClass("active");
 	$(this).addClass("active");
 });
 
-$(".btn-menu").click(function(){
+$(".btn-menu").click(function () {
 	$(this).toggleClass("active");
 	$("header").toggleClass("open");
-	$(".menu").css({ top : $("header").outerHeight() });
+	$(".menu").css({
+		top: $("header").outerHeight()
+	});
 });
 
 var tabsSystem = () => {
@@ -281,7 +288,7 @@ var tabsSystem = () => {
 		$(this).closest(".tabs__head").find(".item-selected").css({
 			transform: "translateX(" + $(this).position().left + "px)"
 		});
-		
+
 		// para mostrar o item activo
 		var target = $(this).attr("href");
 		$(".tabs__body_item").hide();
@@ -297,8 +304,8 @@ var tabsSystem = () => {
 		return false;
 	});
 	// // MOBILE
-	if($(window).width() < 768){
-		$(".tabs__head").click(function(){
+	if ($(window).width() < 768) {
+		$(".tabs__head").click(function () {
 			$(this).toggleClass("open");
 		});
 		$("body,html").click(function (e) {
@@ -315,7 +322,7 @@ var sliders = () => {
 		autoplay: true,
 		smartSpeed: 800,
 		autoplayTimeout: 5000,
-		autoHeight:true,
+		autoHeight: true,
 		dots: true
 	});
 }
