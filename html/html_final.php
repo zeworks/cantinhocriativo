@@ -93,7 +93,7 @@
 				</ul>
 			</div>
 			<div class="col-sm-4">
-				<p>website ddddd links</p>
+				<p>&copy; <?= date('Y'); ?> Todos os direitos reservados</p>
 			</div>
 		</div>
 	</div>

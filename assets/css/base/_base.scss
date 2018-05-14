@@ -343,3 +343,23 @@ table {
 textarea{
     resize: vertical;
 }
+/* esta class serve para dar uma linha em volta do item que queremos, neste caso uso nas imagens */
+.bordered-image{
+    position: relative;
+}
+.bordered-image::before{
+    content: '';
+    width: $images-borderWidth;
+    height: $images-borderHeight;
+    border: $images-border;
+    position: $images-borderPosition;
+    top: $images-borderPositionTop;
+    bottom: $images-borderPositionBottom;
+    left: $images-borderPositionLeft;
+    right: $images-borderPositionRight;
+    z-index: -1;
+
+    @include max-xs{
+        display: none;
+    }
+}

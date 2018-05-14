@@ -24,6 +24,8 @@
 /* CHECKOUT CART */
 /* CHECKOUT TABLE */
 /* TESTIMONIALS */
+/* FOOTER */
+/* IMAGES */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -3793,6 +3795,32 @@ textarea {
   resize: vertical;
 }
 
+/* esta class serve para dar uma linha em volta do item que queremos, neste caso uso nas imagens */
+/* line 347, base/_base.scss */
+.bordered-image {
+  position: relative;
+}
+
+/* line 350, base/_base.scss */
+.bordered-image::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+  position: absolute;
+  top: 10px;
+  bottom: auto;
+  left: 10px;
+  right: auto;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  /* line 350, base/_base.scss */
+  .bordered-image::before {
+    display: none;
+  }
+}
+
 /* ===== REUSABLE BLOCKS OF CODE ===== */
 /* line 1, modules/_buttons.scss */
 .btn {
@@ -4815,11 +4843,17 @@ footer {
 .footer-link {
   display: block;
   width: 100%;
+  color: #fff;
 }
 
-/* line 35, modules/_footer.scss */
+/* line 36, modules/_footer.scss */
 footer img:first-child {
-  height: 165px;
+  height: 125px;
+}
+
+/* line 40, modules/_footer.scss */
+footer p {
+  color: #fff;
 }
 
 /* line 2, modules/_testimonials.scss */
