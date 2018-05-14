@@ -12,8 +12,8 @@
 				<button class="cart-qty__btn qty-less" type="button">-</button>
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
+				<a href="#" class="side-cart__del">delete</a>
 			</form>
-			<a href="#" class="side-cart__del">delete</a>
 			<span class="cart-item__value">100€</span>
 		</li>
 		<li class="side-cart__item">
@@ -24,8 +24,8 @@
 				<button class="cart-qty__btn qty-less" type="button">-</button>
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
+				<a href="#" class="side-cart__del">delete</a>
 			</form>
-			<a href="#" class="side-cart__del">delete</a>
 			<span class="cart-item__value">100€</span>
 		</li>
 	</ul>
@@ -78,7 +78,8 @@
 	<div class="container">
 		<div class="cookies-bar-inner">
 			<div class="cookies-bar-message">Os cookies ajudam-nos a oferecer os nossos serviços. Ao utilizar os nossos serviços, concorda com a nossa utilização de
-				cookies.</div>
+				cookies.
+			</div>
 			<div class="cookies-bar-buttons">
 				<a href="" rel="nofollow" class="cookies-bar-know-more" title="" target="_blank">Saiba mais</a>
 				<a href="" rel="nofollow" class="cookies-bar-accept" title="" id="removecookie">Aceito</a>

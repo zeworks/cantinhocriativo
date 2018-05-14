@@ -85,8 +85,27 @@ table {
     }
 
     &.cart-table{
+        @include max-xs{
+            display: inline-block;
+            white-space: nowrap;
+            clear: both;
+            overflow-x: scroll;
+        }
         td{
             vertical-align: middle;
+        }
+
+        img{
+            width: 50px;
+        }
+
+        .cart-qty--large .cart-qty__btn{
+            padding: 4px 7px;
+        }
+
+        .cart-qty--large .cart-qty__input{
+            width: 35px;
+            padding: 4px 0;
         }
     }
 }
@@ -313,6 +332,12 @@ table {
     .account-item h2 {
         margin: 0;
     }
+    @include max-xs{
+        [data-mh="account-item"]{
+            margin-bottom: 15px;
+        } 
+    }
+    
 }
 
 textarea{

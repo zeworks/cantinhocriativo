@@ -3479,12 +3479,34 @@ table tr {
 table tr:last-child {
   border: 0;
 }
-/* line 88, base/_base.scss */
+@media (max-width: 767px) {
+  /* line 87, base/_base.scss */
+  table.cart-table {
+    display: inline-block;
+    white-space: nowrap;
+    clear: both;
+    overflow-x: scroll;
+  }
+}
+/* line 94, base/_base.scss */
 table.cart-table td {
   vertical-align: middle;
 }
+/* line 98, base/_base.scss */
+table.cart-table img {
+  width: 50px;
+}
+/* line 102, base/_base.scss */
+table.cart-table .cart-qty--large .cart-qty__btn {
+  padding: 4px 7px;
+}
+/* line 106, base/_base.scss */
+table.cart-table .cart-qty--large .cart-qty__input {
+  width: 35px;
+  padding: 4px 0;
+}
 
-/* line 94, base/_base.scss */
+/* line 113, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3492,7 +3514,7 @@ table.cart-table td {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 94, base/_base.scss */
+  /* line 113, base/_base.scss */
   .menu {
     float: none;
     position: fixed;
@@ -3514,7 +3536,7 @@ table.cart-table td {
   }
 }
 
-/* line 113, base/_base.scss */
+/* line 132, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
@@ -3522,7 +3544,7 @@ table.cart-table td {
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 113, base/_base.scss */
+  /* line 132, base/_base.scss */
   .menu__item {
     line-height: normal;
     display: table;
@@ -3530,7 +3552,7 @@ table.cart-table td {
   }
 }
 
-/* line 125, base/_base.scss */
+/* line 144, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3540,52 +3562,52 @@ table.cart-table td {
   text-transform: uppercase;
   position: relative;
 }
-/* line 133, base/_base.scss */
+/* line 152, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
   color: #777;
 }
-/* line 137, base/_base.scss */
+/* line 156, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
   text-decoration: none;
   color: #333;
 }
-/* line 143, base/_base.scss */
+/* line 162, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
   color: #777;
 }
 
-/* line 150, base/_base.scss */
+/* line 169, base/_base.scss */
 .logo-link {
   display: block;
 }
 
-/* line 153, base/_base.scss */
+/* line 172, base/_base.scss */
 .logo-image {
   height: 90px;
   width: auto;
 }
 
 @media (max-width: 767px) {
-  /* line 158, base/_base.scss */
+  /* line 177, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 162, base/_base.scss */
+  /* line 181, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
     height: 50px;
   }
 }
-/* line 169, base/_base.scss */
+/* line 188, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 173, base/_base.scss */
+/* line 192, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3601,13 +3623,13 @@ table.cart-table td {
   transition: width .2s ease;
 }
 
-/* line 187, base/_base.scss */
+/* line 206, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 193, base/_base.scss */
+/* line 212, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3620,47 +3642,47 @@ table.cart-table td {
   text-align: right;
 }
 
-/* line 204, base/_base.scss */
+/* line 223, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 210, base/_base.scss */
+/* line 229, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 216, base/_base.scss */
+/* line 235, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 216, base/_base.scss */
+  /* line 235, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 223, base/_base.scss */
+/* line 242, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 223, base/_base.scss */
+  /* line 242, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 230, base/_base.scss */
+/* line 249, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 234, base/_base.scss */
+/* line 253, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3669,12 +3691,12 @@ table.cart-table td {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 240, base/_base.scss */
+/* line 259, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 245, base/_base.scss */
+/* line 264, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3684,7 +3706,7 @@ table.cart-table td {
   display: inline-block;
 }
 
-/* line 254, base/_base.scss */
+/* line 273, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3693,12 +3715,12 @@ table.cart-table td {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 260, base/_base.scss */
+/* line 279, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 266, base/_base.scss */
+/* line 285, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3707,27 +3729,27 @@ table.cart-table td {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 266, base/_base.scss */
+  /* line 285, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 278, base/_base.scss */
+/* line 297, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 284, base/_base.scss */
+/* line 303, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 289, base/_base.scss */
+/* line 308, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3736,7 +3758,7 @@ table.cart-table td {
   left: 10px;
 }
 
-/* line 297, base/_base.scss */
+/* line 316, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3744,23 +3766,29 @@ table.cart-table td {
   text-transform: uppercase;
 }
 
-/* line 305, base/_base.scss */
+/* line 324, base/_base.scss */
 #pArea {
   padding: 50px 0;
   background-color: #ddd;
 }
-/* line 308, base/_base.scss */
+/* line 327, base/_base.scss */
 #pArea .account-item {
   background-color: #fff;
   padding: 20px;
   height: 100%;
 }
-/* line 313, base/_base.scss */
+/* line 332, base/_base.scss */
 #pArea .account-item h2 {
   margin: 0;
 }
+@media (max-width: 767px) {
+  /* line 336, base/_base.scss */
+  #pArea [data-mh="account-item"] {
+    margin-bottom: 15px;
+  }
+}
 
-/* line 318, base/_base.scss */
+/* line 343, base/_base.scss */
 textarea {
   resize: vertical;
 }
@@ -4420,6 +4448,29 @@ textarea {
 /* line 212, modules/_cart.scss */
 .side-cart__buttons .btn:last-child {
   float: right;
+}
+
+/* line 217, modules/_cart.scss */
+.side-cart__del {
+  border: 1px solid #333;
+  padding: 2px 4px;
+  text-decoration: none;
+  margin-left: 15px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+  font-weight: 400;
+  font-size: 12px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 231, modules/_cart.scss */
+.side-cart__del:hover {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
 }
 
 /* line 1, modules/_breadcrumb.scss */

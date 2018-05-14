@@ -71,7 +71,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
                     soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
             </div>
-            <div class="col-sm-6 col-md-offset-1 col-md-pull-6">
+            <div class="col-sm-6 col-md-offset-1 col-sm-pull-6">
                 <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
             </div>
         </div>
