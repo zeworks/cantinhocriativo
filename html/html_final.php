@@ -12,7 +12,7 @@
 				<button class="cart-qty__btn qty-less" type="button">-</button>
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
-				<a href="#" class="side-cart__del">delete</a>
+				<a href="#" class="side-cart__del">eliminar</a>
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
@@ -24,7 +24,7 @@
 				<button class="cart-qty__btn qty-less" type="button">-</button>
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
-				<a href="#" class="side-cart__del">delete</a>
+				<a href="#" class="side-cart__del">eliminar</a>
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
@@ -36,11 +36,11 @@
 				<button class="cart-qty__btn qty-less" type="button">-</button>
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
-				<a href="#" class="side-cart__del">delete</a>
+				<a href="#" class="side-cart__del">eliminar</a>
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
-		
+
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
 			<a href="#linkProduct" title="Product Link">Product Name</a>
@@ -49,7 +49,7 @@
 				<button class="cart-qty__btn qty-less" type="button">-</button>
 				<input type="text" name="cart_quant" class="cart-qty__input">
 				<button class="cart-qty__btn qty-plus" type="button">+</button>
-				<a href="#" class="side-cart__del">delete</a>
+				<a href="#" class="side-cart__del">eliminar</a>
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
@@ -79,7 +79,7 @@
 				<!-- website logo -->
 				<img class="img-responsive" src="../assets/img/occ_logo.png" alt="">
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-8">
 				<ul class="footer-list">
 					<li class="footer-item">
 						<a href="#linkFooter" title="footer link" class="footer-link">footer link</a>
@@ -92,8 +92,12 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-sm-4">
-				<p>&copy; <?= date('Y'); ?> Todos os direitos reservados</p>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<br>
+				<small>&copy;
+					<?= date('Y'); ?> Todos os direitos reservados</small>
 			</div>
 		</div>
 	</div>

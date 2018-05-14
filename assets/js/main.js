@@ -205,10 +205,11 @@ function main() {
 }
 // função para me devolver o numero de items adicionados ao carrinho
 function updateCartItems() {
-	var numItems = $(".side-cart__list li").length;
-	if (numItems > 0) {
+	var list_items = $(".side-cart__list li").length;
+	
+	if (list_items > 0) {
 		$(".cart-shopping").addClass("has-items");
-		$(".cart-shopping span").html(numItems);
+		$(".cart-shopping span").html(list_items);
 	} else {
 		$(".cart-shopping").removeClass("has-items");
 		$(".cart-shopping span").html('');
@@ -252,8 +253,16 @@ function cartActions() {
 	});
 
 	// para remover os items do carrinho
-	$(".side-cart__del").click(function () {
+	$(".side-cart__del:not(.side-cart__del-tr)").click(function () {
 		$(this).parent().parent().fadeOut(300, function(){
+			$(this).remove();
+			updateCartItems();
+		});
+		return false;
+	})
+
+	$(".side-cart__del-tr").click(function () {
+		$(this).closest("tr").fadeOut(300, function(){
 			$(this).remove();
 			updateCartItems();
 		});

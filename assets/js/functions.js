@@ -35,7 +35,7 @@ function isEmail(email) {
 }
 
 // show element in certain momment
-function checkScroll(element1,element2) {
+function checkScroll(element1, element2) {
   if ($(element1)[0]) {
     var el = $(element1);
     var top_of_object = el.offset().top;
@@ -46,49 +46,54 @@ function checkScroll(element1,element2) {
     if (top_of_window <= bottom_of_object && bottom_of_window >= top_of_object) {
       $(element2).addClass('show');
     } else {
-     
+
     }
   }
 }
 
 // parallax effect on hover element
-function parallaxHoverJS(element){
+function parallaxHoverJS(element) {
   var movementStrength = 40;
   var height = movementStrength / $(window).height();
   var width = movementStrength / $(window).width();
 
-  $(element).mousemove(function(e){
+  $(element).mousemove(function (e) {
     var pageX = e.pageX - ($(window).width() / 2);
     var pageY = e.pageY - ($(window).height() / 2);
     var newvalueX = width * pageX * -1 - 25;
     var newvalueY = height * pageY * -1 - 50;
 
-    $('#example').css({"left" : newvalueX +"px", "top" : newvalueY+"px", "bottom" : "0", "right":"auto"});
+    $('#example').css({
+      "left": newvalueX + "px",
+      "top": newvalueY + "px",
+      "bottom": "0",
+      "right": "auto"
+    });
   });
 
 }
 
 // CALL IT ON DOCUMENT READY AND ON WINDOW SCROLL - TO GET ALWAYS THE ATUAL POSITION OF THE SCROLL.
-function affixItem(fixedItem,stopPosition) {
-  
+function affixItem(fixedItem, stopPosition) {
+
   var scroll = $(window).scrollTop() + $(fixedItem).outerHeight() + $("header").outerHeight() + 80;
 
-  if(scroll < $(stopPosition).offset().top) {
-    
+  if (scroll < $(stopPosition).offset().top) {
+
     $(fixedItem).addClass("affixed"); // while scrolling
     $(fixedItem).removeClass("affixed-bottom"); // when is on bottom
 
-  }else if(scroll >= $(stopPosition).offset().top){
-    
+  } else if (scroll >= $(stopPosition).offset().top) {
+
     $(fixedItem).addClass("affixed-bottom");
     $(fixedItem).removeClass("affixed");
-    
+
   }
-  
-  if(scroll == 0){
+
+  if (scroll == 0) {
     $(fixedItem).removeClass("affixed");
   }
-    
+
 }
 // set the element as class, to be generally used. set the button that will be clicked to execute this function and set the MAX of items to list...
 function showMore(element, button, max) {
@@ -116,7 +121,7 @@ function showMore(element, button, max) {
   });
 }
 // function to only add the ellipses to the text, this doesnt toggle.
-function showMoreText(e,m) {
+function showMoreText(e, m) {
   var max = m;
   $(e).each(function () {
     var e = $(this).html();
@@ -133,83 +138,84 @@ function showMoreText(e,m) {
  * 
  * General Form Validation Function
  *
-**/
+ **/
 
 function initValidation() {
-	
-	var errorClass = 	'error';
-    var successClass =  'success';
-    var regEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    
-    $('form.validate-form').each(function () {
-		
-        var form 		= $(this).attr('novalidate', 'novalidate');
-        var successFlag = true;
-        var inputs 		= form.find('input, textarea, select');
-        
-        // form validation function
-        function validateForm(e) {
-            successFlag = true;
-            form.find('.warnings .success').hide();
-            inputs.each(checkField);
-            
-            if (!successFlag) {
-                form.find('.warnings .error').show();
-                e.preventDefault();
-            }
+
+  var errorClass = 'error';
+  var successClass = 'success';
+  var regEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+  $('form.validate-form').each(function () {
+
+    var form = $(this).attr('novalidate', 'novalidate');
+    var successFlag = true;
+    var inputs = form.find('input, textarea, select');
+
+    // form validation function
+    function validateForm(e) {
+      successFlag = true;
+      form.find('.warnings .success').hide();
+      inputs.each(checkField);
+
+      if (!successFlag) {
+        form.find('.warnings .error').show();
+        e.preventDefault();
+      }
+    }
+
+    // check field
+    function checkField(i, obj) {
+
+      var currentObject = $(obj);
+      var currentParent = currentObject.parent();
+
+      // not empty fields
+      if (currentObject.hasClass('required')) {
+        //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
+        setState(currentParent, !currentObject.val().length);
+      }
+      // radio button
+      if (currentObject.hasClass('required-radio')) {
+        var name = currentParent.attr('name');
+        //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
+        setState(currentParent.parent(), !$('input[name="' + name + '"]:checked').length);
+      }
+      
+      // correct email fields
+      if (currentObject.hasClass('required-email')) {
+        setState(currentParent, !regEmail.test(currentObject.val()));
+      }
+
+      if (currentObject.hasClass('confirm-password')) {
+        if (currentObject.closest('form').find('.password').val() != currentObject.val()) {
+          setState(currentParent, true);
         }
-        
-        // check field
-        function checkField(i, obj){
-            
-            var currentObject = $(obj);
-            var currentParent = currentObject.parent();
-            
-            // not empty fields
-            if (currentObject.hasClass('required')) {
-                //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
-                setState(currentParent, !currentObject.val().length );
-            }
-            // radio button
-            if (currentObject.hasClass('required-radio')) {
-                var name = currentParent.attr('name');
-                //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
-                setState(currentParent, !$('input[name="' + name + '"]:checked').length );
-            }
-            // correct email fields
-            if (currentObject.hasClass('required-email')) {
-                setState(currentParent, !regEmail.test(currentObject.val()));
-            }
-            
-            if (currentObject.hasClass('confirm-password')) {
-                if(currentObject.closest('form').find('.password').val() != currentObject.val()){
-                    setState(currentParent, true);
-                }
-            }
-            // correct input file fields
-            if (currentObject.hasClass('required-file')) {
-                setState(currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
-            }
-        }
-        
-        // set state
-        function setState(field, error) {
-            field.removeClass(errorClass).removeClass(successClass);
-            if (error) {           
-                field.addClass(errorClass);
-                field.one('focus', function () {
-                    field.removeClass(errorClass).removeClass(successClass);
-                });
-                successFlag = false;
-            } else {
-                field.addClass(successClass);
-            }
-        }
-        
-        // form event handlers
-        form.submit(validateForm);
-        
-    });
+      }
+      // correct input file fields
+      if (currentObject.hasClass('required-file')) {
+        setState(currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
+      }
+    }
+
+    // set state
+    function setState(field, error) {
+      field.removeClass(errorClass).removeClass(successClass);
+      if (error) {
+        field.addClass(errorClass);
+        field.one('focus', function () {
+          field.removeClass(errorClass).removeClass(successClass);
+        });
+        successFlag = false;
+      } else {
+        field.addClass(successClass);
+      }
+    }
+
+    // form event handlers
+    form.submit(validateForm);
+
+  });
 }
 
 
@@ -217,15 +223,15 @@ function initValidation() {
  * 
  * Cookies functions
  *
-**/
+ **/
 
 function createCookie(name, value, days) {
   if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      var expires = '; expires=' + date.toGMTString();
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    var expires = '; expires=' + date.toGMTString();
   } else
-      var expires = '';
+    var expires = '';
   document.cookie = name + '=' + value + expires + '; path=/';
 }
 
@@ -233,11 +239,11 @@ function readCookie(name) {
   var nameEQ = name + '=';
   var ca = document.cookie.split(';');
   for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ')
-          c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) == 0)
-          return c.substring(nameEQ.length, c.length);
+    var c = ca[i];
+    while (c.charAt(0) == ' ')
+      c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0)
+      return c.substring(nameEQ.length, c.length);
   }
   return null;
 }

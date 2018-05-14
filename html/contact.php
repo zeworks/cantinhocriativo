@@ -36,6 +36,7 @@
                     <div class="col-sm-12 col-md-6">
                         <p>Tem alguma questão e não encontra a informação no site?
                             <br> Contacte-nos! Teremos todo o gosto em esclarecer todas as suas dúvidas.</p>
+
                         <div class="empty-space-80"></div>
                         <form action="" method class="validate-form">
                             <div class="row">
@@ -66,8 +67,29 @@
                                     </div>
                                 </div>
                             </div>
+                            <small>
+                                Dou consentimento para tratamento dos meus dados pessoais constantes da candidatura a empresas do universo do Cantinho Criativo,
+                                incluindo o registo e conservação em base digital, pelo tempo necessário, autorizando a transmissão
+                                desses dados a qualquer sociedade do referido grupo. A Golden Assets compromete-se a, em
+                                qualquer momento, alterar ou eliminar da sua base de dados os referidos dados pessoais, a
+                                pedido do interessado
+                            </small>
+                            <br>
+                            <br>
                             <div class="row">
-                                <div class="col-sm-offset-6 col-sm-6">
+                                <div class="col-sm-6">
+                                    <div class="form-field">
+                                        
+                                        <label for="terms">
+                                            <input type="checkbox" id="terms" name="terms" class="fleft">
+                                            <small>Aceito os
+                                                <a href="terms.php" target="_blank">termos e condições</a>
+                                            </small>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
                                     <button type="submit" class="btn btn-primary fright">Enviar Mensagem</button>
                                 </div>
                             </div>

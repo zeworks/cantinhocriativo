@@ -63,7 +63,12 @@ function parallaxHoverJS(element) {
     var newvalueX = width * pageX * -1 - 25;
     var newvalueY = height * pageY * -1 - 50;
 
-    $('#example').css({ "left": newvalueX + "px", "top": newvalueY + "px", "bottom": "0", "right": "auto" });
+    $('#example').css({
+      "left": newvalueX + "px",
+      "top": newvalueY + "px",
+      "bottom": "0",
+      "right": "auto"
+    });
   });
 }
 
@@ -128,7 +133,7 @@ function showMoreText(e, m) {
  * 
  * General Form Validation Function
  *
-**/
+ **/
 
 function initValidation() {
 
@@ -169,8 +174,9 @@ function initValidation() {
       if (currentObject.hasClass('required-radio')) {
         var name = currentParent.attr('name');
         //setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('defaultValue'));
-        setState(currentParent, !$('input[name="' + name + '"]:checked').length);
+        setState(currentParent.parent(), !$('input[name="' + name + '"]:checked').length);
       }
+
       // correct email fields
       if (currentObject.hasClass('required-email')) {
         setState(currentParent, !regEmail.test(currentObject.val()));
@@ -210,7 +216,7 @@ function initValidation() {
  * 
  * Cookies functions
  *
-**/
+ **/
 
 function createCookie(name, value, days) {
   if (days) {
@@ -441,10 +447,11 @@ function main() {
 }
 // função para me devolver o numero de items adicionados ao carrinho
 function updateCartItems() {
-	var numItems = $(".side-cart__list li").length;
-	if (numItems > 0) {
+	var list_items = $(".side-cart__list li").length;
+
+	if (list_items > 0) {
 		$(".cart-shopping").addClass("has-items");
-		$(".cart-shopping span").html(numItems);
+		$(".cart-shopping span").html(list_items);
 	} else {
 		$(".cart-shopping").removeClass("has-items");
 		$(".cart-shopping span").html('');
@@ -488,8 +495,16 @@ function cartActions() {
 	});
 
 	// para remover os items do carrinho
-	$(".side-cart__del").click(function () {
+	$(".side-cart__del:not(.side-cart__del-tr)").click(function () {
 		$(this).parent().parent().fadeOut(300, function () {
+			$(this).remove();
+			updateCartItems();
+		});
+		return false;
+	});
+
+	$(".side-cart__del-tr").click(function () {
+		$(this).closest("tr").fadeOut(300, function () {
 			$(this).remove();
 			updateCartItems();
 		});

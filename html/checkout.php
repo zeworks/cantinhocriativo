@@ -12,7 +12,7 @@
                     </a> a sessão de forma segura.</p>
                 <!-- table items -->
                 <hr>
-                <form action method class="validate-form">
+                <form action="success-payment.php" method class="validate-form">
                     <div class="row">
                         <!-- ORDER SUMMARY -->
                         <div class="col-sm-5 col-sm-push-7">
@@ -106,19 +106,19 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="complete_name">Nome Completo</label>
+                                                <label for="complete_name">Nome Completo*</label>
                                                 <input type="text" class="form-control required" id="complete_name" name="complete_name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="email">Email</label>
+                                                <label for="email">Email*</label>
                                                 <input type="email" class="form-control required" id="email" name="email">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="phone">Telefone</label>
+                                                <label for="phone">Telefone*</label>
                                                 <input type="text" class="form-control required" id="phone" name="phone">
                                             </div>
                                         </div>
@@ -130,19 +130,19 @@
                                         </div>
                                     </div>
                                     <div class="form-field">
-                                        <label for="address">Morada</label>
+                                        <label for="address">Morada*</label>
                                         <input type="text" class="form-control required" id="address" name="address">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="city">Cidade</label>
+                                                <label for="city">Cidade*</label>
                                                 <input type="text" class="form-control required" id="city" name="city">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="cod_postal">Código Postal</label>
+                                                <label for="cod_postal">Código Postal*</label>
                                                 <input type="text" class="form-control required" id="cod_postal" name="cod_postal">
                                             </div>
                                         </div>
@@ -158,31 +158,31 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="complete_name_send">Nome Completo</label>
+                                                <label for="complete_name_send">Nome Completo*</label>
                                                 <input type="text" class="form-control required" id="complete_name_send" name="complete_name_send">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="phone_send">Telefone</label>
+                                                <label for="phone_send">Telefone*</label>
                                                 <input type="text" class="form-control required" id="phone_send" name="phone_send">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-field">
-                                        <label for="address_send">Morada</label>
+                                        <label for="address_send">Morada*</label>
                                         <input type="text" class="form-control required" id="address_send" name="address_send">
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="city_send">Cidade</label>
+                                                <label for="city_send">Cidade*</label>
                                                 <input type="text" class="form-control required" id="city_send" name="city_send">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-field">
-                                                <label for="cod_postal_send">Código Postal</label>
+                                                <label for="cod_postal_send">Código Postal*</label>
                                                 <input type="text" class="form-control required" id="cod_postal_send" name="cod_postal_send">
                                             </div>
                                         </div>
@@ -197,14 +197,14 @@
                                 <div class="checkout-cart-body">
                                     <div class="form-field form-field--radio">
                                         <label for="ctt">
-                                            <input type="radio" name="send_method" id="ctt" class="radio">
+                                            <input type="radio" name="send_method" id="ctt" class="radio required-radio">
                                             <strong>Envio por CTT</strong>
                                             <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
                                         </label>
                                     </div>
                                     <div class="form-field form-field--radio">
                                         <label for="ss">
-                                            <input type="radio" name="send_method" id="ss" class="radio">
+                                            <input type="radio" name="send_method" id="ss" class="radio required-radio">
                                             <strong>Envio por CTT</strong>
                                             <small>Custo de envio: 9,25€ | Entrega: 2 dias utéis</small>
                                         </label>
