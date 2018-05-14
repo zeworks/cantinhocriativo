@@ -28,6 +28,31 @@
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
+		<li class="side-cart__item">
+			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
+			<a href="#linkProduct" title="Product Link">Product Name</a>
+			<div class="clearfix"></div>
+			<form action="" method="post" class="cart-qty clearfix">
+				<button class="cart-qty__btn qty-less" type="button">-</button>
+				<input type="text" name="cart_quant" class="cart-qty__input">
+				<button class="cart-qty__btn qty-plus" type="button">+</button>
+				<a href="#" class="side-cart__del">delete</a>
+			</form>
+			<span class="cart-item__value">100€</span>
+		</li>
+		
+		<li class="side-cart__item">
+			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
+			<a href="#linkProduct" title="Product Link">Product Name</a>
+			<div class="clearfix"></div>
+			<form action="" method="post" class="cart-qty clearfix">
+				<button class="cart-qty__btn qty-less" type="button">-</button>
+				<input type="text" name="cart_quant" class="cart-qty__input">
+				<button class="cart-qty__btn qty-plus" type="button">+</button>
+				<a href="#" class="side-cart__del">delete</a>
+			</form>
+			<span class="cart-item__value">100€</span>
+		</li>
 	</ul>
 	<!-- cart items ends -->
 	<!-- cart items total -->

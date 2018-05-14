@@ -479,7 +479,9 @@ function cartActions() {
 
 	// para remover os items do carrinho
 	$(".side-cart__del").click(function () {
-		$(this).parent().parent().remove();
+		$(this).parent().parent().fadeOut(300, function () {
+			$(this).remove();
+		});
 		updateCartItems();
 		return false;
 	});

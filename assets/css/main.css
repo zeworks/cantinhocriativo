@@ -4240,30 +4240,34 @@ textarea {
   margin: 30px 0;
   padding: 0;
   list-style: none;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-/* line 49, modules/_cart.scss */
+/* line 50, modules/_cart.scss */
 .side-cart__list > li {
   padding: 10px 10px 10px 65px;
   display: block;
   width: 100%;
   position: relative;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-/* line 56, modules/_cart.scss */
+/* line 58, modules/_cart.scss */
 .side-cart__list > li img {
   position: absolute;
   top: 10px;
   left: 0;
 }
 
-/* line 62, modules/_cart.scss */
+/* line 64, modules/_cart.scss */
 .cart-qty {
   margin: 10px 0 0 0;
   display: inline-block;
 }
 
-/* line 67, modules/_cart.scss */
+/* line 69, modules/_cart.scss */
 .cart-qty > * {
   display: inline;
   margin: 0;
@@ -4271,7 +4275,7 @@ textarea {
   margin-right: -1px;
 }
 
-/* line 74, modules/_cart.scss */
+/* line 76, modules/_cart.scss */
 .cart-qty__input {
   width: 40px;
   text-align: center;
@@ -4279,7 +4283,7 @@ textarea {
   border: 1px solid #ddd;
 }
 
-/* line 81, modules/_cart.scss */
+/* line 83, modules/_cart.scss */
 .cart-qty__btn {
   padding: 2px 10px;
   border: 1px solid #ddd;
@@ -4287,64 +4291,64 @@ textarea {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-/* line 86, modules/_cart.scss */
+/* line 88, modules/_cart.scss */
 .cart-qty__btn:hover {
   background-color: #333;
   color: #fff;
 }
 
-/* line 92, modules/_cart.scss */
+/* line 94, modules/_cart.scss */
 .cart-qty__btn,
 .cart-qty__input {
   font-size: 12px;
   font-weight: 500;
 }
 
-/* line 98, modules/_cart.scss */
+/* line 100, modules/_cart.scss */
 .side-cart__item {
   border-top: 1px solid #d2d2d2;
 }
-/* line 100, modules/_cart.scss */
+/* line 102, modules/_cart.scss */
 .side-cart__item:last-child {
   border-bottom: 1px solid #d2d2d2;
 }
 
-/* line 105, modules/_cart.scss */
+/* line 107, modules/_cart.scss */
 .cart-item__value {
   float: right;
 }
 
-/* line 109, modules/_cart.scss */
+/* line 111, modules/_cart.scss */
 .cart-qty--large {
   margin: 0;
 }
 
-/* line 113, modules/_cart.scss */
+/* line 115, modules/_cart.scss */
 .cart-qty--large > * {
   margin-right: -1px;
 }
 
-/* line 117, modules/_cart.scss */
+/* line 119, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn,
 .cart-qty--large .cart-qty__input {
   font-size: 18px;
   font-weight: 500;
 }
 
-/* line 123, modules/_cart.scss */
+/* line 125, modules/_cart.scss */
 .cart-qty--large .cart-qty__input {
   width: 60px;
   border: 1px solid #333;
   padding: 7px 0;
 }
 @media (max-width: 991px) {
-  /* line 123, modules/_cart.scss */
+  /* line 125, modules/_cart.scss */
   .cart-qty--large .cart-qty__input {
     width: 40px;
   }
 }
 
-/* line 133, modules/_cart.scss */
+/* line 135, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn {
   border: 1px solid #333;
   background-color: #fff;
@@ -4352,32 +4356,32 @@ textarea {
   transition: all .2s ease-in-out;
   padding: 7px 20px;
 }
-/* line 138, modules/_cart.scss */
+/* line 140, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn:hover {
   background-color: #333;
   color: #fff;
 }
 @media (max-width: 991px) {
-  /* line 133, modules/_cart.scss */
+  /* line 135, modules/_cart.scss */
   .cart-qty--large .cart-qty__btn {
     padding: 7px 10px;
   }
 }
 
-/* line 147, modules/_cart.scss */
+/* line 149, modules/_cart.scss */
 .qty-less {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-/* line 152, modules/_cart.scss */
+/* line 154, modules/_cart.scss */
 .qty-plus {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 /* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
-/* line 159, modules/_cart.scss */
+/* line 161, modules/_cart.scss */
 .cart-shopping span {
   display: none;
   background-color: #f74545;
@@ -4404,21 +4408,21 @@ textarea {
 }
 
 /* se tiver a class has-items o numero de items ir├í aparecer */
-/* line 180, modules/_cart.scss */
+/* line 182, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 184, modules/_cart.scss */
+/* line 186, modules/_cart.scss */
 .side-cart__total {
   position: relative;
   display: block;
   width: 100%;
 }
 
-/* line 190, modules/_cart.scss */
+/* line 192, modules/_cart.scss */
 .side-cart__total-total {
   float: left;
   font-weight: 700;
@@ -4427,7 +4431,7 @@ textarea {
   color: #333;
 }
 
-/* line 198, modules/_cart.scss */
+/* line 200, modules/_cart.scss */
 .side-cart__total-value {
   float: right;
   font-size: 16px;
@@ -4435,22 +4439,22 @@ textarea {
   color: #333;
 }
 
-/* line 205, modules/_cart.scss */
+/* line 207, modules/_cart.scss */
 .side-cart__buttons {
   margin: 30px 0 0;
   position: relative;
 }
 
-/* line 210, modules/_cart.scss */
+/* line 212, modules/_cart.scss */
 .side-cart__buttons .btn {
   float: left;
 }
-/* line 212, modules/_cart.scss */
+/* line 214, modules/_cart.scss */
 .side-cart__buttons .btn:last-child {
   float: right;
 }
 
-/* line 217, modules/_cart.scss */
+/* line 219, modules/_cart.scss */
 .side-cart__del {
   border: 1px solid #333;
   padding: 2px 4px;
@@ -4466,7 +4470,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 231, modules/_cart.scss */
+/* line 233, modules/_cart.scss */
 .side-cart__del:hover {
   text-decoration: none;
   background-color: #333;
