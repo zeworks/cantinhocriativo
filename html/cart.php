@@ -1,5 +1,5 @@
 <?php include 'html_inicial.php' ?>
-<div class="empty-space-80"></div>
+<div class="empty-space-20"></div>
 <!-- CART -->
 <section>
     <div class="container">
