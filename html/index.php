@@ -64,7 +64,7 @@
                 <div class="col-sm-6 col-xs-12" data-mh="post-article">
                     <a href="#link" title="view more">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
                         </div>
                     </a>
                 </div>
@@ -100,7 +100,7 @@
                 <div class="col-sm-6 col-xs-12 col-sm-push-6" data-mh="post-article">
                     <a href="#link" title="view more">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
                         </div>
                     </a>
                 </div>
@@ -136,7 +136,7 @@
                 <div class="col-sm-6 col-xs-12" data-mh="post-article">
                     <a href="#link" title="view more">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
                         </div>
                     </a>
                 </div>
@@ -172,7 +172,7 @@
                 <div class="col-sm-6 col-xs-12 col-sm-push-6" data-mh="post-article">
                     <a href="#link" title="view more">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
                         </div>
                     </a>
                 </div>
