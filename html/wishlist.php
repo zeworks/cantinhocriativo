@@ -15,7 +15,7 @@
                             <div class="empty-space-80"></div>
                             <table class="cart-table" style="width: 100%;" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <th></th>
+                                    <th width="100"></th>
                                     <th>Produto</th>
                                     <th>Preço</th>
                                     <th>Quantidade</th>

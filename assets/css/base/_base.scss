@@ -7,9 +7,10 @@ input[type="radio"]:not(.radio) {
 }
 
 .radio{
-    position: absolute;
-    margin-left: -26px;
-    margin-top: 3px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
 }
 
 input[type="checkbox"]{
@@ -319,25 +320,6 @@ table {
     {
     font-weight: 700;
     text-transform: uppercase;
-}
-
-#pArea {
-    padding: 50px 0;
-    background-color: #ddd;
-    .account-item {
-        background-color: #fff;
-        padding: 20px;
-        height: 100%;
-    }
-    .account-item h2 {
-        margin: 0;
-    }
-    @include max-xs{
-        [data-mh="account-item"]{
-            margin-bottom: 15px;
-        } 
-    }
-    
 }
 
 textarea{

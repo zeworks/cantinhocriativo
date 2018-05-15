@@ -6,9 +6,15 @@
     font-weight: 700;
     font-size: 14px;
     display: inline-block;
+    background: transparent;
+    border: $btnDefault-border $btnDefault-borderColor;
     
     @include max-xs{
         font-size: 12px;
+    }
+    
+    &:hover{
+        background: #f2f2f2;
     }
 
     &:hover,
@@ -16,6 +22,7 @@
     &:focus,
     &:active{
         text-decoration: none;
+       
     }
 }
 .btn-default {

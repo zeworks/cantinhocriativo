@@ -1,0 +1,89 @@
+#pArea {
+    padding: 50px 0;
+    background-color: #ddd;
+    .account-item {
+        background-color: #fff;
+        padding: 20px;
+        height: 100%;
+    }
+    .account-item h2 {
+        margin: 0;
+    }
+    @include max-xs {
+        [data-mh="account-item"] {
+            margin-bottom: 15px;
+        }
+    }
+    .btn-login {
+        position: absolute;
+        bottom: 20px;
+        right: 35px;
+        @include max-xs {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            float: right;
+        }
+    }
+    @include max-xs {
+        padding: 30px 0;
+        .btn-remove-account {
+            margin: 0 0 15px;
+        }
+        .btn-target {
+            float: none;
+        }
+    }
+}
+
+.account-info {
+    position: relative;
+    /* list of user info - the info defined by the user*/
+    ul {
+        margin: 20px 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul>li {
+        margin: 15px 0;
+        display: block;
+    }
+}
+
+.personal-data {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .6);
+    z-index: 200;
+    display: none;
+}
+
+.personal-data__body {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    padding: 20px;
+    box-shadow: 0px 0px 40px 5px rgba($color: #000000, $alpha: .3);
+    @include max-xs {
+        width: 97%;
+        overflow-y: scroll;
+    }
+}
+
+.personal-data__body .btn-default {
+    @include max-xs {
+        float: right;
+    }
+}
+
+.personal-data__body .btn-primary {
+    @include max-xs {
+        float: left;
+    }
+}

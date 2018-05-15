@@ -209,6 +209,7 @@ function initValidation() {
         successFlag = false;
       } else {
         field.addClass(successClass);
+        
       }
     }
 

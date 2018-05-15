@@ -387,6 +387,22 @@ $(document).ready(function () {
 			$(".swiper-slide-active .wrapper-slide").addClass("animated fadeInUp");
 		}, 800);
 	});
+
+	$(".btn-target").click(function () {
+		var target = $(this).attr("data-target");
+		$(target).fadeIn(400, function () {
+			$(this).show();
+		});
+		return false;
+	});
+
+	$(".btn-close").click(function () {
+		var target = $(this).attr("data-target");
+		$(target).fadeOut(400, function () {
+			$(this).hide();
+		});
+		return false;
+	});
 });
 
 $(window).resize(function () {

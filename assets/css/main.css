@@ -3383,17 +3383,18 @@ input[type="radio"]:not(.radio) {
 
 /* line 9, base/_base.scss */
 .radio {
-  position: absolute;
-  margin-left: -26px;
-  margin-top: 3px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
 }
 
-/* line 15, base/_base.scss */
+/* line 16, base/_base.scss */
 input[type="checkbox"] {
   margin-right: 10px;
 }
 
-/* line 19, base/_base.scss */
+/* line 20, base/_base.scss */
 .show-more {
   background: transparent;
   font-size: 25px;
@@ -3404,33 +3405,33 @@ input[type="checkbox"] {
   transition: all 200ms ease;
   padding: 0px 10px;
 }
-/* line 27, base/_base.scss */
+/* line 28, base/_base.scss */
 .show-more:hover {
   color: white;
 }
 
-/* line 33, base/_base.scss */
+/* line 34, base/_base.scss */
 .empty-space-20 {
   padding-bottom: 20px;
 }
 
-/* line 37, base/_base.scss */
+/* line 38, base/_base.scss */
 .empty-space-80 {
   padding-bottom: 80px;
 }
 @media (max-width: 767px) {
-  /* line 37, base/_base.scss */
+  /* line 38, base/_base.scss */
   .empty-space-80 {
     padding-bottom: 20px;
   }
 }
 
-/* line 44, base/_base.scss */
+/* line 45, base/_base.scss */
 hr {
   border-color: #f2f2f2;
 }
 
-/* line 48, base/_base.scss */
+/* line 49, base/_base.scss */
 header {
   position: fixed;
   top: 0;
@@ -3442,25 +3443,25 @@ header {
   padding: 10px 0;
 }
 @media (max-width: 767px) {
-  /* line 48, base/_base.scss */
+  /* line 49, base/_base.scss */
   header {
     min-height: 50px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px 0;
   }
 }
-/* line 62, base/_base.scss */
+/* line 63, base/_base.scss */
 header.open .menu {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
 
-/* line 67, base/_base.scss */
+/* line 68, base/_base.scss */
 table {
   width: 100%;
 }
-/* line 69, base/_base.scss */
+/* line 70, base/_base.scss */
 table th {
   padding: 10px;
   font-weight: 400;
@@ -3468,21 +3469,21 @@ table th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 76, base/_base.scss */
+/* line 77, base/_base.scss */
 table td {
   vertical-align: top;
   padding: 10px;
 }
-/* line 80, base/_base.scss */
+/* line 81, base/_base.scss */
 table tr {
   border-bottom: 1px solid #ddd;
 }
-/* line 82, base/_base.scss */
+/* line 83, base/_base.scss */
 table tr:last-child {
   border: 0;
 }
 @media (max-width: 767px) {
-  /* line 87, base/_base.scss */
+  /* line 88, base/_base.scss */
   table.cart-table {
     display: inline-block;
     white-space: nowrap;
@@ -3490,25 +3491,25 @@ table tr:last-child {
     overflow-x: scroll;
   }
 }
-/* line 94, base/_base.scss */
+/* line 95, base/_base.scss */
 table.cart-table td {
   vertical-align: middle;
 }
-/* line 98, base/_base.scss */
+/* line 99, base/_base.scss */
 table.cart-table img {
   width: 50px;
 }
-/* line 102, base/_base.scss */
+/* line 103, base/_base.scss */
 table.cart-table .cart-qty--large .cart-qty__btn {
   padding: 4px 7px;
 }
-/* line 106, base/_base.scss */
+/* line 107, base/_base.scss */
 table.cart-table .cart-qty--large .cart-qty__input {
   width: 35px;
   padding: 4px 0;
 }
 
-/* line 113, base/_base.scss */
+/* line 114, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3516,7 +3517,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 113, base/_base.scss */
+  /* line 114, base/_base.scss */
   .menu {
     float: none;
     position: fixed;
@@ -3538,7 +3539,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   }
 }
 
-/* line 132, base/_base.scss */
+/* line 133, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
@@ -3546,7 +3547,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 132, base/_base.scss */
+  /* line 133, base/_base.scss */
   .menu__item {
     line-height: normal;
     display: table;
@@ -3554,7 +3555,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   }
 }
 
-/* line 144, base/_base.scss */
+/* line 145, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3564,52 +3565,52 @@ table.cart-table .cart-qty--large .cart-qty__input {
   text-transform: uppercase;
   position: relative;
 }
-/* line 152, base/_base.scss */
+/* line 153, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
   color: #777;
 }
-/* line 156, base/_base.scss */
+/* line 157, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
   text-decoration: none;
   color: #333;
 }
-/* line 162, base/_base.scss */
+/* line 163, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
   color: #777;
 }
 
-/* line 169, base/_base.scss */
+/* line 170, base/_base.scss */
 .logo-link {
   display: block;
 }
 
-/* line 172, base/_base.scss */
+/* line 173, base/_base.scss */
 .logo-image {
   height: 90px;
   width: auto;
 }
 
 @media (max-width: 767px) {
-  /* line 177, base/_base.scss */
+  /* line 178, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 181, base/_base.scss */
+  /* line 182, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
     height: 50px;
   }
 }
-/* line 188, base/_base.scss */
+/* line 189, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 192, base/_base.scss */
+/* line 193, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3625,13 +3626,13 @@ table.cart-table .cart-qty--large .cart-qty__input {
   transition: width .2s ease;
 }
 
-/* line 206, base/_base.scss */
+/* line 207, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 212, base/_base.scss */
+/* line 213, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3644,47 +3645,47 @@ table.cart-table .cart-qty--large .cart-qty__input {
   text-align: right;
 }
 
-/* line 223, base/_base.scss */
+/* line 224, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 229, base/_base.scss */
+/* line 230, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 235, base/_base.scss */
+/* line 236, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 235, base/_base.scss */
+  /* line 236, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 242, base/_base.scss */
+/* line 243, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 242, base/_base.scss */
+  /* line 243, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 249, base/_base.scss */
+/* line 250, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 253, base/_base.scss */
+/* line 254, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3693,12 +3694,12 @@ table.cart-table .cart-qty--large .cart-qty__input {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 259, base/_base.scss */
+/* line 260, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 264, base/_base.scss */
+/* line 265, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3708,7 +3709,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   display: inline-block;
 }
 
-/* line 273, base/_base.scss */
+/* line 274, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3717,12 +3718,12 @@ table.cart-table .cart-qty--large .cart-qty__input {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 279, base/_base.scss */
+/* line 280, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 285, base/_base.scss */
+/* line 286, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3731,27 +3732,27 @@ table.cart-table .cart-qty--large .cart-qty__input {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 285, base/_base.scss */
+  /* line 286, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 297, base/_base.scss */
+/* line 298, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 303, base/_base.scss */
+/* line 304, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 308, base/_base.scss */
+/* line 309, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3760,7 +3761,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   left: 10px;
 }
 
-/* line 316, base/_base.scss */
+/* line 317, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3768,40 +3769,18 @@ table.cart-table .cart-qty--large .cart-qty__input {
   text-transform: uppercase;
 }
 
-/* line 324, base/_base.scss */
-#pArea {
-  padding: 50px 0;
-  background-color: #ddd;
-}
-/* line 327, base/_base.scss */
-#pArea .account-item {
-  background-color: #fff;
-  padding: 20px;
-  height: 100%;
-}
-/* line 332, base/_base.scss */
-#pArea .account-item h2 {
-  margin: 0;
-}
-@media (max-width: 767px) {
-  /* line 336, base/_base.scss */
-  #pArea [data-mh="account-item"] {
-    margin-bottom: 15px;
-  }
-}
-
-/* line 343, base/_base.scss */
+/* line 325, base/_base.scss */
 textarea {
   resize: vertical;
 }
 
 /* esta class serve para dar uma linha em volta do item que queremos, neste caso uso nas imagens */
-/* line 347, base/_base.scss */
+/* line 329, base/_base.scss */
 .bordered-image {
   position: relative;
 }
 
-/* line 350, base/_base.scss */
+/* line 332, base/_base.scss */
 .bordered-image::before {
   content: '';
   width: 100%;
@@ -3815,7 +3794,7 @@ textarea {
   z-index: -1;
 }
 @media (max-width: 767px) {
-  /* line 350, base/_base.scss */
+  /* line 332, base/_base.scss */
   .bordered-image::before {
     display: none;
   }
@@ -3832,6 +3811,8 @@ textarea {
   font-weight: 700;
   font-size: 14px;
   display: inline-block;
+  background: transparent;
+  border: 1px solid #c9c9c9;
 }
 @media (max-width: 767px) {
   /* line 1, modules/_buttons.scss */
@@ -3839,54 +3820,58 @@ textarea {
     font-size: 12px;
   }
 }
-/* line 14, modules/_buttons.scss */
+/* line 16, modules/_buttons.scss */
+.btn:hover {
+  background: #f2f2f2;
+}
+/* line 20, modules/_buttons.scss */
 .btn:hover, .btn:visited, .btn:focus, .btn:active {
   text-decoration: none;
 }
 
-/* line 21, modules/_buttons.scss */
+/* line 28, modules/_buttons.scss */
 .btn-default {
   border: 1px solid #c9c9c9;
   color: #c9c9c9;
   background-color: #fff;
 }
-/* line 25, modules/_buttons.scss */
+/* line 32, modules/_buttons.scss */
 .btn-default:hover {
   border-color: #c9c9c9;
   color: #fff;
   background-color: #c9c9c9;
 }
-/* line 30, modules/_buttons.scss */
+/* line 37, modules/_buttons.scss */
 .btn-default:active, .btn-default:focus, .btn-default:visited {
   color: #c9c9c9;
 }
-/* line 33, modules/_buttons.scss */
+/* line 40, modules/_buttons.scss */
 .btn-default:active:hover, .btn-default:focus:hover, .btn-default:visited:hover {
   color: #fff;
 }
 
-/* line 38, modules/_buttons.scss */
+/* line 45, modules/_buttons.scss */
 .btn-primary {
   border: 1px solid #232323;
   background-color: #232323;
   color: #fff;
 }
-/* line 42, modules/_buttons.scss */
+/* line 49, modules/_buttons.scss */
 .btn-primary:hover {
   border-color: #232323;
-  background-color: #fff;
+  background-color: transparent;
   color: #232323;
 }
-/* line 47, modules/_buttons.scss */
+/* line 54, modules/_buttons.scss */
 .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
   color: #fff;
 }
-/* line 50, modules/_buttons.scss */
+/* line 57, modules/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:focus:hover, .btn-primary:visited:hover {
   color: #232323;
 }
 
-/* line 55, modules/_buttons.scss */
+/* line 62, modules/_buttons.scss */
 .btn-viewmore {
   display: table;
   text-align: center;
@@ -3895,13 +3880,13 @@ textarea {
   font-size: 22px;
 }
 
-/* line 63, modules/_buttons.scss */
+/* line 70, modules/_buttons.scss */
 .btn-viewmore i {
   color: #333;
   font-size: 35px;
 }
 
-/* line 68, modules/_buttons.scss */
+/* line 75, modules/_buttons.scss */
 .btn-menu {
   position: absolute;
   top: 50%;
@@ -3914,13 +3899,13 @@ textarea {
   height: 50px;
   outline-color: transparent;
 }
-/* line 79, modules/_buttons.scss */
+/* line 86, modules/_buttons.scss */
 .btn-menu.active {
   /* general style to iconbar items */
   /* hidding the second icon bar on button */
   /* changing position of icon bar items */
 }
-/* line 81, modules/_buttons.scss */
+/* line 88, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:before {
   position: absolute;
   top: 50%;
@@ -3929,26 +3914,26 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 89, modules/_buttons.scss */
+/* line 96, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:nth-child(2):before {
   opacity: 0;
   visibility: hidden;
 }
-/* line 91, modules/_buttons.scss */
+/* line 98, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:first-child:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-/* line 94, modules/_buttons.scss */
+/* line 101, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:last-child:before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-/* line 98, modules/_buttons.scss */
+/* line 105, modules/_buttons.scss */
 .btn-menu > .icon-bar {
   position: relative;
 }
-/* line 100, modules/_buttons.scss */
+/* line 107, modules/_buttons.scss */
 .btn-menu > .icon-bar:before {
   content: '';
   width: 30px;
@@ -4342,41 +4327,61 @@ textarea {
 }
 
 /* line 107, modules/_cart.scss */
+.side-cart__item a {
+  color: #272727;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* line 111, modules/_cart.scss */
+.side-cart__item a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+/* line 117, modules/_cart.scss */
 .cart-item__value {
   float: right;
 }
+@media (max-width: 767px) {
+  /* line 117, modules/_cart.scss */
+  .cart-item__value {
+    float: none;
+    margin-top: 10px;
+    display: block;
+  }
+}
 
-/* line 111, modules/_cart.scss */
+/* line 126, modules/_cart.scss */
 .cart-qty--large {
   margin: 0;
 }
 
-/* line 115, modules/_cart.scss */
+/* line 130, modules/_cart.scss */
 .cart-qty--large > * {
   margin-right: -1px;
 }
 
-/* line 119, modules/_cart.scss */
+/* line 134, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn,
 .cart-qty--large .cart-qty__input {
   font-size: 18px;
   font-weight: 500;
 }
 
-/* line 125, modules/_cart.scss */
+/* line 140, modules/_cart.scss */
 .cart-qty--large .cart-qty__input {
   width: 60px;
   border: 1px solid #333;
   padding: 7px 0;
 }
 @media (max-width: 991px) {
-  /* line 125, modules/_cart.scss */
+  /* line 140, modules/_cart.scss */
   .cart-qty--large .cart-qty__input {
     width: 40px;
   }
 }
 
-/* line 135, modules/_cart.scss */
+/* line 149, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn {
   border: 1px solid #333;
   background-color: #fff;
@@ -4384,32 +4389,32 @@ textarea {
   transition: all .2s ease-in-out;
   padding: 7px 20px;
 }
-/* line 140, modules/_cart.scss */
+/* line 154, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn:hover {
   background-color: #333;
   color: #fff;
 }
 @media (max-width: 991px) {
-  /* line 135, modules/_cart.scss */
+  /* line 149, modules/_cart.scss */
   .cart-qty--large .cart-qty__btn {
     padding: 7px 10px;
   }
 }
 
-/* line 149, modules/_cart.scss */
+/* line 163, modules/_cart.scss */
 .qty-less {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-/* line 154, modules/_cart.scss */
+/* line 168, modules/_cart.scss */
 .qty-plus {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 /* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
-/* line 161, modules/_cart.scss */
+/* line 175, modules/_cart.scss */
 .cart-shopping span {
   display: none;
   background-color: #f74545;
@@ -4436,21 +4441,21 @@ textarea {
 }
 
 /* se tiver a class has-items o numero de items ir├í aparecer */
-/* line 182, modules/_cart.scss */
+/* line 196, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 186, modules/_cart.scss */
+/* line 200, modules/_cart.scss */
 .side-cart__total {
   position: relative;
   display: block;
   width: 100%;
 }
 
-/* line 192, modules/_cart.scss */
+/* line 206, modules/_cart.scss */
 .side-cart__total-total {
   float: left;
   font-weight: 700;
@@ -4459,7 +4464,7 @@ textarea {
   color: #333;
 }
 
-/* line 200, modules/_cart.scss */
+/* line 214, modules/_cart.scss */
 .side-cart__total-value {
   float: right;
   font-size: 16px;
@@ -4467,22 +4472,22 @@ textarea {
   color: #333;
 }
 
-/* line 207, modules/_cart.scss */
+/* line 221, modules/_cart.scss */
 .side-cart__buttons {
   margin: 30px 0 0;
   position: relative;
 }
 
-/* line 212, modules/_cart.scss */
+/* line 226, modules/_cart.scss */
 .side-cart__buttons .btn {
   float: left;
 }
-/* line 214, modules/_cart.scss */
+/* line 228, modules/_cart.scss */
 .side-cart__buttons .btn:last-child {
   float: right;
 }
 
-/* line 219, modules/_cart.scss */
+/* line 233, modules/_cart.scss */
 .side-cart__del {
   border: 1px solid #333;
   padding: 2px 4px;
@@ -4498,7 +4503,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 233, modules/_cart.scss */
+/* line 246, modules/_cart.scss */
 .side-cart__del:hover {
   text-decoration: none;
   background-color: #333;
@@ -4781,16 +4786,12 @@ textarea {
 }
 
 /* line 27, modules/_form.scss */
-.form-field--radio label {
-  padding-left: 36px;
-}
-/* line 30, modules/_form.scss */
 .form-field--radio small {
   margin-left: 10px;
   font-size: 11px;
 }
 @media (max-width: 767px) {
-  /* line 30, modules/_form.scss */
+  /* line 27, modules/_form.scss */
   .form-field--radio small {
     display: block;
     margin: 0;
@@ -5024,4 +5025,119 @@ footer small {
 /* line 22, layout/_checkout.scss */
 .checkout-cart-footer {
   background-color: #f2f2f2;
+}
+
+/* line 1, layout/_account.scss */
+#pArea {
+  padding: 50px 0;
+  background-color: #ddd;
+}
+/* line 4, layout/_account.scss */
+#pArea .account-item {
+  background-color: #fff;
+  padding: 20px;
+  height: 100%;
+}
+/* line 9, layout/_account.scss */
+#pArea .account-item h2 {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  /* line 13, layout/_account.scss */
+  #pArea [data-mh="account-item"] {
+    margin-bottom: 15px;
+  }
+}
+/* line 17, layout/_account.scss */
+#pArea .btn-login {
+  position: absolute;
+  bottom: 20px;
+  right: 35px;
+}
+@media (max-width: 767px) {
+  /* line 17, layout/_account.scss */
+  #pArea .btn-login {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1, layout/_account.scss */
+  #pArea {
+    padding: 30px 0;
+  }
+  /* line 30, layout/_account.scss */
+  #pArea .btn-remove-account {
+    margin: 0 0 15px;
+  }
+  /* line 33, layout/_account.scss */
+  #pArea .btn-target {
+    float: none;
+  }
+}
+
+/* line 39, layout/_account.scss */
+.account-info {
+  position: relative;
+  /* list of user info - the info defined by the user*/
+}
+/* line 42, layout/_account.scss */
+.account-info ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 47, layout/_account.scss */
+.account-info ul > li {
+  margin: 15px 0;
+  display: block;
+}
+
+/* line 53, layout/_account.scss */
+.personal-data {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+  display: none;
+}
+
+/* line 64, layout/_account.scss */
+.personal-data__body {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 767px) {
+  /* line 64, layout/_account.scss */
+  .personal-data__body {
+    width: 97%;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 79, layout/_account.scss */
+  .personal-data__body .btn-default {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 85, layout/_account.scss */
+  .personal-data__body .btn-primary {
+    float: left;
+  }
 }

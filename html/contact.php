@@ -42,13 +42,13 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-field">
-                                        <label for="firstname_contact">Primeiro Nome</label>
+                                        <label for="firstname_contact">Primeiro Nome*</label>
                                         <input type="text" class="required form-control" name="firstname_contact" id="firstname_contact">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-field">
-                                        <label for="lastname_contact">Último Nome</label>
+                                        <label for="lastname_contact">Último Nome*</label>
                                         <input type="text" class="required form-control" name="lastname_contact" id="lastname_contact">
                                     </div>
                                 </div>
@@ -56,30 +56,34 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="form-field">
-                                        <label for="email_contact">E-mail</label>
+                                        <label for="email_contact">E-mail*</label>
                                         <input type="email" class="required-email form-control" name="email_contact" id="email_contact">
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-field">
-                                        <label for="message_contact">Mensagem</label>
+                                        <label for="message_contact">Mensagem*</label>
                                         <textarea class="required form-control" name="message_contact" id="message_contact"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <small>
-                                Dou consentimento para tratamento dos meus dados pessoais constantes da candidatura a empresas do universo do Cantinho Criativo,
-                                incluindo o registo e conservação em base digital, pelo tempo necessário, autorizando a transmissão
-                                desses dados a qualquer sociedade do referido grupo. A Golden Assets compromete-se a, em
-                                qualquer momento, alterar ou eliminar da sua base de dados os referidos dados pessoais, a
-                                pedido do interessado
+                                A informação que vai enviar será guardada e processada através de email apenas com o propósito de nos contactar. Os dados
+                                que irá submeter vão ser utilizados por outros departamentos da
+                                <strong>Cantinho Criativo</strong>. A
+                                <strong>Cantinho Criativo</strong> irá tratar a sua informação pessoal com toda a confidencialidade
+                                e segurança de acordo com o estabelecido nos regulamentos de proteção de dados. Poderá retirar
+                                o seu consentimento de utilização dos dados, solicitar a sua correção ou pedir a sua eliminação
+                                em qualquer altura. Para tal deverá entrar em contacto connosco através do seguinte endereço
+                                de email:
+                                <strong>info@cantinhocriativo.pt</strong>
                             </small>
                             <br>
                             <br>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-field">
-                                        
+
                                         <label for="terms">
                                             <input type="checkbox" id="terms" name="terms" class="fleft">
                                             <small>Aceito os

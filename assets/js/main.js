@@ -4,9 +4,9 @@ $(document).ready(function () {
 	cartActions();
 	updateCartItems();
 	showMore("[data-mh='product-item']", ".view-more", 12);
-	if($(window).width() > 768){
+	if ($(window).width() > 768) {
 		showMoreText(".text-ellipses", 550);
-	}else{
+	} else {
 		showMoreText(".text-ellipses", 250);
 	}
 	showMoreText(".float-bar h3", 30);
@@ -142,6 +142,21 @@ $(document).ready(function () {
 		}, 800);
 	});
 
+	$(".btn-target").click(function () {
+		var target = $(this).attr("data-target");
+		$(target).fadeIn(400, function () {
+			$(this).show();
+		});
+		return false;
+	});
+
+	$(".btn-close").click(function () {
+		var target = $(this).attr("data-target");
+		$(target).fadeOut(400, function () {
+			$(this).hide();
+		});
+		return false;
+	});
 
 });
 
@@ -157,7 +172,7 @@ $(window).resize(function () {
 		$('.ZoomContainer').remove();
 
 		showMoreText(".text-ellipses", 250);
-		
+
 	} else {
 		// desktop
 		$(".menu").removeAttr("style");
@@ -206,7 +221,7 @@ function main() {
 // função para me devolver o numero de items adicionados ao carrinho
 function updateCartItems() {
 	var list_items = $(".side-cart__list li").length;
-	
+
 	if (list_items > 0) {
 		$(".cart-shopping").addClass("has-items");
 		$(".cart-shopping span").html(list_items);
@@ -254,7 +269,7 @@ function cartActions() {
 
 	// para remover os items do carrinho
 	$(".side-cart__del:not(.side-cart__del-tr)").click(function () {
-		$(this).parent().parent().fadeOut(300, function(){
+		$(this).parent().parent().fadeOut(300, function () {
 			$(this).remove();
 			updateCartItems();
 		});
@@ -262,7 +277,7 @@ function cartActions() {
 	})
 
 	$(".side-cart__del-tr").click(function () {
-		$(this).closest("tr").fadeOut(300, function(){
+		$(this).closest("tr").fadeOut(300, function () {
 			$(this).remove();
 			updateCartItems();
 		});

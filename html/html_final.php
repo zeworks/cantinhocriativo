@@ -6,7 +6,7 @@
 	<ul class="side-cart__list">
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
-			<a href="#linkProduct" title="Product Link">Product Name</a>
+			<a href="product.php" title="Product Link">Product Name</a>
 			<div class="clearfix"></div>
 			<form action="" method="post" class="cart-qty clearfix">
 				<button class="cart-qty__btn qty-less" type="button">-</button>
@@ -18,7 +18,7 @@
 		</li>
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
-			<a href="#linkProduct" title="Product Link">Product Name</a>
+			<a href="product.php" title="Product Link">Product Name</a>
 			<div class="clearfix"></div>
 			<form action="" method="post" class="cart-qty clearfix">
 				<button class="cart-qty__btn qty-less" type="button">-</button>
@@ -30,7 +30,7 @@
 		</li>
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
-			<a href="#linkProduct" title="Product Link">Product Name</a>
+			<a href="product.php" title="Product Link">Product Name</a>
 			<div class="clearfix"></div>
 			<form action="" method="post" class="cart-qty clearfix">
 				<button class="cart-qty__btn qty-less" type="button">-</button>
@@ -43,7 +43,7 @@
 
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
-			<a href="#linkProduct" title="Product Link">Product Name</a>
+			<a href="product.php" title="Product Link">Product Name</a>
 			<div class="clearfix"></div>
 			<form action="" method="post" class="cart-qty clearfix">
 				<button class="cart-qty__btn qty-less" type="button">-</button>
