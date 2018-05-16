@@ -13,6 +13,10 @@ $(document).ready(function () {
 	$('.matchheight').matchHeight();
 	tabsSystem();
 	sliders();
+	productActions();
+	if ($(".product-available__items").length > 0) {
+		availableColorProducts();
+	}
 	// Forms validation
 	initValidation();
 
@@ -158,6 +162,8 @@ $(document).ready(function () {
 		return false;
 	});
 
+
+
 });
 
 $(window).resize(function () {
@@ -193,6 +199,9 @@ function main() {
 
 	$("main").css({
 		"margin-top": $("header").outerHeight(),
+		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
+	});
+	$("#pArea").css({
 		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
 	});
 	if ($(window).width() < 768) {
@@ -365,4 +374,35 @@ var sliders = () => {
 
 var addToCart = () => {
 
+}
+// contem todas as accoes no produto, clicks, etc..
+var productActions = () => {
+	$(".available__items .item").click(function () {
+		// color
+		var colorItem = $(this).attr("data-color");
+
+		// toggle item selected
+		if ($(this).hasClass("item-active")) {
+			$(".available__items .item").removeClass("item-active");
+			$(this).removeClass("item-active");
+			// empty -> removes color from input
+			$("#color_available").val('');
+		} else {
+			$(".available__items .item").removeClass("item-active");
+			$(this).addClass("item-active");
+			// add color to input
+			$("#color_available").val(colorItem);
+		}
+
+	});
+}
+
+var availableColorProducts = () => {
+	// definir a cor para produto que existem opcao de cores
+	$(".available__items .item").each(function () {
+		var color = $(this).attr("data-color");
+		$(this).css({
+			"background-color": color
+		});
+	});
 }

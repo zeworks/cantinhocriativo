@@ -93,6 +93,21 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus
                         doloribus soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum
                         et enim repudiandae?</p>
+                    <div class="product-available__items">
+                        <h4>Cores disponivéis</h4>
+                        <input type="hidden" id="color_available">
+                        <div class="available__items">
+                            <button type="button" class="item" data-color="black"></button>
+                            <button type="button" class="item" data-color="red"></button>
+                            <button type="button" class="item" data-color="#555"></button>
+                            <button type="button" class="item" data-color="#f2f2f2"></button>
+                            <button type="button" class="item" data-color="#999"></button>
+                            <button type="button" class="item" data-color="#333"></button>
+                            <button type="button" class="item" data-color="#DDD"></button>
+                            <button type="button" class="item" data-color="#555"></button>
+                            <button type="button" class="item" data-color="#f2f2f2"></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="product-detail__price">
                     <span class="price">10€</span>
@@ -109,7 +124,6 @@
                         <button class="cart-qty__btn qty-plus" type="button">+</button>
                     </form>
                     <button type="submit" class="btn btn-primary buy-item fleft">Adicionar ao carrinho</button>
-
                 </div>
             </div>
         </div>

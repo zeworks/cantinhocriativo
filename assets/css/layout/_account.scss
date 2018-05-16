@@ -76,14 +76,6 @@
     }
 }
 
-.personal-data__body .btn-default {
-    @include max-xs {
-        float: right;
-    }
-}
-
-.personal-data__body .btn-primary {
-    @include max-xs {
-        float: left;
-    }
+.account-tabs-body {
+    position: relative;
 }

@@ -13,7 +13,6 @@
 
 .tabs__head {
     position: relative;
-    padding: 10px 0;
     border-bottom: 1px solid #ddd;
     @include max-xs {
         padding: 10px;
@@ -54,6 +53,8 @@
     font-size: 17px;
     font-weight: 400;
     color: $head-title;
+    padding: 10px 0;
+    display: inline-block;
     &:hover {
         color: $menu-link-textColor;
         text-decoration: none;
@@ -72,16 +73,12 @@
     /* mobile */
     @include max-xs {
         display: none;
+        padding: 0;
         &.selected {
             display: block;
             font-weight: 700;
         }
     }
-
-    &.selected {
-        // font-weight: 700;
-    }
-    
 }
 
 // esconder os items das tabs
@@ -101,4 +98,10 @@
 .tabs__body_item ul {
     margin: 0;
     padding: 0 20px;
+}
+
+/* TABS ACCOUNT PAGE */
+
+.tabs--account .tabs__head{
+    border-color: #333;
 }

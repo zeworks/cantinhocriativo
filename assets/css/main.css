@@ -4636,7 +4636,6 @@ textarea {
 /* line 14, modules/_tabs.scss */
 .tabs__head {
   position: relative;
-  padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
 @media (max-width: 767px) {
@@ -4645,17 +4644,17 @@ textarea {
     padding: 10px;
     border: 1px solid #ddd;
   }
-  /* line 22, modules/_tabs.scss */
+  /* line 21, modules/_tabs.scss */
   .tabs__head.open > .tabs__btn {
     display: block;
     margin: 0 0 5px 0;
   }
-  /* line 26, modules/_tabs.scss */
+  /* line 25, modules/_tabs.scss */
   .tabs__head.open > .caret-down {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
-  /* line 30, modules/_tabs.scss */
+  /* line 29, modules/_tabs.scss */
   .tabs__head .caret-down {
     position: absolute;
     top: 15px;
@@ -4667,7 +4666,7 @@ textarea {
   }
 }
 
-/* line 39, modules/_tabs.scss */
+/* line 38, modules/_tabs.scss */
 .tabs__head .item-selected {
   position: absolute;
   bottom: 0;
@@ -4681,66 +4680,75 @@ textarea {
   transition: transform .2s ease-in, -webkit-transform .2s ease-in;
 }
 @media (max-width: 767px) {
-  /* line 39, modules/_tabs.scss */
+  /* line 38, modules/_tabs.scss */
   .tabs__head .item-selected {
     display: none;
   }
 }
 
-/* line 52, modules/_tabs.scss */
+/* line 51, modules/_tabs.scss */
 .tabs__btn {
   margin: 0 40px 0 0;
   font-size: 17px;
   font-weight: 400;
   color: #232323;
+  padding: 10px 0;
+  display: inline-block;
   /* mobile */
 }
-/* line 57, modules/_tabs.scss */
+/* line 58, modules/_tabs.scss */
 .tabs__btn:hover {
   color: #333;
   text-decoration: none;
 }
-/* line 61, modules/_tabs.scss */
+/* line 62, modules/_tabs.scss */
 .tabs__btn:active, .tabs__btn:visited, .tabs__btn:focus {
   color: #232323;
   text-decoration: none;
 }
-/* line 67, modules/_tabs.scss */
+/* line 68, modules/_tabs.scss */
 .tabs__btn:active:hover, .tabs__btn:visited:hover, .tabs__btn:focus:hover {
   color: #333;
 }
 @media (max-width: 767px) {
-  /* line 52, modules/_tabs.scss */
+  /* line 51, modules/_tabs.scss */
   .tabs__btn {
     display: none;
+    padding: 0;
   }
-  /* line 75, modules/_tabs.scss */
+  /* line 77, modules/_tabs.scss */
   .tabs__btn.selected {
     display: block;
     font-weight: 700;
   }
 }
 
-/* line 88, modules/_tabs.scss */
+/* line 85, modules/_tabs.scss */
 .tabs__body_item {
   display: none;
   padding: 20px 0;
 }
-/* line 91, modules/_tabs.scss */
+/* line 88, modules/_tabs.scss */
 .tabs__body_item:first-child {
   display: block;
 }
 
-/* line 96, modules/_tabs.scss */
+/* line 93, modules/_tabs.scss */
 .tabs__body_item h4 {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 101, modules/_tabs.scss */
+/* line 98, modules/_tabs.scss */
 .tabs__body_item ul {
   margin: 0;
   padding: 0 20px;
+}
+
+/* TABS ACCOUNT PAGE */
+/* line 105, modules/_tabs.scss */
+.tabs--account .tabs__head {
+  border-color: #333;
 }
 
 /* line 1, modules/_form.scss */
@@ -4945,12 +4953,12 @@ footer small {
   }
 }
 
-/* line 72, layout/_product.scss */
+/* line 73, layout/_product.scss */
 .product-carousel-thumbs {
   margin: 3px 0;
 }
 
-/* line 75, layout/_product.scss */
+/* line 77, layout/_product.scss */
 .product-carousel-thumbs > a {
   display: inline-block;
   margin: 0;
@@ -4958,13 +4966,13 @@ footer small {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
-/* line 81, layout/_product.scss */
+/* line 82, layout/_product.scss */
 .product-carousel-thumbs > a:hover {
   opacity: 1;
 }
 
 /* FLOAT BAR */
-/* line 85, layout/_product.scss */
+/* line 89, layout/_product.scss */
 .float-bar {
   background-color: #f2f2f2;
   padding: 10px 0;
@@ -4977,16 +4985,63 @@ footer small {
   vertical-align: middle;
 }
 
-/* line 96, layout/_product.scss */
+/* line 101, layout/_product.scss */
 .float-bar .buy-item {
   float: right;
 }
 
-/* line 99, layout/_product.scss */
+/* line 105, layout/_product.scss */
 .float-bar h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 23px;
+}
+
+/* product available items */
+/* line 113, layout/_product.scss */
+.product-available__items {
+  position: relative;
+  margin: 20px 0;
+}
+/* line 117, layout/_product.scss */
+.product-available__items .item {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 4px solid transparent;
+  outline-color: transparent;
+  margin: 5px;
+}
+/* line 125, layout/_product.scss */
+.product-available__items .item.item-active {
+  border-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(51, 51, 51, 0.2);
+          box-shadow: 0px 0px 10px 2px rgba(51, 51, 51, 0.2);
+}
+
+/* cart styles to color product */
+/* line 133, layout/_product.scss */
+.side-cart__item .product-available__items {
+  margin: 0;
+  display: inline-block;
+  float: right;
+}
+/* line 138, layout/_product.scss */
+.side-cart__item .product-available__items .available__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 142, layout/_product.scss */
+.side-cart__item .product-available__items .item {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  margin: 0 0 0 5px;
 }
 
 /* line 1, layout/_checkout.scss */
@@ -5119,16 +5174,7 @@ footer small {
   }
 }
 
-@media (max-width: 767px) {
-  /* line 79, layout/_account.scss */
-  .personal-data__body .btn-default {
-    float: right;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 85, layout/_account.scss */
-  .personal-data__body .btn-primary {
-    float: left;
-  }
+/* line 79, layout/_account.scss */
+.account-tabs-body {
+  position: relative;
 }

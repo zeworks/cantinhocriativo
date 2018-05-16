@@ -15,16 +15,13 @@
                             <div class="empty-space-80"></div>
                             <table class="cart-table" style="width: 100%;" cellspacing="0" cellpadding="0">
                                 <tr>
-                                    <th width="100"></th>
                                     <th>Produto</th>
                                     <th>Preço</th>
                                     <th>Quantidade</th>
                                     <th>Total</th>
+                                    <th width="100"></th>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <a href="#" class="side-cart__del side-cart__del-tr">eliminar</a>
-                                    </td>
                                     <td>
                                         <div class="row">
 
@@ -43,15 +40,14 @@
                                             <button class="cart-qty__btn qty-less" type="button">-</button>
                                             <input type="text" name="cart_quant" class="cart-qty__input">
                                             <button class="cart-qty__btn qty-plus" type="button">+</button>
-
                                         </div>
                                     </td>
                                     <td>100€</td>
-                                </tr>
-                                <tr>
                                     <td>
                                         <a href="#" class="side-cart__del side-cart__del-tr">eliminar</a>
                                     </td>
+                                </tr>
+                                <tr>
                                     <td>
                                         <div class="row">
 
@@ -70,10 +66,12 @@
                                             <button class="cart-qty__btn qty-less" type="button">-</button>
                                             <input type="text" name="cart_quant" class="cart-qty__input">
                                             <button class="cart-qty__btn qty-plus" type="button">+</button>
-
                                         </div>
                                     </td>
                                     <td>100€</td>
+                                    <td>
+                                        <a href="#" class="side-cart__del side-cart__del-tr">eliminar</a>
+                                    </td>
                                 </tr>
                             </table>
                             <div class="empty-space-20"></div>

@@ -18,6 +18,10 @@
                                 <label for="account_password_sign">Senha*</label>
                                 <input type="password" name="account_password" id="account_password_sign" class="form-control required">
                             </div>
+                            <div class="form-message">
+                                <small class="fleft">* email ou senha incorretos</small>
+                                <br>
+                            </div>
                             <a href="#forgotPassword" class="fright">Esqueceu a senha?</a>
                             <button type="submit" class="btn btn-primary fright btn-login">Entrar</button>
                         </form>
