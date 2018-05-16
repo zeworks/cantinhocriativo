@@ -3821,73 +3821,81 @@ textarea {
     font-size: 12px;
   }
 }
-/* line 16, modules/_buttons.scss */
+/* line 14, modules/_buttons.scss */
 .btn:hover {
   background: #f2f2f2;
 }
-/* line 20, modules/_buttons.scss */
+/* line 17, modules/_buttons.scss */
 .btn:hover, .btn:visited, .btn:focus, .btn:active {
   text-decoration: none;
 }
 
-/* line 28, modules/_buttons.scss */
+/* line 25, modules/_buttons.scss */
 .btn-default {
   border: 1px solid #c9c9c9;
   color: #c9c9c9;
   background-color: transparent;
 }
-/* line 32, modules/_buttons.scss */
+/* line 29, modules/_buttons.scss */
 .btn-default:hover {
   border-color: #c9c9c9;
   color: #fff;
   background-color: #c9c9c9;
 }
-/* line 37, modules/_buttons.scss */
+/* line 34, modules/_buttons.scss */
 .btn-default:active, .btn-default:focus, .btn-default:visited {
   color: #c9c9c9;
 }
-/* line 40, modules/_buttons.scss */
+/* line 39, modules/_buttons.scss */
 .btn-default:active:hover, .btn-default:focus:hover, .btn-default:visited:hover {
   color: #fff;
 }
 
-/* line 45, modules/_buttons.scss */
+/* line 46, modules/_buttons.scss */
 .btn-primary {
   border: 1px solid #232323;
   background-color: #232323;
   color: #fff;
 }
-/* line 49, modules/_buttons.scss */
+/* line 50, modules/_buttons.scss */
 .btn-primary:hover {
   border-color: #232323;
   background-color: transparent;
   color: #232323;
 }
-/* line 54, modules/_buttons.scss */
+/* line 55, modules/_buttons.scss */
 .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
   color: #fff;
 }
-/* line 57, modules/_buttons.scss */
+/* line 60, modules/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:focus:hover, .btn-primary:visited:hover {
   color: #232323;
 }
 
-/* line 62, modules/_buttons.scss */
+/* line 67, modules/_buttons.scss */
 .btn-viewmore {
   display: table;
   text-align: center;
   padding: 20px;
   margin: 0 auto;
   font-size: 22px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+}
+/* line 77, modules/_buttons.scss */
+.btn-viewmore:hover {
+  border-color: #f2f2f2;
+  background-color: transparent;
 }
 
-/* line 70, modules/_buttons.scss */
+/* line 83, modules/_buttons.scss */
 .btn-viewmore i {
   color: #333;
   font-size: 35px;
 }
 
-/* line 75, modules/_buttons.scss */
+/* line 88, modules/_buttons.scss */
 .btn-menu {
   position: absolute;
   top: 50%;
@@ -3900,13 +3908,13 @@ textarea {
   height: 50px;
   outline-color: transparent;
 }
-/* line 86, modules/_buttons.scss */
+/* line 98, modules/_buttons.scss */
 .btn-menu.active {
   /* general style to iconbar items */
   /* hidding the second icon bar on button */
   /* changing position of icon bar items */
 }
-/* line 88, modules/_buttons.scss */
+/* line 100, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:before {
   position: absolute;
   top: 50%;
@@ -3915,26 +3923,26 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 96, modules/_buttons.scss */
+/* line 108, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:nth-child(2):before {
   opacity: 0;
   visibility: hidden;
 }
-/* line 98, modules/_buttons.scss */
+/* line 113, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:first-child:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-/* line 101, modules/_buttons.scss */
+/* line 116, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:last-child:before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-/* line 105, modules/_buttons.scss */
+/* line 120, modules/_buttons.scss */
 .btn-menu > .icon-bar {
   position: relative;
 }
-/* line 107, modules/_buttons.scss */
+/* line 123, modules/_buttons.scss */
 .btn-menu > .icon-bar:before {
   content: '';
   width: 30px;
