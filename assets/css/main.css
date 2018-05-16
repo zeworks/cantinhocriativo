@@ -4021,24 +4021,27 @@ textarea {
 
 @media (max-width: 991px) {
   /* line 57, modules/_cookies.scss */
+  .cookies-bar {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* line 63, modules/_cookies.scss */
   .cookies-bar-inner {
     padding: 10px;
   }
 
-  /* line 60, modules/_cookies.scss */
+  /* line 66, modules/_cookies.scss */
   .cookies-bar-message {
     height: auto;
+    line-height: normal;
   }
 
-  /* line 63, modules/_cookies.scss */
+  /* line 70, modules/_cookies.scss */
   .cookies-bar-buttons {
-    float: left;
-    clear: both;
-  }
-
-  /* line 67, modules/_cookies.scss */
-  .cookies-bar-know-more {
-    padding-left: 0;
+    margin-top: 10px;
   }
 }
 /* Barra cookies END */
@@ -4322,7 +4325,7 @@ textarea {
 }
 /* line 111, modules/_cart.scss */
 .side-cart__item a:hover {
-  color: #555;
+  color: #fff;
   text-decoration: none;
 }
 

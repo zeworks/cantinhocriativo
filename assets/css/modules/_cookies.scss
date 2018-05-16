@@ -54,18 +54,21 @@
 }
 
 @include max-sm {
+	.cookies-bar {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		border-radius: 0;
+	}
 	.cookies-bar-inner {
 		padding: 10px;
 	}
 	.cookies-bar-message {
 		height: auto;
+		line-height: normal;
 	}
 	.cookies-bar-buttons {
-		float: left;
-		clear: both;
-	}
-	.cookies-bar-know-more {
-		padding-left: 0;
+		margin-top: 10px;
 	}
 }
 
