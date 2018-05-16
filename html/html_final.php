@@ -104,15 +104,14 @@
 </footer>
 <!-- Cookies -->
 <div class="cookies-bar">
-	<div class="container">
-		<div class="cookies-bar-inner">
-			<div class="cookies-bar-message">Os cookies ajudam-nos a oferecer os nossos serviços. Ao utilizar os nossos serviços, concorda com a nossa utilização de
-				cookies.
-			</div>
-			<div class="cookies-bar-buttons">
-				<a href="" rel="nofollow" class="cookies-bar-know-more" title="" target="_blank">Saiba mais</a>
-				<a href="" rel="nofollow" class="cookies-bar-accept" title="" id="removecookie">Aceito</a>
-			</div>
+	<div class="cookies-bar-inner clearfix">
+		<h4>Política de Cookies</h4>
+		<div class="cookies-bar-message">Os cookies ajudam-nos a oferecer os nossos serviços. Ao utilizar os nossos serviços, concorda com a nossa utilização de
+			cookies.
+		</div>
+		<div class="cookies-bar-buttons">
+			<a href="" rel="nofollow" class="cookies-bar-know-more btn btn-default" title="" target="_blank">Saiba mais</a>
+			<a href="" rel="nofollow" class="cookies-bar-accept btn btn-primary" title="" id="removecookie">Aceito</a>
 		</div>
 	</div>
 </div>

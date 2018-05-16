@@ -5,6 +5,7 @@
 /* ===== COLORS ===== */
 /* ===== FONTS ===== */
 /* ===== BOOTSTRAP EXTRAS ===== */
+/* COOKIES */
 /* MENU */
 /* footer */
 /* headers and paragraphs */
@@ -3833,7 +3834,7 @@ textarea {
 .btn-default {
   border: 1px solid #c9c9c9;
   color: #c9c9c9;
-  background-color: #fff;
+  background-color: transparent;
 }
 /* line 32, modules/_buttons.scss */
 .btn-default:hover {
@@ -3948,107 +3949,86 @@ textarea {
 }
 
 /* Barra cookies */
-/* line 2, modules/_cookies.scss */
+/* line 3, modules/_cookies.scss */
 .cookies-bar {
   display: none;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  bottom: 30px;
+  left: 30px;
   right: 0;
   z-index: 99999;
-  background-color: black;
+  background-color: #f2f2f2;
+  width: 400px;
+  -webkit-box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
 }
-/* line 11, modules/_cookies.scss */
+/* line 14, modules/_cookies.scss */
 .cookies-bar * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 16, modules/_cookies.scss */
+/* line 19, modules/_cookies.scss */
 .cookies-bar-inner {
-  padding: 20px 0;
-  width: 100%;
+  padding: 20px;
   display: block;
-  float: left;
 }
 
-/* line 23, modules/_cookies.scss */
+/* line 24, modules/_cookies.scss */
 .cookies-bar-message {
   display: block;
   width: auto;
-  height: 26px;
-  float: left;
-  color: #fff;
-  font-size: 12px;
+  color: #333;
+  font-size: 14px;
   line-height: 26px;
 }
 
-/* line 33, modules/_cookies.scss */
+/* line 32, modules/_cookies.scss */
 .cookies-bar-buttons {
   display: block;
   float: right;
 }
 
-/* line 38, modules/_cookies.scss */
+/* line 37, modules/_cookies.scss */
 .cookies-bar-know-more {
   display: block;
   width: auto;
-  height: 26px;
-  padding: 0 20px;
   float: left;
-  color: #9a9a9a;
-  font-size: 12px;
-  line-height: 26px;
-  text-decoration: underline;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 50, modules/_cookies.scss */
-.cookies-bar-know-more:hover {
-  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  padding: 5px 10px;
 }
 
-/* line 55, modules/_cookies.scss */
+/* line 47, modules/_cookies.scss */
 .cookies-bar-accept {
-  display: block;
-  width: auto;
-  height: 26px;
-  padding: 0 16px;
-  float: left;
-  border: 1px solid #9a9a9a;
-  color: #9a9a9a;
+  display: inline-block;
+  margin-left: 10px;
   font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s, color 0.2s;
-  transition: background-color 0.2s, color 0.2s;
-}
-/* line 69, modules/_cookies.scss */
-.cookies-bar-accept:hover {
-  border-color: white;
-  color: white;
-  text-decoration: none;
+  font-weight: 500;
+  text-transform: none;
+  padding: 5px 10px;
 }
 
 @media (max-width: 991px) {
-  /* line 77, modules/_cookies.scss */
+  /* line 57, modules/_cookies.scss */
   .cookies-bar-inner {
     padding: 10px;
   }
 
-  /* line 81, modules/_cookies.scss */
+  /* line 60, modules/_cookies.scss */
   .cookies-bar-message {
     height: auto;
   }
 
-  /* line 85, modules/_cookies.scss */
+  /* line 63, modules/_cookies.scss */
   .cookies-bar-buttons {
     float: left;
     clear: both;
   }
 
-  /* line 90, modules/_cookies.scss */
+  /* line 67, modules/_cookies.scss */
   .cookies-bar-know-more {
     padding-left: 0;
   }

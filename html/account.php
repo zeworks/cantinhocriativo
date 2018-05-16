@@ -8,7 +8,7 @@
                         <h1>Minha Conta</h1>
                     </div>
                     <div class="col-sm-6" data-mh="my-group">
-                        <button class="btn btn-remove-account fright">Remover conta</button>
+                        <button class="btn btn-remove-account fright">Fechar conta</button>
                     </div>
                 </div>
                 <div class="row matchheight">

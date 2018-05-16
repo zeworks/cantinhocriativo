@@ -82,6 +82,13 @@ $bootstrap-modals: 0;
 $bootstrap-tooltip: 0;
 $bootstrap-popovers: 0;
 $bootstrap-carousel: 0;
+
+/* COOKIES */
+$cookies-bgColor: #f2f2f2;
+$cookies-textColor: #333;
+$cookies-fontSize: 14px;
+
+
 /* MENU */
 
 $header-backgroundColor: #fff;
@@ -100,7 +107,7 @@ $head-title: #232323;
 
 $btnDefault-border: 1px solid;
 $btnDefault-borderColor: #c9c9c9;
-$btnDefault-bgColor: #fff;
+$btnDefault-bgColor: transparent;
 $btnDefault-textColor: #c9c9c9;
 /* buttons DEFAULT - hover */
 

@@ -1,94 +1,72 @@
 /* Barra cookies */
+
 .cookies-bar {
-    display:none;
-	position:fixed;
-	bottom:0;
-    left:0;
-	right:0;
-	z-index:99999;
-	background-color: black;
-	
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	right: 0;
+	z-index: 99999;
+	background-color: $cookies-bgColor;
+	width: 400px;
+	box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, .2);
+	border-radius: 7px;
 	* {
-		box-sizing:border-box;
+		box-sizing: border-box;
 	}
 }
 
 .cookies-bar-inner {
-    padding:20px 0;
-	width:100%;
-	display:block;
-	float:left;
+	padding: 20px;
+	display: block;
 }
 
 .cookies-bar-message {
 	display: block;
 	width: auto;
-	height: 26px;
-	float:left;
-    color: #fff;
-	font-size: 12px;
+	color: $cookies-textColor;
+	font-size: $cookies-fontSize;
 	line-height: 26px;
 }
 
 .cookies-bar-buttons {
-    display:block;
-	float:right;
+	display: block;
+	float: right;
 }
 
 .cookies-bar-know-more {
 	display: block;
 	width: auto;
-	height: 26px;
-	padding: 0 20px;
 	float: left;
-    color: #9a9a9a;
-	font-size: 12px;
-	line-height: 26px;
-	text-decoration: underline;
-	transition: color 0.2s ease;
-
-	&:hover {
-		color: white;
-	}
+	font-size: $cookies-fontSize;
+	font-weight: 500;
+	text-transform: none;
+	padding: 5px 10px;
 }
 
 .cookies-bar-accept {
-	display: block;
-	width: auto;
-	height: 26px;
-	padding: 0 16px;
-	float: left;
-    border: 1px solid #9a9a9a;
-	color: #9a9a9a;
-	font-size: 14px;
-	line-height: 26px;
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: background-color 0.2s, color 0.2s;
-
-	&:hover {
-		border-color: white;
-		color: white;
-		text-decoration: none;
-	}
+	display: inline-block;
+	margin-left: 10px;
+	font-size: $cookies-fontSize;
+	font-weight: 500;
+	text-transform: none;
+	padding: 5px 10px;
 }
 
 @include max-sm {
-    .cookies-bar-inner{
-        padding:10px;
+	.cookies-bar-inner {
+		padding: 10px;
 	}
-	
-     .cookies-bar-message{
-        height: auto;
+	.cookies-bar-message {
+		height: auto;
 	}
-	
-    .cookies-bar-buttons{
-        float:left;
-		clear:both;
+	.cookies-bar-buttons {
+		float: left;
+		clear: both;
 	}
-	
-    .cookies-bar-know-more{
-        padding-left:0;
-    }
+	.cookies-bar-know-more {
+		padding-left: 0;
+	}
 }
+
 /* Barra cookies END */
