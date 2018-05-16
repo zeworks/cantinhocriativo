@@ -22,6 +22,7 @@
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
+		
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
 			<a href="product.php" title="Product Link">Product Name</a>
