@@ -116,6 +116,7 @@
 
 .cart-item__value {
     float: right;
+    font-weight: bold;
     @include max-xs {
         float: none;
         margin-top: 10px;

@@ -9,7 +9,7 @@
 			<a href="product.php" title="Product Link">Product Name</a>
 			<div class="product-available__items">
 				<div class="available__items">
-					<strong>cor:</strong>	
+					Cor:
 					<span class="item" data-color="black"></span>
 				</div>
 			</div>
@@ -22,14 +22,14 @@
 			</form>
 			<span class="cart-item__value">100€</span>
 		</li>
-		
+
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
 			<a href="product.php" title="Product Link">Product Name</a>
 			<div class="product-available__items">
 				<div class="available__items">
-					<strong>cor:</strong>	
-					<span class="item" data-color="red"></span>
+					Cor:
+					<span class="item" data-color="black"></span>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -44,9 +44,11 @@
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
 			<a href="product.php" title="Product Link">Product Name</a>
-			<div class="side-cart__item-att">
-				Cor:
-				<strong>Roxo</strong>
+			<div class="product-available__items">
+				<div class="available__items">
+					Cor:
+					<span class="item" data-color="black"></span>
+				</div>
 			</div>
 			<div class="clearfix"></div>
 			<form action="" method="post" class="cart-qty clearfix">
@@ -60,9 +62,11 @@
 		<li class="side-cart__item">
 			<img src="https://dummyimage.com/50x50/ddd/000" alt="">
 			<a href="product.php" title="Product Link">Product Name</a>
-			<div class="side-cart__item-att">
-				Cor:
-				<strong>Lilás</strong>
+			<div class="product-available__items">
+				<div class="available__items">
+					Cor:
+					<span class="item" data-color="red"></span>
+				</div>
 			</div>
 			<div class="clearfix"></div>
 			<form action="" method="post" class="cart-qty clearfix">

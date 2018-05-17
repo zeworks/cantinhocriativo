@@ -4332,6 +4332,7 @@ textarea {
 /* line 117, modules/_cart.scss */
 .cart-item__value {
   float: right;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   /* line 117, modules/_cart.scss */
@@ -4342,37 +4343,37 @@ textarea {
   }
 }
 
-/* line 126, modules/_cart.scss */
+/* line 127, modules/_cart.scss */
 .cart-qty--large {
   margin: 0;
 }
 
-/* line 130, modules/_cart.scss */
+/* line 131, modules/_cart.scss */
 .cart-qty--large > * {
   margin-right: -1px;
 }
 
-/* line 134, modules/_cart.scss */
+/* line 135, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn,
 .cart-qty--large .cart-qty__input {
   font-size: 18px;
   font-weight: 500;
 }
 
-/* line 140, modules/_cart.scss */
+/* line 141, modules/_cart.scss */
 .cart-qty--large .cart-qty__input {
   width: 60px;
   border: 1px solid #333;
   padding: 7px 0;
 }
 @media (max-width: 991px) {
-  /* line 140, modules/_cart.scss */
+  /* line 141, modules/_cart.scss */
   .cart-qty--large .cart-qty__input {
     width: 40px;
   }
 }
 
-/* line 149, modules/_cart.scss */
+/* line 150, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn {
   border: 1px solid #333;
   background-color: #fff;
@@ -4380,32 +4381,32 @@ textarea {
   transition: all .2s ease-in-out;
   padding: 7px 20px;
 }
-/* line 154, modules/_cart.scss */
+/* line 155, modules/_cart.scss */
 .cart-qty--large .cart-qty__btn:hover {
   background-color: #333;
   color: #fff;
 }
 @media (max-width: 991px) {
-  /* line 149, modules/_cart.scss */
+  /* line 150, modules/_cart.scss */
   .cart-qty--large .cart-qty__btn {
     padding: 7px 10px;
   }
 }
 
-/* line 163, modules/_cart.scss */
+/* line 164, modules/_cart.scss */
 .qty-less {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-/* line 168, modules/_cart.scss */
+/* line 169, modules/_cart.scss */
 .qty-plus {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 /* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
-/* line 175, modules/_cart.scss */
+/* line 176, modules/_cart.scss */
 .cart-shopping span {
   display: none;
   background-color: #f74545;
@@ -4432,21 +4433,21 @@ textarea {
 }
 
 /* se tiver a class has-items o numero de items ir├í aparecer */
-/* line 196, modules/_cart.scss */
+/* line 197, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* line 200, modules/_cart.scss */
+/* line 201, modules/_cart.scss */
 .side-cart__total {
   position: relative;
   display: block;
   width: 100%;
 }
 
-/* line 206, modules/_cart.scss */
+/* line 207, modules/_cart.scss */
 .side-cart__total-total {
   float: left;
   font-weight: 700;
@@ -4455,7 +4456,7 @@ textarea {
   color: #333;
 }
 
-/* line 214, modules/_cart.scss */
+/* line 215, modules/_cart.scss */
 .side-cart__total-value {
   float: right;
   font-size: 16px;
@@ -4463,22 +4464,22 @@ textarea {
   color: #333;
 }
 
-/* line 221, modules/_cart.scss */
+/* line 222, modules/_cart.scss */
 .side-cart__buttons {
   margin: 30px 0 0;
   position: relative;
 }
 
-/* line 226, modules/_cart.scss */
+/* line 227, modules/_cart.scss */
 .side-cart__buttons .btn {
   float: left;
 }
-/* line 228, modules/_cart.scss */
+/* line 229, modules/_cart.scss */
 .side-cart__buttons .btn:last-child {
   float: right;
 }
 
-/* line 233, modules/_cart.scss */
+/* line 234, modules/_cart.scss */
 .side-cart__del {
   border: 1px solid #333;
   padding: 2px 4px;
@@ -4494,7 +4495,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 246, modules/_cart.scss */
+/* line 247, modules/_cart.scss */
 .side-cart__del:hover {
   text-decoration: none;
   background-color: #333;
@@ -5022,13 +5023,12 @@ footer small {
 
 /* cart styles to color product */
 /* line 133, layout/_product.scss */
-.side-cart__item .product-available__items {
+.side-cart__item .product-available__items, .cart-table .product-available__items {
   margin: 0;
-  display: inline-block;
-  float: right;
+  display: block;
 }
-/* line 138, layout/_product.scss */
-.side-cart__item .product-available__items .available__items {
+/* line 136, layout/_product.scss */
+.side-cart__item .product-available__items .available__items, .cart-table .product-available__items .available__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5036,12 +5036,18 @@ footer small {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 142, layout/_product.scss */
-.side-cart__item .product-available__items .item {
-  width: 20px;
-  height: 20px;
+/* line 140, layout/_product.scss */
+.side-cart__item .product-available__items .item, .cart-table .product-available__items .item {
+  width: 10px;
+  height: 10px;
   border-radius: 0;
   margin: 0 0 0 5px;
+}
+/* line 145, layout/_product.scss */
+.side-cart__item .product-available__items .item.item-active, .cart-table .product-available__items .item.item-active {
+  border-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(51, 51, 51, 0);
+          box-shadow: 0px 0px 0px 0px rgba(51, 51, 51, 0);
 }
 
 /* line 1, layout/_checkout.scss */

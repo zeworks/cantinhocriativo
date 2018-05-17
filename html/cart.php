@@ -19,13 +19,20 @@
                         <tr>
                             <td>
                                 <div class="row">
-                                    
+
                                     <div class="col-md-2">
                                         <img class="img-responsive" src="https://dummyimage.com/90x90/f2f2f2/000" alt="">
                                     </div>
                                     <div class="col-md-9">
                                         <h4>Nome do produto</h4>
                                         <small>ref: 29123</small>
+                                        <br><br>
+                                        <div class="product-available__items">
+                                            <div class="available__items">
+                                                Cor:
+                                                <span class="item" data-color="black"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
@@ -38,18 +45,27 @@
                                 </div>
                             </td>
                             <td>100€</td>
-                            <td><a href="#" class="side-cart__del side-cart__del-tr">eliminar</a></td>
+                            <td>
+                                <a href="#" class="side-cart__del side-cart__del-tr">eliminar</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>
                                 <div class="row">
-                                    
+
                                     <div class="col-md-2">
                                         <img class="img-responsive" src="https://dummyimage.com/90x90/f2f2f2/000" alt="">
                                     </div>
                                     <div class="col-md-9">
                                         <h4>Nome do produto</h4>
                                         <small>ref: 29123</small>
+                                        <br><br>
+                                        <div class="product-available__items">
+                                            <div class="available__items">
+                                                Cor:
+                                                <span class="item" data-color="red"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
@@ -62,7 +78,9 @@
                                 </div>
                             </td>
                             <td>100€</td>
-                            <td><a href="#" class="side-cart__del side-cart__del-tr">eliminar</a></td>
+                            <td>
+                                <a href="#" class="side-cart__del side-cart__del-tr">eliminar</a>
+                            </td>
                         </tr>
                     </table>
                     <div class="empty-space-20"></div>

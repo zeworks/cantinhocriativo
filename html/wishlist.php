@@ -31,6 +31,14 @@
                                             <div class="col-md-9">
                                                 <h4>Nome do produto</h4>
                                                 <small>ref: 29123</small>
+                                                <br>
+                                                <br>
+                                                <div class="product-available__items">
+                                                    <div class="available__items">
+                                                        Cor:
+                                                        <span class="item" data-color="black"></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -57,6 +65,14 @@
                                             <div class="col-md-9">
                                                 <h4>Nome do produto</h4>
                                                 <small>ref: 29123</small>
+                                                <br>
+                                                <br>
+                                                <div class="product-available__items">
+                                                    <div class="available__items">
+                                                        Cor:
+                                                        <span class="item" data-color="red"></span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
