@@ -238,7 +238,7 @@
                 <h2 class="text-center">Produtos Relacionados</h2>
                 <div class="empty-space-80"></div>
                 <div class="row matchheight">
-                    <div class="col-md-3" data-mh="product-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                         <div class="product-card">
                             <a href="product.php" title="product title">
                                 <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -254,7 +254,7 @@
                             <button type="button" class="btn btn-primary buy-item">Comprar</button>
                         </div>
                     </div>
-                    <div class="col-md-3" data-mh="product-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                         <div class="product-card">
                             <a href="product.php" title="product title">
                                 <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -270,7 +270,7 @@
                             <button type="button" class="btn btn-primary buy-item">Comprar</button>
                         </div>
                     </div>
-                    <div class="col-md-3" data-mh="product-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                         <div class="product-card">
                             <a href="product.php" title="product title">
                                 <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
@@ -286,7 +286,7 @@
                             <button type="button" class="btn btn-primary buy-item">Comprar</button>
                         </div>
                     </div>
-                    <div class="col-md-3" data-mh="product-item">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                         <div class="product-card">
                             <a href="product.php" title="product title">
                                 <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
