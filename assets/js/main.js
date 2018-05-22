@@ -219,7 +219,7 @@ function main() {
 		// desktop
 
 		swiper_banner_size.css({
-			"min-height": $(window).height() / 2 + 100 - $("header").outerHeight()
+			"min-height": $(window).height() - 100 - $("header").outerHeight()
 		});
 		image_banner_size.css({
 			"min-height": $(window).height() / 2 + 100 - $("header").outerHeight()
@@ -299,7 +299,7 @@ var footerPosition = $("footer").offset().top - $("footer").outerHeight();
 var floatBar = () => {
 	var windowPosition = $(window).scrollTop();
 	var buyButtonPosition = $('.product-detail__buy').offset().top / 2;
-	var screenSize = window.matchMedia('(min-width: 768px)');
+	var screenSize = window.matchMedia('(min-width: 992px)');
 
 	if (screenSize.matches) {
 		if (windowPosition > buyButtonPosition && windowPosition < footerPosition) {
