@@ -101,7 +101,7 @@
                     </div>
                     <div class="hidden-xs hidden-sm col-md-offset-1 col-md-5">
                         <div class="text-center">
-                            <img src="../assets/img/occ_logoBIG.png" alt="O Cantinho Criativo Logotipo" class="img-responsive">
+                            <img src="../assets/img/LOGO_JUSTFORYOU.png" alt="O Cantinho Criativo Logotipo" class="img-responsive">
                         </div>
                     </div>
                 </div>

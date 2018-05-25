@@ -101,7 +101,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<!-- website logo -->
-				<img class="img-responsive" src="../assets/img/occ_logo.png" alt="">
+				<img class="img-responsive" src="../assets/img/LOGO_JUSTFORYOU.png" alt="">
 			</div>
 			<div class="col-sm-8">
 				<ul class="footer-list">

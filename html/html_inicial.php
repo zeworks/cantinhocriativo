@@ -61,7 +61,7 @@
 				<div class="col-sm-2 col-xs-6" data-mh="height-menu">
 					<!-- website logo -->
 					<a class="logo-link" href="../html/" title>
-						<img class="logo-image" src="../assets/img/occ_logoBIG.png" alt="">
+						<img class="logo-image" src="../assets/img/LOGO_JUSTFORYOU.png" alt="">
 					</a>
 				</div>
 				<div class="col-sm-10">
