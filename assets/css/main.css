@@ -3569,7 +3569,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
 /* line 153, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
-  color: #777;
+  color: #fb6e6a;
 }
 /* line 157, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
@@ -3578,7 +3578,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
 }
 /* line 163, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
-  color: #777;
+  color: #fb6e6a;
 }
 
 /* line 170, base/_base.scss */
@@ -3620,7 +3620,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
           transform: translateY(-50%);
   left: 10px;
   display: inline-block;
-  background-color: #777;
+  background-color: #fb6e6a;
   width: 0px;
   height: 2px;
   -webkit-transition: width .2s ease;
@@ -3786,7 +3786,7 @@ textarea {
   content: '';
   width: 100%;
   height: 100%;
-  border: 1px solid #333;
+  border: 2px solid #fb6e6a;
   position: absolute;
   top: 10px;
   bottom: auto;
@@ -3813,7 +3813,7 @@ textarea {
   font-size: 14px;
   display: inline-block;
   background: transparent;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #6a615d;
 }
 @media (max-width: 767px) {
   /* line 1, modules/_buttons.scss */
@@ -3832,19 +3832,19 @@ textarea {
 
 /* line 25, modules/_buttons.scss */
 .btn-default {
-  border: 1px solid #c9c9c9;
-  color: #c9c9c9;
+  border: 1px solid #6a615d;
+  color: #6a615d;
   background-color: transparent;
 }
 /* line 29, modules/_buttons.scss */
 .btn-default:hover {
-  border-color: #c9c9c9;
+  border-color: #6a615d;
   color: #fff;
-  background-color: #c9c9c9;
+  background-color: #6a615d;
 }
 /* line 34, modules/_buttons.scss */
 .btn-default:active, .btn-default:focus, .btn-default:visited {
-  color: #c9c9c9;
+  color: #6a615d;
 }
 /* line 39, modules/_buttons.scss */
 .btn-default:active:hover, .btn-default:focus:hover, .btn-default:visited:hover {
@@ -3853,15 +3853,15 @@ textarea {
 
 /* line 46, modules/_buttons.scss */
 .btn-primary {
-  border: 1px solid #232323;
-  background-color: #232323;
+  border: 1px solid #fb6e6a;
+  background-color: #fb6e6a;
   color: #fff;
 }
 /* line 50, modules/_buttons.scss */
 .btn-primary:hover {
-  border-color: #232323;
+  border-color: #fb6e6a;
   background-color: transparent;
-  color: #232323;
+  color: #fb6e6a;
 }
 /* line 55, modules/_buttons.scss */
 .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
@@ -3869,7 +3869,7 @@ textarea {
 }
 /* line 60, modules/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:focus:hover, .btn-primary:visited:hover {
-  color: #232323;
+  color: #fb6e6a;
 }
 
 /* line 67, modules/_buttons.scss */
@@ -3888,14 +3888,20 @@ textarea {
   border-color: #f2f2f2;
   background-color: transparent;
 }
-
-/* line 83, modules/_buttons.scss */
-.btn-viewmore i {
-  color: #333;
-  font-size: 35px;
+/* line 81, modules/_buttons.scss */
+.btn-viewmore:hover i {
+  color: #e2274a;
 }
 
-/* line 88, modules/_buttons.scss */
+/* line 87, modules/_buttons.scss */
+.btn-viewmore i {
+  color: #000;
+  font-size: 35px;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+/* line 93, modules/_buttons.scss */
 .btn-menu {
   position: absolute;
   top: 50%;
@@ -3908,13 +3914,13 @@ textarea {
   height: 50px;
   outline-color: transparent;
 }
-/* line 98, modules/_buttons.scss */
+/* line 103, modules/_buttons.scss */
 .btn-menu.active {
   /* general style to iconbar items */
   /* hidding the second icon bar on button */
   /* changing position of icon bar items */
 }
-/* line 100, modules/_buttons.scss */
+/* line 105, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:before {
   position: absolute;
   top: 50%;
@@ -3923,26 +3929,26 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 108, modules/_buttons.scss */
+/* line 113, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:nth-child(2):before {
   opacity: 0;
   visibility: hidden;
 }
-/* line 113, modules/_buttons.scss */
+/* line 118, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:first-child:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-/* line 116, modules/_buttons.scss */
+/* line 121, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:last-child:before {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-/* line 120, modules/_buttons.scss */
+/* line 125, modules/_buttons.scss */
 .btn-menu > .icon-bar {
   position: relative;
 }
-/* line 123, modules/_buttons.scss */
+/* line 128, modules/_buttons.scss */
 .btn-menu > .icon-bar:before {
   content: '';
   width: 30px;
@@ -4153,11 +4159,12 @@ textarea {
 
 /* line 86, modules/_sliders.scss */
 .wrapper-slide strong {
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 75px;
+  text-transform: uppercase;
+  line-height: normal;
 }
 
-/* line 91, modules/_sliders.scss */
+/* line 92, modules/_sliders.scss */
 .wrapper-slide p {
   font-size: 16px;
   font-weight: 100;
@@ -4165,13 +4172,13 @@ textarea {
 }
 
 /*  owl carousel */
-/* line 99, modules/_sliders.scss */
+/* line 100, modules/_sliders.scss */
 .owl-carousel:not(.product-carousel) .owl-dot span {
   background-color: transparent !important;
   border: 2px solid #333;
   opacity: .2;
 }
-/* line 104, modules/_sliders.scss */
+/* line 105, modules/_sliders.scss */
 .owl-carousel:not(.product-carousel) .owl-dot:hover span,
 .owl-carousel:not(.product-carousel) .owl-dot.active span {
   opacity: 1;
@@ -4800,7 +4807,7 @@ textarea {
 
 /* line 1, modules/_footer.scss */
 footer {
-  background-color: #232323;
+  background-color: #f6e0bd;
   padding: 30px 0;
   position: relative;
 }
@@ -4844,7 +4851,7 @@ footer {
 .footer-link {
   display: block;
   width: 100%;
-  color: #fff;
+  color: #000;
 }
 
 /* line 36, modules/_footer.scss */
@@ -4854,7 +4861,7 @@ footer img:first-child {
 
 /* line 40, modules/_footer.scss */
 footer small {
-  color: #fff;
+  color: #000;
 }
 
 /* line 2, modules/_testimonials.scss */

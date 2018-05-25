@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="image-bg" style="background-image: url(https://dummyimage.com/1920x900/ddd/fff)"></div>
+                <div class="image-bg" style="background-image: url(../assets/img/wallhome.jpg)"></div>
                 <div class="wrapper-slide">
                     <div class="container">
                         <div class="row">
@@ -64,7 +64,7 @@
                 <div class="col-sm-6 col-xs-12" data-mh="post-article">
                     <a href="#link" title="view more">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
+                            <img class="img-responsive" src="../assets/img/walltest.jpg" alt="">
                         </div>
                     </a>
                 </div>

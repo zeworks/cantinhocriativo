@@ -95,10 +95,10 @@ $header-backgroundColor: #fff;
 $navbarH: 80px;
 $navbarHM: 50px;
 $menu-link-textColor: #333;
-$menu-link-textColor-hover: #777;
+$menu-link-textColor-hover: #fb6e6a;
 /* footer */
 
-$footer-backgroundColor: #232323;
+$footer-backgroundColor: #f6e0bd;
 /* headers and paragraphs */
 
 $text-color: #333;
@@ -106,26 +106,25 @@ $head-title: #232323;
 /* buttons DEFAULT */
 
 $btnDefault-border: 1px solid;
-$btnDefault-borderColor: #c9c9c9;
+$btnDefault-borderColor: #6a615d;
 $btnDefault-bgColor: transparent;
-$btnDefault-textColor: #c9c9c9;
+$btnDefault-textColor: #6a615d;
 /* buttons DEFAULT - hover */
 
-$btnDefault-borderColor-hover: #c9c9c9;
-$btnDefault-bgColor-hover: #c9c9c9;
+$btnDefault-borderColor-hover: #6a615d;
+$btnDefault-bgColor-hover: #6a615d;
 $btnDefault-textColor-hover: #fff;
 /* button HIGHLIGHT */
 
 $btnHightlight-border: 1px solid;
-$btnHightlight-borderColor: #232323;
-$btnHightlight-bgColor: #232323;
-$btnHightlight-borderColor: #232323;
+$btnHightlight-borderColor: #fb6e6a;
+$btnHightlight-bgColor: #fb6e6a;
 $btnHightlight-textColor: #fff;
 /* button HIGHLIGHT - hover */
 
 $btnHightlight-bgColor-hover: transparent;
-$btnHightlight-borderColor-hover: #232323;
-$btnHightlight-textColor-hover: #232323;
+$btnHightlight-borderColor-hover: #fb6e6a;
+$btnHightlight-textColor-hover: #fb6e6a;
 /* sliders */
 
 $slider-text-color: #fff;
@@ -195,14 +194,14 @@ $testimonial-textTransform: none;
 /* FOOTER */
 $footer-padding: 30px 0;
 $footer-paddingMobile: 20px 0;
-$footer-linkColor: #fff;
+$footer-linkColor: #000;
 $footer-fontSize: 14px;
 $footer-itemPadding: 0;
 $footer-itemMargin: 3px 0;
 $footer-itemMarginMobile: 10px 0;
 
 /* IMAGES */
-$images-border: 1px solid #333;
+$images-border: 2px solid #fb6e6a;
 $images-borderWidth: 100%;
 $images-borderHeight: 100%;
 $images-borderPosition: absolute;

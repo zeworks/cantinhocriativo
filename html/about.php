@@ -55,7 +55,9 @@
                     soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
             </div>
             <div class="col-sm-6 col-md-offset-1">
-                <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                <div class="bordered-image">
+                    <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                </div>
             </div>
         </div>
         <div class="empty-space-80"></div>
@@ -72,7 +74,9 @@
                     soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
             </div>
             <div class="col-sm-6 col-md-offset-1 col-sm-pull-6">
-                <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                <div class="bordered-image">
+                    <img class="img-responsive" src="https://dummyimage.com/750x500/000/fff" alt="">
+                </div>
             </div>
         </div>
         <div class="empty-space-80"></div>
