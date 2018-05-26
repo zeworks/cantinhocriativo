@@ -443,9 +443,13 @@ function main() {
 		"margin-top": $("header").outerHeight(),
 		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
 	});
-	$("#pArea").css({
-		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
-	});
+
+	if ($("#pArea").length) {
+		$("#pArea").css({
+			"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
+		});
+	}
+
 	if ($(window).width() < 768) {
 		// mobile
 
@@ -461,7 +465,7 @@ function main() {
 		// desktop
 
 		swiper_banner_size.css({
-			"min-height": $(window).height() - 100 - $("header").outerHeight()
+			"min-height": $(window).height() - 110 - $("header").outerHeight()
 		});
 		image_banner_size.css({
 			"min-height": $(window).height() / 2 + 100 - $("header").outerHeight()
