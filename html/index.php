@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="image-bg" style="background-image: url(../assets/img/wallhome.jpg)"></div>
+                <div class="image-bg" style="background-image: url(../assets/img/cartoes-JFY.jpg)"></div>
                 <div class="wrapper-slide">
                     <div class="container">
                         <div class="row">
