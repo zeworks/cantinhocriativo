@@ -70,20 +70,19 @@
                             <small>
                                 A informação que vai enviar será guardada e processada através de email apenas com o propósito de nos contactar. Os dados
                                 que irá submeter vão ser utilizados por outros departamentos da
-                                <strong>Cantinho Criativo</strong>. A
-                                <strong>Cantinho Criativo</strong> irá tratar a sua informação pessoal com toda a confidencialidade
+                                <strong>Just For You</strong>. A
+                                <strong>Just For You</strong> irá tratar a sua informação pessoal com toda a confidencialidade
                                 e segurança de acordo com o estabelecido nos regulamentos de proteção de dados. Poderá retirar
                                 o seu consentimento de utilização dos dados, solicitar a sua correção ou pedir a sua eliminação
                                 em qualquer altura. Para tal deverá entrar em contacto connosco através do seguinte endereço
                                 de email:
-                                <strong>info@cantinhocriativo.pt</strong>
+                                <strong>info@justforyou.pt</strong>
                             </small>
                             <br>
                             <br>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-field">
-
                                         <label for="terms">
                                             <input type="checkbox" id="terms" name="terms" class="fleft">
                                             <small>Aceito os
@@ -91,7 +90,6 @@
                                             </small>
                                         </label>
                                     </div>
-
                                 </div>
                                 <div class="col-sm-6">
                                     <button type="submit" class="btn btn-primary fright">Enviar Mensagem</button>
