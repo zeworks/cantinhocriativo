@@ -3844,7 +3844,7 @@ textarea {
 
 /* ===== REUSABLE BLOCKS OF CODE ===== */
 /* line 1, modules/_buttons.scss */
-.btn {
+.btn, .swiper-container a {
   padding: 10px 20px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -3858,16 +3858,16 @@ textarea {
 }
 @media (max-width: 767px) {
   /* line 1, modules/_buttons.scss */
-  .btn {
+  .btn, .swiper-container a {
     font-size: 12px;
   }
 }
 /* line 14, modules/_buttons.scss */
-.btn:hover {
+.btn:hover, .swiper-container a:hover {
   background: #f2f2f2;
 }
 /* line 17, modules/_buttons.scss */
-.btn:hover, .btn:visited, .btn:focus, .btn:active {
+.btn:hover, .btn:visited, .btn:focus, .btn:active, .swiper-container a:hover, .swiper-container a:visited, .swiper-container a:focus, .swiper-container a:active {
   text-decoration: none;
 }
 
@@ -3893,23 +3893,23 @@ textarea {
 }
 
 /* line 46, modules/_buttons.scss */
-.btn-primary {
+.btn-primary, .swiper-container a {
   border: 1px solid #fb6e6a;
   background-color: #fb6e6a;
   color: #fff;
 }
 /* line 50, modules/_buttons.scss */
-.btn-primary:hover {
+.btn-primary:hover, .swiper-container a:hover {
   border-color: #fb6e6a;
   background-color: transparent;
   color: #fb6e6a;
 }
 /* line 55, modules/_buttons.scss */
-.btn-primary:active, .btn-primary:focus, .btn-primary:visited {
+.btn-primary:active, .btn-primary:focus, .btn-primary:visited, .swiper-container a:active, .swiper-container a:focus, .swiper-container a:visited {
   color: #fff;
 }
 /* line 60, modules/_buttons.scss */
-.btn-primary:active:hover, .btn-primary:focus:hover, .btn-primary:visited:hover {
+.btn-primary:active:hover, .btn-primary:focus:hover, .btn-primary:visited:hover, .swiper-container a:active:hover, .swiper-container a:focus:hover, .swiper-container a:visited:hover {
   color: #fb6e6a;
 }
 
@@ -4457,7 +4457,7 @@ textarea {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
 /* line 176, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4484,7 +4484,7 @@ textarea {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items ir├í aparecer */
+/* se tiver a class has-items o numero de items irá aparecer */
 /* line 197, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
