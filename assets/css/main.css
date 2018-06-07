@@ -3439,29 +3439,52 @@ header {
   z-index: 100;
   width: 100%;
   background-color: #fff;
-  min-height: 80px;
+  min-height: 87px;
   padding: 10px 0;
 }
 @media (max-width: 767px) {
   /* line 49, base/_base.scss */
   header {
-    min-height: 50px;
-    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 61px;
+    background-color: white;
     padding: 5px 0;
   }
 }
-/* line 63, base/_base.scss */
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  /* line 49, base/_base.scss */
+  header {
+    min-height: 80px;
+  }
+}
+/* line 66, base/_base.scss */
 header.open .menu {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
 }
 
-/* line 68, base/_base.scss */
+/* line 70, base/_base.scss */
+main {
+  margin-top: 117px;
+}
+@media (max-width: 767px) {
+  /* line 70, base/_base.scss */
+  main {
+    margin-top: 61px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  /* line 70, base/_base.scss */
+  main {
+    margin-top: 100px;
+  }
+}
+
+/* line 79, base/_base.scss */
 table {
   width: 100%;
 }
-/* line 70, base/_base.scss */
+/* line 81, base/_base.scss */
 table th {
   padding: 10px;
   font-weight: 400;
@@ -3469,21 +3492,21 @@ table th {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 77, base/_base.scss */
+/* line 88, base/_base.scss */
 table td {
   vertical-align: top;
   padding: 10px;
 }
-/* line 81, base/_base.scss */
+/* line 92, base/_base.scss */
 table tr {
   border-bottom: 1px solid #ddd;
 }
-/* line 83, base/_base.scss */
+/* line 94, base/_base.scss */
 table tr:last-child {
   border: 0;
 }
 @media (max-width: 767px) {
-  /* line 88, base/_base.scss */
+  /* line 99, base/_base.scss */
   table.cart-table {
     display: inline-block;
     white-space: nowrap;
@@ -3491,25 +3514,25 @@ table tr:last-child {
     overflow-x: scroll;
   }
 }
-/* line 95, base/_base.scss */
+/* line 106, base/_base.scss */
 table.cart-table td {
   vertical-align: middle;
 }
-/* line 99, base/_base.scss */
+/* line 110, base/_base.scss */
 table.cart-table img {
   width: 50px;
 }
-/* line 103, base/_base.scss */
+/* line 114, base/_base.scss */
 table.cart-table .cart-qty--large .cart-qty__btn {
   padding: 4px 7px;
 }
-/* line 107, base/_base.scss */
+/* line 118, base/_base.scss */
 table.cart-table .cart-qty--large .cart-qty__input {
   width: 35px;
   padding: 4px 0;
 }
 
-/* line 114, base/_base.scss */
+/* line 125, base/_base.scss */
 .menu {
   margin: 0;
   padding: 0;
@@ -3517,11 +3540,11 @@ table.cart-table .cart-qty--large .cart-qty__input {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 114, base/_base.scss */
+  /* line 125, base/_base.scss */
   .menu {
     float: none;
     position: fixed;
-    top: 50px;
+    top: 61px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -3539,23 +3562,29 @@ table.cart-table .cart-qty--large .cart-qty__input {
   }
 }
 
-/* line 133, base/_base.scss */
+/* line 144, base/_base.scss */
 .menu__item {
   vertical-align: middle;
   display: inline-block;
-  line-height: 80px;
+  line-height: 87px;
   margin: 0 2.5px;
 }
 @media (max-width: 767px) {
-  /* line 133, base/_base.scss */
+  /* line 144, base/_base.scss */
   .menu__item {
     line-height: normal;
     display: table;
     margin: 20px auto;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  /* line 144, base/_base.scss */
+  .menu__item {
+    line-height: 80px;
+  }
+}
 
-/* line 145, base/_base.scss */
+/* line 159, base/_base.scss */
 .menu__item__link {
   display: block;
   padding: 0 10px;
@@ -3565,52 +3594,65 @@ table.cart-table .cart-qty--large .cart-qty__input {
   text-transform: uppercase;
   position: relative;
 }
-/* line 153, base/_base.scss */
+/* line 167, base/_base.scss */
 .menu__item__link:hover {
   text-decoration: none;
   color: #fb6e6a;
 }
-/* line 157, base/_base.scss */
+/* line 171, base/_base.scss */
 .menu__item__link:active, .menu__item__link:focus, .menu__item__link:visited {
   text-decoration: none;
   color: #333;
 }
-/* line 163, base/_base.scss */
+/* line 177, base/_base.scss */
 .menu__item__link:active:hover, .menu__item__link:focus:hover, .menu__item__link:visited:hover {
   color: #fb6e6a;
 }
+@media (max-width: 767px) {
+  /* line 159, base/_base.scss */
+  .menu__item__link {
+    font-size: 19px;
+  }
+}
 
-/* line 170, base/_base.scss */
+/* line 188, base/_base.scss */
 .logo-link {
   display: block;
 }
 
-/* line 173, base/_base.scss */
+/* line 191, base/_base.scss */
 .logo-image {
-  height: 90px;
-  width: auto;
+  height: auto;
+  width: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  /* line 191, base/_base.scss */
+  .logo-image {
+    width: 80px;
+  }
 }
 
 @media (max-width: 767px) {
-  /* line 178, base/_base.scss */
+  /* line 199, base/_base.scss */
   .menu .menu__item__link--icon {
     display: none;
   }
 
   /* in mobile set the image logo responsive */
-  /* line 182, base/_base.scss */
+  /* line 203, base/_base.scss */
   .logo-image {
     display: block;
     max-width: 100%;
     height: 50px;
+    width: auto;
   }
 }
-/* line 189, base/_base.scss */
+/* line 211, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon):hover:after {
   width: 50%;
 }
 
-/* line 193, base/_base.scss */
+/* line 215, base/_base.scss */
 .menu__item__link:not(.menu__item__link--icon)::after {
   content: '';
   position: absolute;
@@ -3626,13 +3668,13 @@ table.cart-table .cart-qty--large .cart-qty__input {
   transition: width .2s ease;
 }
 
-/* line 207, base/_base.scss */
+/* line 229, base/_base.scss */
 .menu__item__link i {
   font-size: 16px;
 }
 
 /* menu mobile device */
-/* line 213, base/_base.scss */
+/* line 235, base/_base.scss */
 .menu--mobile {
   position: absolute;
   right: 60px;
@@ -3645,47 +3687,47 @@ table.cart-table .cart-qty--large .cart-qty__input {
   text-align: right;
 }
 
-/* line 224, base/_base.scss */
+/* line 246, base/_base.scss */
 .menu--mobile .menu__item {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 
-/* line 230, base/_base.scss */
+/* line 252, base/_base.scss */
 .menu--mobile .menu__item__link {
   padding: 0 7px;
 }
 
 /* menu mobile device ends */
-/* line 236, base/_base.scss */
+/* line 258, base/_base.scss */
 .fleft {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 236, base/_base.scss */
+  /* line 258, base/_base.scss */
   .fleft {
     float: none;
   }
 }
 
-/* line 243, base/_base.scss */
+/* line 265, base/_base.scss */
 .fright {
   float: right;
 }
 @media (max-width: 767px) {
-  /* line 243, base/_base.scss */
+  /* line 265, base/_base.scss */
   .fright {
     float: none;
   }
 }
 
-/* line 250, base/_base.scss */
+/* line 272, base/_base.scss */
 .share {
   margin: 20px 0;
 }
 
-/* line 254, base/_base.scss */
+/* line 276, base/_base.scss */
 .share-item {
   display: inline-block;
   font-size: 20px;
@@ -3694,12 +3736,12 @@ table.cart-table .cart-qty--large .cart-qty__input {
   transition: all .2s ease;
   margin: 0 25px 0 0;
 }
-/* line 260, base/_base.scss */
+/* line 282, base/_base.scss */
 .share-item:hover {
   color: #777;
 }
 
-/* line 265, base/_base.scss */
+/* line 287, base/_base.scss */
 .payment-methods,
 .payment-methods--cart,
 .way-delivery {
@@ -3709,7 +3751,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   display: inline-block;
 }
 
-/* line 274, base/_base.scss */
+/* line 296, base/_base.scss */
 .payment-methods--cart li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3718,12 +3760,12 @@ table.cart-table .cart-qty--large .cart-qty__input {
   margin: 0 0 10px 0;
   display: block;
 }
-/* line 280, base/_base.scss */
+/* line 302, base/_base.scss */
 .payment-methods--cart li:hover, .payment-methods--cart li.active {
   background-color: #f2f2f2;
 }
 
-/* line 286, base/_base.scss */
+/* line 308, base/_base.scss */
 .payment-methods li {
   padding: 10px 10px 10px 80px;
   position: relative;
@@ -3732,27 +3774,27 @@ table.cart-table .cart-qty--large .cart-qty__input {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 286, base/_base.scss */
+  /* line 308, base/_base.scss */
   .payment-methods li {
     width: 100%;
     float: none;
   }
 }
 
-/* line 298, base/_base.scss */
+/* line 320, base/_base.scss */
 .way-delivery li {
   padding: 10px 10px 10px 80px;
   position: relative;
   display: block;
 }
 
-/* line 304, base/_base.scss */
+/* line 326, base/_base.scss */
 .payment-methods--cart li label {
   width: 100%;
   display: inline-block;
 }
 
-/* line 309, base/_base.scss */
+/* line 331, base/_base.scss */
 .payment-methods--cart li img,
 .payment-methods li img,
 .way-delivery li img {
@@ -3761,7 +3803,7 @@ table.cart-table .cart-qty--large .cart-qty__input {
   left: 10px;
 }
 
-/* line 317, base/_base.scss */
+/* line 339, base/_base.scss */
 .payment-methods li p,
 .payment-methods--cart li p,
 .way-delivery li p {
@@ -3769,18 +3811,18 @@ table.cart-table .cart-qty--large .cart-qty__input {
   text-transform: uppercase;
 }
 
-/* line 325, base/_base.scss */
+/* line 347, base/_base.scss */
 textarea {
   resize: vertical;
 }
 
 /* esta class serve para dar uma linha em volta do item que queremos, neste caso uso nas imagens */
-/* line 329, base/_base.scss */
+/* line 351, base/_base.scss */
 .bordered-image {
   position: relative;
 }
 
-/* line 332, base/_base.scss */
+/* line 354, base/_base.scss */
 .bordered-image::before {
   content: '';
   width: 100%;
@@ -3794,7 +3836,7 @@ textarea {
   z-index: -1;
 }
 @media (max-width: 767px) {
-  /* line 332, base/_base.scss */
+  /* line 354, base/_base.scss */
   .bordered-image::before {
     display: none;
   }
@@ -3904,13 +3946,13 @@ textarea {
 .btn-menu {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: transparent;
   border: 0;
-  width: 50px;
-  height: 50px;
+  width: 61px;
+  height: 61px;
   outline-color: transparent;
 }
 /* line 103, modules/_buttons.scss */
@@ -3920,6 +3962,10 @@ textarea {
   /* changing position of icon bar items */
 }
 /* line 105, modules/_buttons.scss */
+.btn-menu.active > .icon-bar {
+  position: absolute;
+}
+/* line 108, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:before {
   position: absolute;
   top: 50%;
@@ -3928,26 +3974,26 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 113, modules/_buttons.scss */
+/* line 116, modules/_buttons.scss */
 .btn-menu.active > .icon-bar:nth-child(2):before {
   opacity: 0;
   visibility: hidden;
 }
-/* line 118, modules/_buttons.scss */
-.btn-menu.active > .icon-bar:first-child:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
 /* line 121, modules/_buttons.scss */
-.btn-menu.active > .icon-bar:last-child:before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+.btn-menu.active > .icon-bar:first-child:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
-/* line 125, modules/_buttons.scss */
+/* line 124, modules/_buttons.scss */
+.btn-menu.active > .icon-bar:last-child:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* line 128, modules/_buttons.scss */
 .btn-menu > .icon-bar {
   position: relative;
 }
-/* line 128, modules/_buttons.scss */
+/* line 131, modules/_buttons.scss */
 .btn-menu > .icon-bar:before {
   content: '';
   width: 30px;
@@ -4411,7 +4457,7 @@ textarea {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
 /* line 176, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4438,7 +4484,7 @@ textarea {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items irá aparecer */
+/* se tiver a class has-items o numero de items ir├í aparecer */
 /* line 197, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;

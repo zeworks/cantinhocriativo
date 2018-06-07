@@ -93,7 +93,7 @@
 .btn-menu {
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 0;
     transform: translateY(-50%);
     background-color: transparent;
     border: 0;
@@ -102,6 +102,9 @@
     outline-color: transparent;
     &.active {
         /* general style to iconbar items */
+        >.icon-bar{
+            position: absolute;
+        }
         >.icon-bar:before {
             position: absolute;
             top: 50%;
@@ -116,10 +119,10 @@
         }
         /* changing position of icon bar items */
         >.icon-bar:first-child:before {
-            transform: rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
         }
         >.icon-bar:last-child:before {
-            transform: rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
         }
     }
     >.icon-bar {

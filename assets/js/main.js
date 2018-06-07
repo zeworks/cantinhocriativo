@@ -171,18 +171,12 @@ $(window).resize(function () {
 
 	if ($(window).width() < 768) {
 		// mobile
-		$(".menu").css({
-			top: $("header").outerHeight()
-		});
-
 		$('.ZoomContainer').remove();
 
 		showMoreText(".text-ellipses", 250);
 
 	} else {
 		// desktop
-		$(".menu").removeAttr("style");
-
 		showMoreText(".text-ellipses", 550);
 	}
 });
@@ -198,7 +192,6 @@ function main() {
 	var swiper_banner_size = $(".swiper-container .image-bg");
 
 	$("main").css({
-		"margin-top": $("header").outerHeight(),
 		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
 	});
 
@@ -325,9 +318,6 @@ $(".payment-methods li").click(function () {
 $(".btn-menu").click(function () {
 	$(this).toggleClass("active");
 	$("header").toggleClass("open");
-	$(".menu").css({
-		top: $("header").outerHeight()
-	});
 });
 
 var tabsSystem = () => {
