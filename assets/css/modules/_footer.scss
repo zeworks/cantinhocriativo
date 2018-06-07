@@ -1,7 +1,6 @@
 footer {
     background-color: $footer-backgroundColor;
     padding: $footer-padding;
-    // z-index: 1000;
     position: relative;
     @include max-xs{
         padding: $footer-paddingMobile;
@@ -31,6 +30,23 @@ footer {
     display: block;
     width: 100%;
     color: $footer-linkColor;
+    font-size: $footer-fontSize;
+    &:hover{
+        color: $footer-linkColor-hover;
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+        color: $footer-linkColor;
+    }
+    &:active:hover,
+    &:focus:hover,
+    &:visited:hover {
+        color: $footer-linkColor-hover;
+    }
 }
 
 footer img:first-child{

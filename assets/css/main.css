@@ -4863,7 +4863,7 @@ footer {
   }
 }
 
-/* line 11, modules/_footer.scss */
+/* line 10, modules/_footer.scss */
 .footer-list {
   margin: 0;
   padding: 0;
@@ -4872,39 +4872,54 @@ footer {
           column-count: 2;
 }
 @media (max-width: 767px) {
-  /* line 11, modules/_footer.scss */
+  /* line 10, modules/_footer.scss */
   .footer-list {
     -webkit-column-count: 1;
             column-count: 1;
   }
 }
 
-/* line 21, modules/_footer.scss */
+/* line 20, modules/_footer.scss */
 .footer-item {
   position: relative;
   display: block;
   margin: 3px 0;
 }
 @media (max-width: 767px) {
-  /* line 21, modules/_footer.scss */
+  /* line 20, modules/_footer.scss */
   .footer-item {
     margin: 10px 0;
   }
 }
 
-/* line 30, modules/_footer.scss */
+/* line 29, modules/_footer.scss */
 .footer-link {
   display: block;
   width: 100%;
   color: #000;
+  font-size: 15px;
+}
+/* line 34, modules/_footer.scss */
+.footer-link:hover {
+  color: #fb6e6a;
+  text-decoration: none;
+}
+/* line 39, modules/_footer.scss */
+.footer-link:active, .footer-link:focus, .footer-link:visited {
+  text-decoration: none;
+  color: #000;
+}
+/* line 45, modules/_footer.scss */
+.footer-link:active:hover, .footer-link:focus:hover, .footer-link:visited:hover {
+  color: #fb6e6a;
 }
 
-/* line 36, modules/_footer.scss */
+/* line 52, modules/_footer.scss */
 footer img:first-child {
   height: 125px;
 }
 
-/* line 40, modules/_footer.scss */
+/* line 56, modules/_footer.scss */
 footer small {
   color: #000;
 }
