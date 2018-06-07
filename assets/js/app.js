@@ -434,7 +434,7 @@ function main() {
 	var swiper_banner_size = $(".swiper-container .image-bg");
 
 	$("main").css({
-		"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
+		"min-height": $(window).outerHeight() - $("footer").outerHeight()
 	});
 
 	if ($("#pArea").length) {
