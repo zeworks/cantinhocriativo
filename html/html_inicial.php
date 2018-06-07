@@ -41,7 +41,7 @@
 	<link rel="dns-prefetch" href="//connect.facebook.net">
 
 	<!-- Website icons -->
-	<link href="../assets/img/favicon.ico" rel="icon" sizes="192x192">
+	<link href="../assets/img/favicon-192x192.png" rel="icon" sizes="192x192">
 	<link href="../assets/img/favicon-180x180.png" rel="apple-touch-icon" sizes="180x180">
 
 	<!-- Font Awesome icons -->
