@@ -182,25 +182,28 @@ $(window).resize(function () {
 });
 
 $(window).scroll(function () {
+	
 	if ($(".float-bar").length) {
 		floatBar();
 	}
+
 });
 
 function main() {
 	var image_banner_size = $(".institutional-banner .image-bg");
 	var swiper_banner_size = $(".swiper-container .image-bg");
+	
 
 	$("main").css({
 		"min-height": $(window).outerHeight() - $("footer").outerHeight()
 	});
 
-	if($("#pArea").length){
+	if ($("#pArea").length) {
 		$("#pArea").css({
-			"min-height": $(window).outerHeight() - $("header").outerHeight() - $("footer").outerHeight()
+			"min-height": $(window).outerHeight()  - $("footer").outerHeight()
 		});
 	}
-	
+
 	if ($(window).width() < 768) {
 		// mobile
 
@@ -245,6 +248,8 @@ function cartActions() {
 	});
 	$(".side-cart").click(function (e) {
 		e.stopPropagation();
+		$(".btn-menu").removeClass("active");
+		$("header").removeClass("open");
 	});
 	// close SIDE CART
 	$("body,html").click(function (e) {
@@ -297,7 +302,7 @@ var floatBar = () => {
 	var windowPosition = $(window).scrollTop();
 	var buyButtonPosition = $('.product-detail__buy').offset().top / 2;
 	var screenSize = window.matchMedia('(min-width: 992px)');
-
+	// detalhe de produto
 	if (screenSize.matches) {
 		if (windowPosition > buyButtonPosition && windowPosition < footerPosition) {
 			$('.float-bar').slideDown();
@@ -307,6 +312,7 @@ var floatBar = () => {
 	} else {
 		$('.float-bar').slideUp();
 	}
+
 }
 
 // metodos de pagamento

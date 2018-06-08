@@ -24,9 +24,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="text-center">
-                    <h1>Termos e Condições</h1>
-                </div>
+                <h1>Termos e Condições</h1>
                 <p>Lorem ipsum dolor sit amet cons consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus
                     doloribus soluta incidunt voluptates et quae. Eligen ectetur adipisicing elit. Illo necessitatibus earum,
                     aut odit temporibus doloribus soluta incidunt voluptates et quae. Eligen v di quia ipsam aliquid tenetur

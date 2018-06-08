@@ -1,0 +1,45 @@
+.search-filter {
+    position: relative;
+    display: inline-block;
+    @include max-xs{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+.search-filter-field {
+    width: 100%;
+    @include min-sm {
+        width: 345px;
+    }
+}
+
+.search-filter-field input {
+    width: 100%;
+    padding: 0 36px 0 5px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    outline-color: transparent;
+    border: $btnHightlight-border $btnHightlight-borderColor;
+    color: #000;
+    font-style: italic;
+}
+
+.search-filter-field button {
+    position: relative;
+    z-index: 1;
+    float: right;
+    padding: 5px 10px;
+    background-color: $btnHightlight-bgColor;
+    color: $btnHightlight-textColor;
+    border: $btnHightlight-border $btnHightlight-borderColor;
+
+    &:hover {
+        border-color: $btnHightlight-borderColor-hover;
+        background-color: white;
+        color: $btnHightlight-textColor-hover;
+    };
+}
+

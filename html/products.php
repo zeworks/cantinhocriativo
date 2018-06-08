@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <ul class="breadcrumb">
+                <ul class="breadcrumb fleft">
                     <li>
                         <a href="#home" title="home">Home</a>
                     </li>
@@ -33,6 +33,14 @@
                         <a href="#" title="produtos">Produtos</a>
                     </li>
                 </ul>
+                <div class="search-filter fright">
+                    <form action="" method="get">
+                        <div class="search-filter-field">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                            <input type="text" placeholder="Procurar..." name="search_field" id="search_field">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

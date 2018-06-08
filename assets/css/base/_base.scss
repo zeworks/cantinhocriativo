@@ -6,14 +6,15 @@ input[type="radio"]:not(.radio) {
     position: absolute;
 }
 
-.radio{
+.radio {
     position: relative;
     display: inline-block;
     float: left;
     margin-right: 5px;
+    top: 3px;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     margin-right: 10px;
 }
 
@@ -60,27 +61,29 @@ header {
         background-color: rgba($color: #fff, $alpha: 1);
         padding: 5px 0;
     }
-    @media screen and (min-width: 768px) and (max-width: 1400px){
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
         min-height: 80px;
     }
     &.open .menu {
         display: flex !important;
     }
 }
-main{
+
+main {
     margin-top: 117px;
-    @include max-xs{
+    @include max-xs {
         margin-top: 61px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1400px){
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
         margin-top: 100px;
     }
 }
+
 table {
     width: 100%;
-    th{
+    th {
         padding: $table-padding;
-        font-weight: $table-fontWeightTH; 
+        font-weight: $table-fontWeightTH;
         color: $table-textColorTH;
         text-align: left;
         text-transform: uppercase;
@@ -89,33 +92,29 @@ table {
         vertical-align: top;
         padding: 10px;
     }
-    tr{
+    tr {
         border-bottom: 1px solid #ddd;
-        &:last-child{
+        &:last-child {
             border: 0;
         }
     }
-
-    &.cart-table{
-        @include max-xs{
+    &.cart-table {
+        @include max-xs {
             display: inline-block;
             white-space: nowrap;
             clear: both;
             overflow-x: scroll;
         }
-        td{
+        td {
             vertical-align: middle;
         }
-
-        img{
+        img {
             width: 50px;
         }
-
-        .cart-qty--large .cart-qty__btn{
+        .cart-qty--large .cart-qty__btn {
             padding: 4px 7px;
         }
-
-        .cart-qty--large .cart-qty__input{
+        .cart-qty--large .cart-qty__input {
             width: 35px;
             padding: 4px 0;
         }
@@ -151,7 +150,7 @@ table {
         display: table;
         margin: 20px auto;
     }
-    @media screen and (min-width: 768px) and (max-width: 1400px){
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
         line-height: 80px;
     }
 }
@@ -179,8 +178,7 @@ table {
     &:visited:hover {
         color: $menu-link-textColor-hover;
     }
-
-    @include max-xs{
+    @include max-xs {
         font-size: 19px;
     }
 }
@@ -188,13 +186,15 @@ table {
 .logo-link {
     display: block;
 }
-.logo-image{
+
+.logo-image {
     height: auto;
     width: 100px;
-    @media screen and (min-width: 768px) and (max-width: 1400px){
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
         width: 80px;
     }
 }
+
 @include max-xs {
     .menu .menu__item__link--icon {
         display: none
@@ -344,14 +344,17 @@ table {
     text-transform: uppercase;
 }
 
-textarea{
+textarea {
     resize: vertical;
 }
+
 /* esta class serve para dar uma linha em volta do item que queremos, neste caso uso nas imagens */
-.bordered-image{
+
+.bordered-image {
     position: relative;
 }
-.bordered-image::before{
+
+.bordered-image::before {
     content: '';
     width: $images-borderWidth;
     height: $images-borderHeight;
@@ -362,8 +365,7 @@ textarea{
     left: $images-borderPositionLeft;
     right: $images-borderPositionRight;
     z-index: -1;
-
-    @include max-xs{
+    @include max-xs {
         display: none;
     }
 }
