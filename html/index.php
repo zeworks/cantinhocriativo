@@ -105,7 +105,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-7" data-mh="post-article">
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-6 col-md-pull-7" data-mh="post-article">
                     <h2>Article Title</h2>
                     <div class="text-ellipses">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
@@ -177,7 +177,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-7" data-mh="post-article">
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-6 col-md-pull-7" data-mh="post-article">
                     <h2>Article Title</h2>
                     <div class="text-ellipses">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto quam porro officia rerum
