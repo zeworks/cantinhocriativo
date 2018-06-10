@@ -118,9 +118,7 @@
 			</div>
 			<div class="col-sm-4">
 				<h4>Subscreva a nossa newsletter</h4>
-				<small>Subscrevendo estará a permitir o uso do seu email para efeitos de marketing da
-					<strong>Just For You</strong>
-				</small>
+				<small>Subscreve para seres dos primeiros a receber as novidades da <strong>Just FOR YOU</strong></small>
 				<form action="" method="post" class="form validate-form inputs--inline clearfix">
 					<div class="form-field">
 						<input type="email" class="required-email form-control" placeholder="email@mail.com" name="email_newsletter" id="email_newsletter">

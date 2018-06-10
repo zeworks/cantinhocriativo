@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<!-- Website theme color -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#F1E3DD">
 
 	<!-- Website desc -->
 	<title>LOBA</title>
