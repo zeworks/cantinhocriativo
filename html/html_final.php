@@ -103,7 +103,7 @@
 				<!-- website logo -->
 				<img class="img-responsive" src="../assets/img/LOGO_JUSTFORYOU.png" alt="">
 			</div>
-			<div class="col-sm-8">
+			<div class="col-sm-4">
 				<ul class="footer-list">
 					<li class="footer-item">
 						<a href="#linkFooter" title="footer link" class="footer-link">footer link</a>
@@ -115,6 +115,18 @@
 						<a href="#linkFooter" title="footer link" class="footer-link">footer link</a>
 					</li>
 				</ul>
+			</div>
+			<div class="col-sm-4">
+				<h4>Subscreva a nossa newsletter</h4>
+				<small>Subscrevendo estará a permitir o uso do seu email para efeitos de marketing da
+					<strong>Just For You</strong>
+				</small>
+				<form action="" method="post" class="form validate-form inputs--inline clearfix">
+					<div class="form-field">
+						<input type="email" class="required-email form-control" placeholder="email@mail.com" name="email_newsletter" id="email_newsletter">
+					</div>
+					<button type="submit" class="btn btn-primary fright">Subscrever</button>
+				</form>
 			</div>
 		</div>
 		<div class="row">

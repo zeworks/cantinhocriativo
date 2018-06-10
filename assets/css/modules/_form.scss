@@ -1,21 +1,26 @@
-.form-field{
+.form-field {
     position: relative;
     margin: 10px 0;
 }
 
-.form-field.error{
-    label{ color: $brand-danger }
-    .form-control{ border-color: $brand-danger }
+.form-field.error {
+    label {
+        color: $brand-danger
+    }
+    .form-control {
+        border-color: $brand-danger
+    }
 }
 
-.form-field label{
+.form-field label {
     display: block;
     font-weight: 500;
     text-transform: uppercase;
     color: $text-color;
     position: relative;
 }
-.form-field .form-control{
+
+.form-field .form-control {
     width: 100%;
     border-radius: 3px;
     border: $input-border;
@@ -23,13 +28,39 @@
     color: $input-textColor;
 }
 
-.form-field--radio{
+.form-field--radio {
     small {
         margin-left: 10px;
         font-size: 11px;
-        @include max-xs{
+        @include max-xs {
             display: block;
             margin: 0;
         }
     }
+}
+
+.inputs--inline {
+    margin: 10px 0;
+    
+    /* min (1200px) */
+    @include min-lg{
+        >* {
+            float: left;
+        }
+
+        > :first-child {
+            width: 60%;
+            margin: 0;
+    
+            > input{
+                padding: 10px 7px;
+            }
+        }
+        >button {
+            width: calc(100% - 60%);
+            margin-left: -1px;
+            position: relative;
+        }
+    }
+
 }

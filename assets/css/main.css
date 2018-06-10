@@ -4458,7 +4458,7 @@ textarea {
   border-bottom-right-radius: 5px;
 }
 
-/* o estado default do carrinho com o numero de items, est├í escondido se estiver vazio */
+/* o estado default do carrinho com o numero de items, está escondido se estiver vazio */
 /* line 176, modules/_cart.scss */
 .cart-shopping span {
   display: none;
@@ -4485,7 +4485,7 @@ textarea {
   transition: all .2s ease-in-out;
 }
 
-/* se tiver a class has-items o numero de items ir├í aparecer */
+/* se tiver a class has-items o numero de items irá aparecer */
 /* line 197, modules/_cart.scss */
 .cart-shopping.has-items span {
   display: -webkit-box;
@@ -4816,12 +4816,12 @@ textarea {
 .form-field.error label {
   color: #f74545;
 }
-/* line 8, modules/_form.scss */
+/* line 10, modules/_form.scss */
 .form-field.error .form-control {
   border-color: #f74545;
 }
 
-/* line 11, modules/_form.scss */
+/* line 15, modules/_form.scss */
 .form-field label {
   display: block;
   font-weight: 500;
@@ -4830,7 +4830,7 @@ textarea {
   position: relative;
 }
 
-/* line 18, modules/_form.scss */
+/* line 23, modules/_form.scss */
 .form-field .form-control {
   width: 100%;
   border-radius: 3px;
@@ -4839,16 +4839,43 @@ textarea {
   color: #333;
 }
 
-/* line 27, modules/_form.scss */
+/* line 32, modules/_form.scss */
 .form-field--radio small {
   margin-left: 10px;
   font-size: 11px;
 }
 @media (max-width: 767px) {
-  /* line 27, modules/_form.scss */
+  /* line 32, modules/_form.scss */
   .form-field--radio small {
     display: block;
     margin: 0;
+  }
+}
+
+/* line 42, modules/_form.scss */
+.inputs--inline {
+  margin: 10px 0;
+  /* min (1200px) */
+}
+@media (min-width: 1200px) {
+  /* line 47, modules/_form.scss */
+  .inputs--inline > * {
+    float: left;
+  }
+  /* line 51, modules/_form.scss */
+  .inputs--inline > :first-child {
+    width: 60%;
+    margin: 0;
+  }
+  /* line 55, modules/_form.scss */
+  .inputs--inline > :first-child > input {
+    padding: 10px 7px;
+  }
+  /* line 59, modules/_form.scss */
+  .inputs--inline > button {
+    width: calc(100% - 60%);
+    margin-left: -1px;
+    position: relative;
   }
 }
 
@@ -4924,6 +4951,11 @@ footer img:first-child {
 /* line 56, modules/_footer.scss */
 footer small {
   color: #000;
+}
+
+/* line 60, modules/_footer.scss */
+footer h4 {
+  margin-top: 0;
 }
 
 /* line 2, modules/_testimonials.scss */

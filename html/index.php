@@ -206,7 +206,7 @@
 <!-- /ARTICLES -->
 
 <!-- TESTIMONIALS -->
-<section>
+<!-- <section>
     <div class="container">
         <div class="row">
             <div class="col-sm-offset-2 col-sm-8">
@@ -232,8 +232,8 @@
             </div>
         </div>
     </div>
-</section>
-<div class="empty-space-80"></div>
+    <div class="empty-space-80"></div>
+</section> -->
 <!-- TESTIMONIALS ENDS -->
 
 <?php include 'html_final.php' ?>
