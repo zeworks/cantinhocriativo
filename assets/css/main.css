@@ -3325,6 +3325,12 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+@media (max-width: 1499px) {
+  /* line 23, base/_fonts.scss */
+  h1 {
+    font-size: 45px;
+  }
+}
 @media (max-width: 1199px) {
   /* line 23, base/_fonts.scss */
   h1 {
@@ -3344,20 +3350,20 @@ h1 {
   }
 }
 
-/* line 40, base/_fonts.scss */
+/* line 45, base/_fonts.scss */
 h2 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 45px;
 }
 @media (max-width: 767px) {
-  /* line 40, base/_fonts.scss */
+  /* line 45, base/_fonts.scss */
   h2 {
     font-size: 25px;
   }
 }
 
-/* line 50, base/_fonts.scss */
+/* line 55, base/_fonts.scss */
 p {
   font-weight: 400;
   font-size: 17px;
@@ -3365,7 +3371,7 @@ p {
   color: #333;
 }
 @media (max-width: 767px) {
-  /* line 50, base/_fonts.scss */
+  /* line 55, base/_fonts.scss */
   p {
     font-size: 15px;
     line-height: 22px;

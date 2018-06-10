@@ -25,6 +25,10 @@ h1{
     font-weight: 900;
     text-transform: uppercase;
     margin-bottom: 25px;
+    
+    @include max-lg{
+        font-size: 45px;
+    }
 
     @include max-md{
         font-size: 40px;
@@ -33,6 +37,7 @@ h1{
     @include max-sm{
         font-size: 35px;
     }
+    
     @include max-xs{
         font-size: 29px;
     }
