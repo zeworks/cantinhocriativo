@@ -8,10 +8,10 @@
 
 	<!-- Website theme color -->
 	<meta name="theme-color" content="#F1E3DD">
-
+	
 	<!-- Website desc -->
-	<title>LOBA</title>
-	<meta name="description" content="">
+	<title>{{$settings[0]->website_name}}</title>
+	<meta name="description" content="{{$settings[0]->website_desc}}">
 	<meta name="keywords" content="">
 
 	<!-- Facebook meta tags -->
@@ -60,7 +60,7 @@
 			<div class="row matchheight">
 				<div class="col-sm-2 col-xs-6" data-mh="height-menu">
 					<!-- website logo -->
-					<a class="logo-link" href="../html/" title>
+					<a class="logo-link" href="../" title>
 						<img class="logo-image" src="../assets/img/LOGO_JUSTFORYOU.png" alt="">
 					</a>
 				</div>
@@ -236,15 +236,11 @@
 				</div>
 				<div class="col-sm-4">
 					<ul class="footer-list">
+						@foreach($urls as $url)
 						<li class="footer-item">
-							<a href="#linkFooter" title="footer link" class="footer-link">footer link</a>
+							<a href="#linkFooter" title="{{$url->slug}}" class="footer-link">{{$url->title}}</a>
 						</li>
-						<li class="footer-item">
-							<a href="#linkFooter" title="footer link" class="footer-link">footer link</a>
-						</li>
-						<li class="footer-item">
-							<a href="#linkFooter" title="footer link" class="footer-link">footer link</a>
-						</li>
+						@endforeach
 					</ul>
 				</div>
 				<div class="col-sm-4">

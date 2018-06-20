@@ -153,8 +153,9 @@ Route::prefix('admin')->group(function () {
 
 });
 
-Route::get('/{slug}', 'Frontend\HomeController@index');
+Route::get('/{slug}', 'Frontend\BaseController@index');
 Route::get('/', 'Frontend\HomeController@home');
+// Route::get('/{slug}', 'Frontend\BlogController@index')->name("blog");
 
 // VIEW COMPOSERS
 

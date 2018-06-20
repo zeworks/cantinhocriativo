@@ -65,6 +65,20 @@
             @endisset
             <!-- /template status -->
         </div>
+        <br>
+        <div class="form-field">
+            <select name="template_type" class="form-control">
+                @foreach($templatetype as $template_type)
+                    @isset($templatedata)
+                        <option @if($template_type->id == $templatedata->template_type ) selected="selected" @endif value="{{$template_type->id}}">{{$template_type->template_name}}</option>
+                    @else
+                        <option value="{{$template_type->id}}">{{$template_type->template_name}}</option>
+                    @endisset
+
+                @endforeach
+            </select>
+        </div>
+        <br>
         <div class="form-field">
             <span>Imagem de Destaque
                 <strong>1920x900</strong>

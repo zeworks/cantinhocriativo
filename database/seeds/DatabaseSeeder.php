@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersTableSeeder::class);
         $this->call(WebsiteSettingsTableSeeder::class);
+        $this->call(TemplateTypeTableSeeder::class);
     }
 }
 
@@ -49,5 +50,22 @@ class WebsiteSettingsTableSeeder extends Seeder
             'website_legal_name' => 'zwcms',
             'website_desc' => 'zwcms',
         ]);
+    }
+}
+
+class TemplateTypeTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('template_types')->insert(
+            [
+                ['template_name' => 'institucional'],['template_name' => 'produtos'],['template_name' => 'blog'],['template_name' => 'contactos']
+            ]
+        );
     }
 }

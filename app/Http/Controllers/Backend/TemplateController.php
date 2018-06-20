@@ -9,6 +9,7 @@ use App\Http\Controllers\BlocksController;
 
 use App\WebsiteSettings;
 use App\Templates;
+use App\TemplateType;
 use App\Blocks;
 
 
@@ -40,8 +41,9 @@ class TemplateController extends Controller
     public function newTemplate(){
         // to include website settings
         $websitesettings = WebsiteSettings::get();
+        $templatetype = TemplateType::get();
         // returns to the view with the website settings compacted
-        return view('admin.templates.create', compact('websitesettings'));
+        return view('admin.templates.create', compact('websitesettings','templatetype'));
     }
 
     function insertNewTemplate(Request $request){
@@ -54,6 +56,7 @@ class TemplateController extends Controller
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
+                "template_type" => $request -> input("template_type"),
                 "featured_image" => $filename
             ];
         }else{
@@ -61,7 +64,9 @@ class TemplateController extends Controller
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
-                "status" => $request -> input("status_item")     
+                "status" => $request -> input("status_item"),
+                "template_type" => $request -> input("template_type")
+
             ];
         }
 
@@ -77,8 +82,11 @@ class TemplateController extends Controller
         // to include template data
         $templatedata = Templates::find($id);
 
+        $templatetype = TemplateType::get();
+
+
         // returns to the view with the website settings compacted
-        return view('admin.templates.edit', compact('websitesettings','templatedata'));
+        return view('admin.templates.edit', compact('websitesettings','templatedata','templatetype'));
     }
 
     function updateTemplate(Request $request,$id){
@@ -90,6 +98,7 @@ class TemplateController extends Controller
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
+                "template_type" => $request -> input("template_type"),
                 "featured_image" => $filename
             ];
         }else{
@@ -97,7 +106,8 @@ class TemplateController extends Controller
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
-                "status" => $request -> input("status_item")     
+                "status" => $request -> input("status_item"),
+                "template_type" => $request -> input("template_type")
             ];
         }
 

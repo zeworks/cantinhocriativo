@@ -11,6 +11,8 @@ use App\BlogImages;
 use App\Blog;
 use App\Images;
 
+use Image;
+
 class BlogController extends Controller
 {
     /**
@@ -43,10 +45,15 @@ class BlogController extends Controller
 
     function insertNewBlog(Request $request){
 
+        // create an image manager instance with favored driver
+        // $manager = new ImageManager(array('driver' => 'imagick'));
+
         // if files exists
         if($request->file('upload_photo')){
             $filename = $request->file('upload_photo')->getClientOriginalName();
+            // $image = $manager->make('public/images',$filename)->resize(300, 200);
             $path = $request->file('upload_photo')->storeAs('public/images',$filename);
+            
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
