@@ -8,10 +8,12 @@ use App\Banners;
 
 class HomeController extends Controller
 {
-    function index(){
-
+    function index($slug=null){
+        return view('front.homepage');
+    }
+    
+    function home(){
         $banners = Banners::get();
-
         return view('front.homepage',compact('banners'));
-    }   
+    }
 }
