@@ -19,7 +19,9 @@
                         <a href="#home" title="home">Home</a>
                     </li>
                     <li>
-                        <a href="#" title="sobre">{{ $template }}</a>
+                        @foreach($template as $templ)
+                        <a href="{{$templ->slug}}" title="sobre">{{ $templ->title }}</a>
+                        @endforeach
                     </li>
                 </ul>
             </div>

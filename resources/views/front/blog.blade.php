@@ -15,7 +15,7 @@
             <div class="col-xs-12">
                 <ul class="breadcrumb">
                     <li>
-                        <a href="#home" title="home">Home</a>
+                        <a href="../" title="home">Home</a>
                     </li>
                     <li>
                         @foreach($template as $templ)
