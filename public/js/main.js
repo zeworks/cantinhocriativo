@@ -14,6 +14,7 @@ function resizableElements(viewport) {
       filterPlaceholder: 'Procurar',
       includeSelectAllOption: true
     });
+    
     // dropzone
     $("#addImages").dropzone({
       url: image_upload,
@@ -231,7 +232,7 @@ function insertColorProduct($color) {
   $(".colors-submited").val($(".colors-submited").val() + $color + ",");
 }
 
-$("body,html").on("click",".clean-colors", function(){
+$("body,html").on("click", ".clean-colors", function () {
   $(".available-colors").html('');
   return false;
 });

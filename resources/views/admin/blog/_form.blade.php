@@ -55,6 +55,7 @@
             <div class="buttons-top fleft">
                 <img class="image-previewer" @isset($blogs->featured_image) src="{{ asset('storage/images/'.$blogs->featured_image) }}" @endisset>
                 <input type="file" name="upload_photo" id="upload_photo" class="hidden upload_photo">
+                <br>
                 <a href="#" class="btn btn-default upload" data-target="upload_photo">Enviar Ficheiro</a>
             </div>
         </div>

@@ -45,21 +45,38 @@ class BlogController extends Controller
 
     function insertNewBlog(Request $request){
 
-        // create an image manager instance with favored driver
-        // $manager = new ImageManager(array('driver' => 'imagick'));
-
+    
         // if files exists
         if($request->file('upload_photo')){
-            $filename = $request->file('upload_photo')->getClientOriginalName();
-            // $image = $manager->make('public/images',$filename)->resize(300, 200);
-            $path = $request->file('upload_photo')->storeAs('public/images',$filename);
+             //get filename with extension
+            $filenamewithextension = $request->file('upload_photo')->getClientOriginalName();
+    
+             //get filename without extension
+            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+     
+             //get file extension
+            $extension = $request->file('upload_photo')->getClientOriginalExtension();
+     
+             //filename to store
+            $filenametostore = $filename.'_'.time().'.'.$extension;
+     
+             //Upload File
+            $request->file('upload_photo')->storeAs('public/images', $filenametostore);
+            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenamewithextension);
+     
+             //Resize image here
+            $thumbnailpath = public_path('storage/images/image_temp/'.$filenamewithextension);
+
+            $img = Image::make($thumbnailpath)->fit(720, 480, function ($constraint) {
+                $constraint->upsize();
+            })->save($thumbnailpath);
             
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "description" => $request -> input('editor_content'),
-                "featured_image" => $filename
+                "featured_image" => $filenamewithextension
             ];
         }else{
             // if there is not a file
@@ -99,14 +116,35 @@ class BlogController extends Controller
     function updateBlog(Request $request,$id){
         // if files exists
         if($request->file('upload_photo')){
-            $filename = $request->file('upload_photo')->getClientOriginalName();
-            $path = $request->file('upload_photo')->storeAs('public/images',$filename);
+             //get filename with extension
+             $filenamewithextension = $request->file('upload_photo')->getClientOriginalName();
+    
+             //get filename without extension
+            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+     
+             //get file extension
+            $extension = $request->file('upload_photo')->getClientOriginalExtension();
+     
+             //filename to store
+            $filenametostore = $filename.'_'.time().'.'.$extension;
+     
+             //Upload File
+            $request->file('upload_photo')->storeAs('public/images', $filenametostore);
+            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenamewithextension);
+     
+             //Resize image here
+            $thumbnailpath = public_path('storage/images/image_temp/'.$filenamewithextension);
+
+            $img = Image::make($thumbnailpath)->fit(720, 480, function ($constraint) {
+                $constraint->upsize();
+            })->save($thumbnailpath);
+            
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "description" => $request -> input('editor_content'),
-                "featured_image" => $filename
+                "featured_image" => $filenamewithextension
             ];
         }else{
             // if there is not a file

@@ -10,7 +10,8 @@ class InstitutionalController extends Controller
 {
     //
     function index(){
-        // dd("dd"); exit();
-        return view('front.institucional');
+        $template = Templates::get()->where("slug","sobre");
+
+        return view('front.institucional',compact('template'));
     }
 }

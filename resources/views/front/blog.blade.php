@@ -37,7 +37,7 @@
             <div class="col-sm-6">
                 <article class="post-article">
                     <a href="blog-detail.php" title="view more">
-                        <img class="img-responsive" src="{{ asset('storage/images/'.$blog->featured_image) }}" alt="">
+                        <img class="img-responsive" src="{{ asset('storage/images/image_temp/'.$blog->featured_image) }}" alt="">
                     </a>
                     <h2>{{$blog->title}}</h2>
                     <small>{{$blog->created_at}}</small>

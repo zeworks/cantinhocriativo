@@ -69,7 +69,7 @@
 					<ul class="menu hidden-xs">
 						@foreach($urls as $url)
 						<li class="menu__item">
-							<a href="{{ $url->slug }}" title="{{$url->title}}" class="menu__item__link">{{$url->title}}</a>
+							<a href="../{{ $url->slug }}" title="{{$url->title}}" class="menu__item__link">{{$url->title}}</a>
 						</li>
 						@endforeach 
 						@if($settings[0]->website_mode_store == 'on')
