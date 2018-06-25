@@ -27,7 +27,7 @@ Route::prefix('admin')->group(function () {
     Route::get('settings', 'Backend\SettingsController@index')->name('settings');
     Route::get('templates', 'Backend\TemplateController@index')->name('templates');
     Route::get('products', 'Backend\ProductsController@index')->name('products');
-    Route::get('blog', 'Backend\BlogController@index')->name('blog');
+    Route::get('blog', 'Backend\BlogController@index')->name('admin_blog');
     Route::get('discounts', 'Backend\DiscountsController@index')->name('discounts');
     Route::get('costumers', 'Backend\CostumersController@index')->name('costumers');
     Route::get('shipping', 'Backend\ShippingController@index')->name('shipping');

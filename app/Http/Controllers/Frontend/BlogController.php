@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Templates;
 use App\Blog;
+use App\BlogImages;
 
 
 class BlogController extends Controller
@@ -18,6 +19,7 @@ class BlogController extends Controller
     }
 
     function detail($slug){
-        return view('front.blogDetail');
+        $blogs = Blog::get()->where("slug",$slug);
+        return view('front.blogDetail', compact('blogs','images'));
     }
 }

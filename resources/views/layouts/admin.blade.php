@@ -103,7 +103,7 @@
                     </li>
                     <!-- blog -->
                     <li class="{{ Request::is('admin/blog*') ? 'active' : '' }}">
-                        <a href="{{ route('blog') }}" class="aside__link" title="{{ __('Blog') }}">
+                        <a href="{{ route('admin_blog') }}" class="aside__link" title="{{ __('Blog') }}">
                             <i class="fab fa-blogger-b"></i>
                         </a>
                     </li>

@@ -252,7 +252,7 @@ window.addEventListener('load', function (event) {
 
 
 });
-$('a:not([target])').click(function(e){
+$('.menu__item__link, .btn').click(function(e){
 	e.preventDefault();
 	$('.loading').addClass('leaving-page');
 	var eventLink = this.getAttribute('href');
