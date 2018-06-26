@@ -20,10 +20,13 @@ class BlogController extends Controller
     }
 
     function detail($slug){
-        $blogs = Blog::find(12);
+        $blogs = BlogImages::get()->where('blog_id',12);
+        // $blogs->Images()->get();
 
-        // $blogimageids = BlogImages::get()->where("blog_id",$blogs[0]->id);
-        echo $blogs; exit();
+        $blog = new Blog();
+        $blog->Images();
+        echo $blog;
+        exit();
         return view('front.blogDetail', compact('blogs','images'));
 
     }

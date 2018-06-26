@@ -264,9 +264,12 @@ $('.menu__item__link, .btn').click(function(e){
 });
 $(document).ready(function () {
 	setTimeout(function(){
+		main();
+	},100);
+	setTimeout(function(){
 		$(".loading").addClass("loaded");
 	},900);
-	main();
+	
 	cartActions();
 	updateCartItems();
 	showMore("[data-mh='product-item']", ".view-more", 12);

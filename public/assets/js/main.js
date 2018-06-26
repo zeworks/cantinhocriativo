@@ -1,6 +1,9 @@
 'use strict';
+
 $(document).ready(function () {
-	main();
+	setTimeout(function() {
+		main();
+	}, 1000);
 	cartActions();
 	updateCartItems();
 	showMore("[data-mh='product-item']", ".view-more", 12);
