@@ -4649,6 +4649,10 @@ textarea {
   margin: 20px 0 0;
 }
 
+.post-article .text-ellipses{
+  height: 130px;
+}
+
 /* elemento que contem todos os produtos adicionados ao carrinho */
 
 /* line 3, modules/_cart.scss */

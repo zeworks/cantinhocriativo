@@ -14,9 +14,8 @@
             <div class="col-sm-5 col-sm-push-7">
                 <div class="empty-space-20"></div>
                 <div class="owl-carousel owl-theme product-carousel">
-                {{$images}}
                     @foreach($images as $image)
-                    <div class="item" data-hash="{{$image->image_id}}">
+                    <div class="item" data-hash="{{$image->id}}">
                         <img class="img-responsive zoom-image" src="{{ asset('storage/images/'.$image->image_name) }}" alt="" data-zoom-image="https://dummyimage.com/900x900/000/fff">
                     </div>
                     @endforeach

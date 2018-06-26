@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Templates;
 use App\Blog;
 use App\BlogImages;
+use App\Images;
 
 
 class BlogController extends Controller
@@ -19,7 +20,11 @@ class BlogController extends Controller
     }
 
     function detail($slug){
-        $blogs = Blog::get()->where("slug",$slug);
+        $blogs = Blog::find(12);
+
+        // $blogimageids = BlogImages::get()->where("blog_id",$blogs[0]->id);
+        echo $blogs; exit();
         return view('front.blogDetail', compact('blogs','images'));
+
     }
 }

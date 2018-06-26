@@ -157,14 +157,15 @@ Route::prefix('admin')->group(function () {
 // Route::get('/{slug}/{slugDetail}', 'Frontend\BaseController@detail');
 
 Route::get('/', 'Frontend\HomeController@home');
-Route::get('blog', 'Frontend\BlogController@index')->name('blog');
+Route::get('blog', 'Frontend\BlogController@index');
 Route::get('blog/{slug}', 'Frontend\BlogController@detail');
 Route::get('sobre', 'Frontend\InstitutionalController@index')->name("institucional");
-Route::get('produtos', 'Frontend\ProductController@index')->name("product");
-Route::get('contactos', 'Frontend\ContactController@index')->name("contact");
+// Route::get('produtos', 'Frontend\ProductController@index')->name("product");
+// Route::get('contactos', 'Frontend\ContactController@index')->name("contact");
 
 
 // Route::get('/{slug}', 'Frontend\BlogController@index')->name("blog");
+
 
 // VIEW COMPOSERS
 
