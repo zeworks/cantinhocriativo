@@ -14,19 +14,11 @@ class BaseController extends Controller
     function index($slug=null){
 
         // para me devolver dados do template
-        $template = Templates::get()->where('slug',$slug)
-        ->where("status","on");
-        foreach($template as $t){
-            $templatetype = TemplateType::get()->where("id",$t->template_type);
-            foreach($templatetype as $tname){
-                $view = $tname->template_name;
-            }
-        }
-
-        if(!empty($view)){
-            return view('front.'.$view, compact('templatetype','template'));
+        if( Templates::where('slug',$slug)->where("status","on")->where("template_id",1)->get()->count() > 0){
+            $template = Templates::where('slug',$slug)->where("status","on")->where("template_id",1)->get();
+            return view('front.institucional', compact('template'));
         }else{
-            return view('front.error');
+            return view("front.error");
         }
     }
 }

@@ -112,7 +112,6 @@ Route::prefix('admin')->group(function () {
         Route::get('new', 'Backend\BlogController@newBlog')->name('blog_new');
         Route::get('edit/{id}', 'Backend\BlogController@editBlog')->name('blog_edit');
 
-        
         // para criar novo post
         Route::post('new', 'Backend\BlogController@insertNewBlog')->name('blog_insert');
         // para editar o post
@@ -153,15 +152,14 @@ Route::prefix('admin')->group(function () {
 
 });
 
-// Route::get('/{slug}', 'Frontend\BaseController@index');
-// Route::get('/{slug}/{slugDetail}', 'Frontend\BaseController@detail');
-
-Route::get('/', 'Frontend\HomeController@home');
 Route::get('blog', 'Frontend\BlogController@index');
 Route::get('blog/{slug}', 'Frontend\BlogController@detail');
 Route::get('sobre', 'Frontend\InstitutionalController@index')->name("institucional");
-// Route::get('produtos', 'Frontend\ProductController@index')->name("product");
-// Route::get('contactos', 'Frontend\ContactController@index')->name("contact");
+Route::get('produtos', 'Frontend\ProductController@index')->name("product");
+Route::get('contactos', 'Frontend\ContactController@index')->name("contact");
+
+Route::get('/{slug}', 'Frontend\BaseController@index');
+Route::get('/', 'Frontend\HomeController@home');
 
 
 // Route::get('/{slug}', 'Frontend\BlogController@index')->name("blog");

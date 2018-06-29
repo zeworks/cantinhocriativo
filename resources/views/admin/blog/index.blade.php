@@ -45,7 +45,7 @@
                             <td>
                                 <a href="{{ route('blog_edit',['id' => $blog->id]) }}" class="go-back">
                                 @isset($blog->featured_image)
-                                <img src="{{ asset('storage/images/'.$blog->featured_image) }}" class="rounded" width="40" height="40" alt="blog image {{$blog->id}}">
+                                <img src="{{ asset('storage/images/'.$blog->featured_image) }}" class="rounded" width="40" height="40" alt="blog image {{$blog->featured_image}}">
                                 @endisset
                                 </a>
                             </td>

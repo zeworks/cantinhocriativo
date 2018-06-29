@@ -1,6 +1,6 @@
 @extends('layouts.admin') @section('content')
 <div class="breadcrumb">
-    <a href="{{ route('blog') }}" class="go-back"><i class="fas fa-angle-left"></i> {{ __('Blog') }}</a>
+    <a href="{{ route('admin_blog') }}" class="go-back"><i class="fas fa-angle-left"></i> {{ __('Blog') }}</a>
     <span>\</span>
     <span>{{ __('Adicionar Post')}}</span>
 </div>

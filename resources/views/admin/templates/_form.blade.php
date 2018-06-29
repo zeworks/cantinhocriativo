@@ -70,7 +70,7 @@
             <select name="template_type" class="form-control">
                 @foreach($templatetype as $template_type)
                     @isset($templatedata)
-                        <option @if($template_type->id == $templatedata->template_type ) selected="selected" @endif value="{{$template_type->id}}">{{$template_type->template_name}}</option>
+                        <option @if($template_type->id == $templatedata->template_id ) selected="selected" @endif value="{{$template_type->id}}">{{$template_type->template_name}}</option>
                     @else
                         <option value="{{$template_type->id}}">{{$template_type->template_name}}</option>
                     @endisset

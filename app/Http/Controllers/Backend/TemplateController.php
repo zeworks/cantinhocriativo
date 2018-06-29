@@ -56,7 +56,7 @@ class TemplateController extends Controller
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
-                "template_type" => $request -> input("template_type"),
+                "template_id" => $request -> input("template_type"),
                 "featured_image" => $filename
             ];
         }else{
@@ -65,10 +65,11 @@ class TemplateController extends Controller
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
-                "template_type" => $request -> input("template_type")
+                "template_id" => $request -> input("template_type")
 
             ];
         }
+
 
         Templates::create($data);
 
@@ -98,7 +99,7 @@ class TemplateController extends Controller
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
-                "template_type" => $request -> input("template_type"),
+                "template_id" => $request -> input("template_type"),
                 "featured_image" => $filename
             ];
         }else{
@@ -107,7 +108,7 @@ class TemplateController extends Controller
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
-                "template_type" => $request -> input("template_type")
+                "template_id" => $request -> input("template_type")
             ];
         }
 

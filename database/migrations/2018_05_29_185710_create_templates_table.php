@@ -19,7 +19,7 @@ class CreateTemplatesTable extends Migration
             $table->string('slug',500);
             $table->string('status',500)->nullable();
             $table->string('featured_image',500)->nullable();
-            $table->string('template_type',10)->nullable();
+            $table->string('template_id',10)->nullable()->default(1);
             $table->timestamps();
         });
     }

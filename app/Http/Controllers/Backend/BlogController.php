@@ -48,6 +48,7 @@ class BlogController extends Controller
     
         // if files exists
         if($request->file('upload_photo')){
+
              //get filename with extension
             $filenamewithextension = $request->file('upload_photo')->getClientOriginalName();
     
@@ -59,24 +60,24 @@ class BlogController extends Controller
      
              //filename to store
             $filenametostore = $filename.'_'.time().'.'.$extension;
-     
+
              //Upload File
             $request->file('upload_photo')->storeAs('public/images', $filenametostore);
-            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenamewithextension);
+            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenametostore);
      
              //Resize image here
-            $thumbnailpath = public_path('storage/images/image_temp/'.$filenamewithextension);
+            $thumbnailpath = public_path('storage/images/image_temp/'.$filenametostore);
 
             $img = Image::make($thumbnailpath)->fit(720, 480, function ($constraint) {
                 $constraint->upsize();
             })->save($thumbnailpath);
-            
+
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "description" => $request -> input('editor_content'),
-                "featured_image" => $filenamewithextension
+                "featured_image" => $filenametostore
             ];
         }else{
             // if there is not a file
@@ -130,10 +131,10 @@ class BlogController extends Controller
      
              //Upload File
             $request->file('upload_photo')->storeAs('public/images', $filenametostore);
-            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenamewithextension);
+            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenametostore);
      
              //Resize image here
-            $thumbnailpath = public_path('storage/images/image_temp/'.$filenamewithextension);
+            $thumbnailpath = public_path('storage/images/image_temp/'.$filenametostore);
 
             $img = Image::make($thumbnailpath)->fit(720, 480, function ($constraint) {
                 $constraint->upsize();
@@ -144,7 +145,7 @@ class BlogController extends Controller
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "description" => $request -> input('editor_content'),
-                "featured_image" => $filenamewithextension
+                "featured_image" => $filenametostore
             ];
         }else{
             // if there is not a file

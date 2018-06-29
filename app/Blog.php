@@ -13,6 +13,6 @@ class Blog extends Model
     ]; 
 
     public function Images(){
-        return $this->belongsTo('App\BlogImages','blog_id','id');
+        return $this->hasMany('App\BlogImages','blog_id');
     }
 }
