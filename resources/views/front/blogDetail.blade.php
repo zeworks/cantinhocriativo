@@ -6,6 +6,30 @@
         @endforeach
     </div>
 </section>
+<div class="empty-space-20"></div>
+<!-- breadcrumb -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="{{ url('/')}}" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('blog')}}" title="Blog">Blog</a>
+                    </li>
+                    <li>
+                        @foreach($blogs as $blog)
+                            <a href="{{ $blog -> slug }}" title="{{ $blog -> title }}">{{ $blog -> title }}</a>
+                        @endforeach
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /breadcrumb -->
 <!-- BLOG SECTION -->
 <div class="empty-space-80"></div>
 <section>
@@ -16,17 +40,18 @@
                 <div class="owl-carousel owl-theme product-carousel">
                     @foreach($images as $key => $image)
                     <div class="item" data-hash="{{$image->id}}">
-                        <img class="img-responsive zoom-image" src="{{ asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name) }}" alt="" data-zoom-image="{{ asset('storage/images/'.$images[$key]['images'][0]->image_name) }}">
+                        <img class="img-responsive zoom-image" src="{{ Image::url(asset('storage/images/'.$images[$key]['images'][0]->image_name),720,480,array('crop','')) }}"
+                            alt="" data-zoom-image="{{ Image::url(asset('storage/images/'.$images[$key]['images'][0]->image_name),900,900,array('crop','')) }}">
                     </div>
                     @endforeach
                 </div>
                 <div class="product-carousel-thumbs">
-                    <a href="#1">
-                        <img class="img-responsive" src="https://dummyimage.com/100x100/ddd/000" alt="">
+                    @foreach($images as $key => $image)
+                    <a href="#{{$image->id}}">
+                        <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$images[$key]['images'][0]->image_name),100,100,array('crop','')) }}"
+                            alt="">
                     </a>
-                    <a href="#2">
-                        <img class="img-responsive" src="https://dummyimage.com/100x100/ddd/000" alt="">
-                    </a>
+                    @endforeach
                 </div>
             </div>
             <div class="col-sm-7 col-sm-pull-5">
@@ -62,10 +87,10 @@
              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-            // var disqus_config = function () {
-            //  this.page.url = "product.php";  // Replace PAGE_URL with your page's canonical URL variable
-            //  this.page.identifier = "123"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            // };
+            var disqus_config = function () {
+                this.page.url = <?= $blogs[0]->slug ?>; // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = <?= $blogs[0]->slug ?>; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
 
             (function () { // DON'T EDIT BELOW THIS LINE
                 var d = document,

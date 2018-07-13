@@ -49,35 +49,18 @@ class BlogController extends Controller
         // if files exists
         if($request->file('upload_photo')){
 
-             //get filename with extension
+            //get filename with extension
             $filenamewithextension = $request->file('upload_photo')->getClientOriginalName();
     
-             //get filename without extension
-            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+            //Upload File
+            $request->file('upload_photo')->storeAs('public/images', $filenamewithextension);
      
-             //get file extension
-            $extension = $request->file('upload_photo')->getClientOriginalExtension();
-     
-             //filename to store
-            $filenametostore = $filename.'_'.time().'.'.$extension;
-
-             //Upload File
-            $request->file('upload_photo')->storeAs('public/images', $filenametostore);
-            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenametostore);
-     
-             //Resize image here
-            $thumbnailpath = public_path('storage/images/image_temp/'.$filenametostore);
-
-            $img = Image::make($thumbnailpath)->fit(720, 480, function ($constraint) {
-                $constraint->upsize();
-            })->save($thumbnailpath);
-
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "description" => $request -> input('editor_content'),
-                "featured_image" => $filenametostore
+                "featured_image" => $filenamewithextension
             ];
         }else{
             // if there is not a file
@@ -119,33 +102,17 @@ class BlogController extends Controller
         if($request->file('upload_photo')){
              //get filename with extension
              $filenamewithextension = $request->file('upload_photo')->getClientOriginalName();
-    
-             //get filename without extension
-            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
-     
-             //get file extension
-            $extension = $request->file('upload_photo')->getClientOriginalExtension();
-     
-             //filename to store
-            $filenametostore = $filename.'_'.time().'.'.$extension;
-     
-             //Upload File
-            $request->file('upload_photo')->storeAs('public/images', $filenametostore);
-            $request->file('upload_photo')->storeAs('public/images/image_temp', $filenametostore);
-     
-             //Resize image here
-            $thumbnailpath = public_path('storage/images/image_temp/'.$filenametostore);
 
-            $img = Image::make($thumbnailpath)->fit(720, 480, function ($constraint) {
-                $constraint->upsize();
-            })->save($thumbnailpath);
-            
+             //Upload File
+            $request->file('upload_photo')->storeAs('public/images', $filenamewithextension);
+     
+
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "description" => $request -> input('editor_content'),
-                "featured_image" => $filenametostore
+                "featured_image" => $filenamewithextension
             ];
         }else{
             // if there is not a file

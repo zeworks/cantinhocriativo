@@ -18,27 +18,10 @@ class AjaxController extends Controller
             //get filename with extension
             $filenamewithextension = $image->getClientOriginalName();
     
-            //get filename without extension
-            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+            $image->storeAs('public/images/image_temp', $filenamewithextension);
      
-             //get file extension
-            $extension = $image->getClientOriginalExtension();
-     
-             //filename to store
-            $filenametostore = $filename.'_'.time().'.'.$extension;
-
-            $image->storeAs('public/images', $filenametostore);
-            $image->storeAs('public/images/image_temp', $filenametostore);
-     
-             //Resize image here
-            $thumbnailpath = public_path('storage/images/image_temp/'.$filenametostore);
-
-            $img = Image::make($thumbnailpath)->fit(750, 500, function ($constraint) {
-                $constraint->upsize();
-            })->save($thumbnailpath);
-            
             $id = Images::create([
-                "image_name" => $filenametostore
+                "image_name" => $filenamewithextension
             ])->id;
 
         }
