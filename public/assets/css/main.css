@@ -512,6 +512,10 @@ body {
   margin: 0;
 }
 
+body.in-modal{
+  overflow: hidden !important;
+}
+
 /* line 33, bootstrap/bootstrap/_normalize.scss */
 
 article,
@@ -5127,7 +5131,7 @@ textarea {
 /* line 42, modules/_product-card.scss */
 
 .product-card__title {
-  margin: 0 0 20px;
+  margin: 20px 0 20px;
   font-size: 18px;
   font-weight: 900;
   color: #333;
@@ -5417,16 +5421,6 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
-  -webkit-column-count: 2;
-  column-count: 2;
-}
-
-@media (max-width: 767px) {
-  /* line 10, modules/_footer.scss */
-  .footer-list {
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
 }
 
 /* line 20, modules/_footer.scss */
@@ -5450,7 +5444,9 @@ footer {
   display: block;
   width: 100%;
   color: #000;
-  font-size: 15px;
+  /* font-size: 15px; */
+  text-transform: uppercase;
+  font-weight: 700; 
 }
 
 /* line 34, modules/_footer.scss */
@@ -5994,4 +5990,41 @@ footer h4 {
   100% {
     max-width: 400px;
   }
+}
+
+.product-card__smalltext p{
+  display: none;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(241, 227, 221, 0.8);
+  z-index: 9999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-active .modal-content{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-content{
+  transform: scale(0);
+  opacity: 0;
+  transition: all 600ms ease;
+  padding: 40px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  margin: 50px 0;
 }

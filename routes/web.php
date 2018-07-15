@@ -154,9 +154,10 @@ Route::prefix('admin')->group(function () {
 
 Route::get('blog', 'Frontend\BlogController@index');
 Route::get('blog/{slug}', 'Frontend\BlogController@detail');
-Route::get('sobre', 'Frontend\InstitutionalController@index')->name("institucional");
-Route::get('produtos', 'Frontend\ProductController@index')->name("product");
-Route::get('contactos', 'Frontend\ContactController@index')->name("contact");
+Route::get('sobre', 'Frontend\InstitutionalController@index');
+Route::get('produtos', 'Frontend\ProductController@index');
+Route::get('produtos/{slug}', 'Frontend\ProductController@detail');
+Route::get('contactos', 'Frontend\ContactController@index');
 
 Route::get('/{slug}', 'Frontend\BaseController@index');
 Route::get('/', 'Frontend\HomeController@home');

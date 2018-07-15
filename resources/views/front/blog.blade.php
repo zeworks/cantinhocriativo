@@ -19,7 +19,7 @@
                     </li>
                     <li>
                         @foreach($template as $templ)
-                        <a href="{{ $templ -> slug }}" title="sobre">{{ $templ -> title }}</a>
+                        <a href="{{ $templ -> slug }}" title="{{ $templ -> title }}">{{ $templ -> title }}</a>
                         @endforeach
                     </li>
                 </ul>

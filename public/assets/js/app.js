@@ -252,7 +252,7 @@ window.addEventListener('load', function (event) {
 
 
 });
-$('.menu__item__link, .btn').click(function(e){
+$('.menu__item__link, a.btn').click(function(e){
 	e.preventDefault();
 	$('.loading').addClass('leaving-page');
 	var eventLink = this.getAttribute('href');
@@ -279,6 +279,7 @@ $(document).ready(function () {
 		showMoreText(".text-ellipses", 250);
 	}
 	showMoreText(".float-bar h3", 30);
+	showMoreText(".product-card__smalltext *", 190);
 	$('.matchheight').matchHeight();
 	tabsSystem();
 	sliders();
@@ -429,6 +430,12 @@ $(document).ready(function () {
 			$(this).hide();
 		});
 		return false;
+	});
+
+	$(".open-modal").on("click", function(){
+		var target = $(this).attr("data-target");
+		$("body").addClass("in-modal");
+		$(target).addClass("modal-active");
 	});
 });
 
