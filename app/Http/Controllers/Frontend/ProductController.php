@@ -23,11 +23,14 @@ class ProductController extends Controller
     function detail($slug){
         $products = Products::where("slug",$slug)->with('Images')->get();
 
+        // all products
+        $allproducts = Products::get();
+
         foreach($products as $product){
             $images = ProductImages::where("product_id",$product->id)->with('Images')->get();
         }
 
-        return view('front.productDetail', compact('products','images'));
+        return view('front.productDetail', compact('allproducts','products','images'));
 
     }
 }

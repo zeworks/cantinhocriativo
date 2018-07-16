@@ -456,7 +456,7 @@ $(window).resize(function () {
 $(window).scroll(function () {
 
 	if ($(".float-bar").length) {
-		floatBar();
+		// floatBar();
 	}
 });
 

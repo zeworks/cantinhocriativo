@@ -21,4 +21,5 @@ class BaseController extends Controller
             return view("front.error");
         }
     }
+
 }

@@ -59,8 +59,7 @@
             <!-- product description -->
             <div class="col-sm-6 col-lg-5 col-lg-offset-1">
                 <!-- se no BO estiver como NOVO: -->
-                @foreach($products as $product)
-                @if($product->new_product)
+                @foreach($products as $product) @if($product->new_product)
                 <span class="product-detail__tag">novo</span>
                 @endif
                 <h1>{{ $product->title }}</h1>
@@ -107,17 +106,64 @@
                     <button type="submit" class="btn btn-primary buy-item fleft">Adicionar ao carrinho</button>
                 </div>
                 @else
-                <button class="open-modal btn btn-primary" data-target="#orderbuy">Encomenda Aqui - {{ $product->title }}</button>
-                @endif
-                @endforeach
+                <button class="open-modal btn btn-primary" data-target="#orderbuy">Informações - {{ $product->title }}</button>
+                @endif @endforeach
             </div>
         </div>
     </div>
 </article>
 <div class="modal" id="orderbuy">
     <div class="container">
-        <div class="modal-content">
-            <h2>teste</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-offset-2 col-md-8">
+                <div class="modal-content">
+                    <button class="btn-close btn">
+                    <i class="fas fa-times"></i>
+                    </button>
+                    <h3>Informações sobre: <strong>{{$product->title}}</strong></h3>
+                    <div class="empty-space-20"></div>
+                    <form action="" class="validate-form form">
+                        <div class="form-field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" class="required form-control">
+                        </div>
+                        <div class="form-field">
+                            <label for="message_contact">Mensagem*</label>
+                            <textarea class="required form-control" name="message_contact" id="message_contact"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <small>
+                                A informação que vai enviar será guardada e processada através de email apenas com o propósito de nos contactar. Os dados
+                                que irá submeter vão ser utilizados por outros departamentos da
+                                <strong>{{ $settings[0]->website_name }}</strong>. A
+                                <strong>{{ $settings[0]->website_name }}</strong> irá tratar a sua informação pessoal com toda a
+                                confidencialidade e segurança de acordo com o estabelecido nos regulamentos de proteção de
+                                dados. Poderá retirar o seu consentimento de utilização dos dados, solicitar a sua correção
+                                ou pedir a sua eliminação em qualquer altura. Para tal deverá entrar em contacto connosco
+                                através do seguinte endereço de email:
+                                <strong>{{ $settings[0]->website_account_email }}</strong>
+                            </small>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-field">
+                                        <label for="terms">
+                                            <input type="checkbox" id="terms" name="terms" class="required-radio fleft" required>
+                                            <small>Aceito os
+                                                <a href="terms.php" target="_blank">termos e condições</a>
+                                            </small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-primary fright">Enviar Mensagem</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -135,26 +181,21 @@
                         </span>
                         <span class="item-selected"></span>
                         <a href="#details" class="tabs__btn selected" title>Detalhes</a>
+                        @if($settings[0]->website_mode_store == 'on')
                         <a href="#mpagamento" class="tabs__btn" title>Métodos de Pagamento</a>
                         <a href="#way_delivery" class="tabs__btn" title>Métodos de Entrega</a>
-                        <span class="fright hidden-xs">Encomendar por e-mail:
-                            <strong>info@cantinhocriativo.pt</strong>
+                        @endif
+                        <span class="fright hidden-xs">Informações por e-mail:
+                            <strong>{{ $settings[0]->website_account_email }}</strong>
                         </span>
                     </div>
                     <div class="tabs__body">
                         <div id="details" class="tabs__body_item">
-                            <h4>REF:: 9172364</h4>
-                            <p>Aqui terá uma informação detalhada do meu
-                                <strong>produto</strong>
-                            </p>
-                            <ul>
-                                <li>
-                                    <p>lorem ipsum</p>
-                                    <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-                                        ipsum
-                                    </p>
-                                </li>
-                            </ul>
+                            @foreach($products as $product)
+                            <h4>REF:: {{ $product->reference }}</h4>
+                            <div>
+                                {!! $product->details !!}
+                            </div>
                             <div class="share">
                                 <p>Share this</p>
                                 <a href="#facebook" title class="share-item">
@@ -167,7 +208,9 @@
                                     <i class="fab fa-google-plus-g"></i>
                                 </a>
                             </div>
+                            @endforeach
                         </div>
+                        @if($settings[0]->website_mode_store == 'on')
                         <div id="mpagamento" class="tabs__body_item">
                             <!-- <ul class="payment-methods--cart">
                                 <li>
@@ -218,6 +261,7 @@
                                 </li>
                             </ul>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -234,70 +278,34 @@
                 <h2 class="text-center">Produtos Relacionados</h2>
                 <div class="empty-space-80"></div>
                 <div class="row matchheight">
-                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
+                    @foreach($allproducts as $products)
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
                         <div class="product-card">
-                            <a href="product.php" title="product title">
-                                <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
+                            <a href="{{ $products->slug}}" title="{{ $products->slug}}">
+                                <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$products->featured_image),345,345,array('crop','')) }}"
+                                    alt="">
                             </a>
-                            <a href="product.php" title="product title">
+                            <a href="{{ $products->slug}}" title="{{ $products->slug}}">
+                                @if($settings[0]->website_mode_store == 'on')
                                 <span class="product-card__category">Category Product</span>
-                                <h4 class="product-card__title">Product Name</h4>
+                                @endif
+                                <h4 class="product-card__title">{{ $products->title }}</h4>
                             </a>
+                            @if($settings[0]->website_mode_store == 'on')
                             <span class="product-card__price">10€</span>
                             <span class="product-card__oldprice">19€</span>
+                            @endif
+                            <div class="product-card__smalltext">
+                                {!! $products->description !!}
+                            </div>
                             <div class="clearfix"></div>
-                            <a href="product.php" class="btn btn-default">Visualizar</a>
+                            <a href="{{ $products->slug}}" class="btn btn-primary btn-block">Visualizar</a>
+                            @if($settings[0]->website_mode_store == 'on')
                             <button type="button" class="btn btn-primary buy-item">Comprar</button>
+                            @endif
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
-                        <div class="product-card">
-                            <a href="product.php" title="product title">
-                                <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                            </a>
-                            <a href="product.php" title="product title">
-                                <span class="product-card__category">Category Product</span>
-                                <h4 class="product-card__title">Product Name</h4>
-                            </a>
-                            <span class="product-card__price">10€</span>
-                            <span class="product-card__oldprice">19€</span>
-                            <div class="clearfix"></div>
-                            <a href="product.php" class="btn btn-default">Visualizar</a>
-                            <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
-                        <div class="product-card">
-                            <a href="product.php" title="product title">
-                                <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                            </a>
-                            <a href="product.php" title="product title">
-                                <span class="product-card__category">Category Product</span>
-                                <h4 class="product-card__title">Product Name</h4>
-                            </a>
-                            <span class="product-card__price">10€</span>
-                            <span class="product-card__oldprice">19€</span>
-                            <div class="clearfix"></div>
-                            <a href="product.php" class="btn btn-default">Visualizar</a>
-                            <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3" data-mh="product-item">
-                        <div class="product-card">
-                            <a href="product.php" title="product title">
-                                <img class="img-responsive" src="https://dummyimage.com/345x345/f2f2f2/000" alt="">
-                            </a>
-                            <a href="product.php" title="product title">
-                                <span class="product-card__category">Category Product</span>
-                                <h4 class="product-card__title">Product Name</h4>
-                            </a>
-                            <span class="product-card__price">10€</span>
-                            <span class="product-card__oldprice">19€</span>
-                            <div class="clearfix"></div>
-                            <a href="product.php" class="btn btn-default">Visualizar</a>
-                            <button type="button" class="btn btn-primary buy-item">Comprar</button>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -319,10 +327,10 @@
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-        // var disqus_config = function () {
-        // this.page.url = "product.php";  // Replace PAGE_URL with your page's canonical URL variable
-        // this.page.identifier = "123"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        // };
+        var disqus_config = function () {
+            this.page.url = '{{ url()->current() }}'; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = '{{ url()->current() }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
 
         (function () { // DON'T EDIT BELOW THIS LINE
             var d = document,
@@ -335,6 +343,7 @@
 </section>
 <!-- /COMMENTS -->
 <div class="empty-space-80"></div>
+@if($settings[0]->website_mode_store == 'on')
 <div class="float-bar">
     <div class="container">
         <div class="row">
@@ -362,4 +371,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endif @endsection

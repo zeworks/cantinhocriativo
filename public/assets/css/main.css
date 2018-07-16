@@ -512,7 +512,7 @@ body {
   margin: 0;
 }
 
-body.in-modal{
+body.in-modal {
   overflow: hidden !important;
 }
 
@@ -4653,7 +4653,7 @@ textarea {
   margin: 20px 0 0;
 }
 
-.post-article .text-ellipses{
+.post-article .text-ellipses {
   height: 130px;
 }
 
@@ -5446,7 +5446,7 @@ footer {
   color: #000;
   /* font-size: 15px; */
   text-transform: uppercase;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 /* line 34, modules/_footer.scss */
@@ -5992,11 +5992,21 @@ footer h4 {
   }
 }
 
-.product-card__smalltext p{
+.product-card__smalltext {
+  height: 70px;
+}
+
+@media (max-width: 768px) {
+  .product-card__smalltext {
+    height: auto;
+  }
+}
+
+.product-card__smalltext p>span {
   display: none;
 }
 
-.modal{
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -6009,17 +6019,18 @@ footer h4 {
   transition: all 0.3s ease;
 }
 
-.modal-active{
+.modal-active {
   opacity: 1;
   visibility: visible;
+  overflow-y: auto;
 }
 
-.modal-active .modal-content{
+.modal-active .modal-content {
   transform: scale(1);
   opacity: 1;
 }
 
-.modal-content{
+.modal-content {
   transform: scale(0);
   opacity: 0;
   transition: all 600ms ease;
