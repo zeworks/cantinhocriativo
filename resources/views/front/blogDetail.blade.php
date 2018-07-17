@@ -40,15 +40,15 @@
                 <div class="owl-carousel owl-theme product-carousel">
                     @foreach($images as $key => $image)
                     <div class="item" data-hash="{{$image->id}}">
-                        <img class="img-responsive zoom-image" src="{{ Image::url(asset('storage/images/'.$images[$key]['images'][0]->image_name),720,480,array('crop','')) }}"
-                            alt="" data-zoom-image="{{ Image::url(asset('storage/images/'.$images[$key]['images'][0]->image_name),900,900,array('crop','')) }}">
+                        <img class="img-responsive zoom-image" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),720,480,array('crop','')) }}"
+                            alt="" data-zoom-image="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),900,900,array('crop','')) }}">
                     </div>
                     @endforeach
                 </div>
                 <div class="product-carousel-thumbs">
                     @foreach($images as $key => $image)
                     <a href="#{{$image->id}}">
-                        <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$images[$key]['images'][0]->image_name),100,100,array('crop','')) }}"
+                        <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),100,100,array('crop','')) }}"
                             alt="">
                     </a>
                     @endforeach

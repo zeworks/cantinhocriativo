@@ -40,20 +40,20 @@
             <!-- image and details -->
             <div class="col-sm-6">
                 <div class="owl-carousel owl-theme product-carousel">
-                    <div class="item" data-hash="1">
-                        <img class="img-responsive zoom-image" src="https://dummyimage.com/750x500/000/fff" alt="" data-zoom-image="https://dummyimage.com/900x900/000/fff">
+                    @foreach($images as $key => $image)
+                    <div class="item" data-hash="{{$image->id}}">
+                        <img class="img-responsive zoom-image" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),750,500,array('crop','')) }}"
+                            alt="" data-zoom-image="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),900,900,array('crop','')) }}">
                     </div>
-                    <div class="item" data-hash="2">
-                        <img class="img-responsive zoom-image" src="https://dummyimage.com/750x500/ddd/000" alt="" data-zoom-image="https://dummyimage.com/900x900/ddd/000">
-                    </div>
+                    @endforeach
                 </div>
                 <div class="product-carousel-thumbs">
-                    <a href="#1">
-                        <img class="img-responsive" src="https://dummyimage.com/80x80/ddd/000" alt="">
+                    @foreach($images as $key => $image)
+                    <a href="#{{$image->id}}">
+                        <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),100,100,array('crop','')) }}"
+                            alt="">
                     </a>
-                    <a href="#2">
-                        <img class="img-responsive" src="https://dummyimage.com/80x80/ddd/000" alt="">
-                    </a>
+                    @endforeach
                 </div>
             </div>
             <!-- product description -->
@@ -118,9 +118,11 @@
             <div class="col-sm-12 col-md-offset-2 col-md-8">
                 <div class="modal-content">
                     <button class="btn-close btn">
-                    <i class="fas fa-times"></i>
+                        <i class="fas fa-times"></i>
                     </button>
-                    <h3>Informações sobre: <strong>{{$product->title}}</strong></h3>
+                    <h3>Informações sobre:
+                        <strong>{{$product->title}}</strong>
+                    </h3>
                     <div class="empty-space-20"></div>
                     <form action="" class="validate-form form">
                         <div class="form-field">

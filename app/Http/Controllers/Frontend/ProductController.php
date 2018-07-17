@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Templates;
 use App\Products;
 use App\ProductImages;
+use App\Images;
 
 
 class ProductController extends Controller
@@ -21,16 +22,18 @@ class ProductController extends Controller
     }
 
     function detail($slug){
+
         $products = Products::where("slug",$slug)->with('Images')->get();
 
-        // all products
+        // all products 
         $allproducts = Products::get();
 
         foreach($products as $product){
-            $images = ProductImages::where("product_id",$product->id)->with('Images')->get();
+            $images = ProductImages::where("product_id",$product->images[0]->product_id)->with('Images')->get();
         }
-
+        
         return view('front.productDetail', compact('allproducts','products','images'));
 
     }
+
 }
