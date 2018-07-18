@@ -39,22 +39,24 @@
         <div class="row">
             <!-- image and details -->
             <div class="col-sm-6">
+                @isset($images)
                 <div class="owl-carousel owl-theme product-carousel">
                     @foreach($images as $key => $image)
                     <div class="item" data-hash="{{$image->id}}">
-                        <img class="img-responsive zoom-image" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),750,500,array('crop','')) }}"
-                            alt="" data-zoom-image="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),900,900,array('crop','')) }}">
+                        <img class="img-responsive zoom-image" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images']->image_name),750,500,array('crop','')) }}"
+                            alt="" data-zoom-image="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images']->image_name),900,900,array('crop','')) }}">
                     </div>
                     @endforeach
                 </div>
                 <div class="product-carousel-thumbs">
                     @foreach($images as $key => $image)
                     <a href="#{{$image->id}}">
-                        <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images'][0]->image_name),100,100,array('crop','')) }}"
+                        <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$images[$key]['images']->image_name),100,100,array('crop','')) }}"
                             alt="">
                     </a>
                     @endforeach
                 </div>
+                @endisset
             </div>
             <!-- product description -->
             <div class="col-sm-6 col-lg-5 col-lg-offset-1">
@@ -76,15 +78,17 @@
                         <h4>Cores disponivéis</h4>
                         <input type="hidden" id="color_available">
                         <div class="available__items">
-                            <button type="button" class="item" data-color="black"></button>
-                            <button type="button" class="item" data-color="red"></button>
-                            <button type="button" class="item" data-color="#555"></button>
-                            <button type="button" class="item" data-color="#f2f2f2"></button>
-                            <button type="button" class="item" data-color="#999"></button>
-                            <button type="button" class="item" data-color="#333"></button>
-                            <button type="button" class="item" data-color="#DDD"></button>
-                            <button type="button" class="item" data-color="#555"></button>
-                            <button type="button" class="item" data-color="#f2f2f2"></button>
+                            <?php
+
+                                $length = str_word_count(implode(',', array($product->colors))); 
+
+                                $colors = explode(",", $product->colors);
+
+                                for ($i=0; $i < $length ; $i++) { 
+                                    echo "<button type='button' class='item' data-color=".$colors[$i]."></button>";
+                                }
+
+                            ?>
                         </div>
                     </div>
                 </div>

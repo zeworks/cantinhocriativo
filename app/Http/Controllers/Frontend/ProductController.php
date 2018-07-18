@@ -16,7 +16,7 @@ class ProductController extends Controller
     function index(){
         
         $template = Templates::get()->where("slug","produtos");
-        $products = Products::get();
+        $products = Products::where("status","on")->get();
 
         return view('front.product',compact('template','products'));
     }
@@ -24,15 +24,22 @@ class ProductController extends Controller
     function detail($slug){
 
         $products = Products::where("slug",$slug)->with('Images')->get();
-
-        // all products 
-        $allproducts = Products::get();
-
-        foreach($products as $product){
-            $images = ProductImages::where("product_id",$product->images[0]->product_id)->with('Images')->get();
-        }
         
-        return view('front.productDetail', compact('allproducts','products','images'));
+        if(empty($products[0]->status)){
+            return view('front.error');
+        }else{
+
+            // all products 
+            $allproducts = Products::limit(4)->get();
+    
+            foreach($products as $product){
+                if(!empty($product->images[0])){
+                    $images = ProductImages::where("product_id",$product->images[0]->product_id)->with('Images')->get();
+                }
+            }
+    
+            return view('front.productDetail', compact('allproducts','products','images'));
+        }
 
     }
 

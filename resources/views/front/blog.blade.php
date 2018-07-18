@@ -36,7 +36,7 @@
             @foreach($blogs as $blog)
             <div class="col-sm-6">
                 <article class="post-article">
-                    <a href="blog-detail.php" title="view more">
+                    <a href="{{$templ->slug.'/'.$blog->slug}}" title="{{$blog->title}}">
                         <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$blog->featured_image),720,480,array('crop','')) }}" alt="">
                     </a>
                     <h2>{{$blog->title}}</h2>
@@ -57,7 +57,7 @@
                         </a>
                     </div>
                     @foreach($template as $templ)
-                    <a href="{{$templ->slug.'/'.$blog->slug}}" class="btn btn-primary" title="view more">View More</a>
+                    <a href="{{$templ->slug.'/'.$blog->slug}}" class="btn btn-primary" title="{{$blog->title}}">Ver mais</a>
                     @endforeach
                 </article>
                 <div class="empty-space-80"></div>

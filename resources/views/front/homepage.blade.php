@@ -42,4 +42,56 @@
     @endforeach @endif
 </section>
 <!-- banner - large ends -->
+
+<section>
+    <div class="empty-space-80"></div>
+    @foreach($products as $key => $product)
+    <article class="post-article">
+        <div class="container">
+            <div class="row matchheight">
+                @if($key%2)
+                <div class="col-sm-6 col-xs-12 col-sm-push-6" data-mh="post-article">
+                    <a href="produtos/{{$product->slug}}" title="{{$product->title}}">
+                        <div class="bordered-image">
+                            @if($product->featured_image)
+                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$product->featured_image),720,480,array('crop','')) }}"
+                                alt="{{$product->title}}"> @else
+                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="{{$product->title}}"> @endif
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12 col-sm-pull-6 col-md-pull-7" data-mh="post-article">
+                    <h2>{{$product->title}}</h2>
+                    <div class="text-ellipses">
+                        {!! $product->description !!}
+                    </div>
+                    <a href="produtos/{{$product->slug}}" class="btn btn-primary" title="{{$product->title}}">Ver mais</a>
+                </div>
+                @else
+                <div class="col-sm-6 col-xs-12" data-mh="post-article">
+                    <a href="produtos/{{$product->slug}}" title="{{$product->title}}">
+                        <div class="bordered-image">
+                            @if($product->featured_image)
+                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$product->featured_image),720,480,array('crop','')) }}"
+                                alt="{{$product->title}}"> @else
+                            <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="{{$product->title}}"> @endif
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-5 col-md-offset-1 col-xs-12" data-mh="post-article">
+                    <h2>{{$product->title}}</h2>
+                    <div class="text-ellipses">
+                        {!! $product->description !!}
+                    </div>
+                    <a href="produtos/{{$product->slug}}" class="btn btn-primary" title="{{$product->title}}">Ver mais</a>
+                </div>
+                @endif
+            </div>
+        </div>
+    </article>
+    <div class="empty-space-80"></div>
+    @endforeach
+
+
+</section>
 @endsection

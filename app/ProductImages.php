@@ -10,6 +10,6 @@ class ProductImages extends Model
     protected $fillable = ['product_id','image_id'];
     
     public function Images(){
-        return $this->hasMany('App\Images', 'id');
+        return $this->belongsTo('App\Images', 'image_id', 'id');
     }
 }

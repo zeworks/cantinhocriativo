@@ -28,9 +28,9 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'name' => 'User Admin',
-            'email' => 'admin@zwcms.com',
-            'password' => Hash::make( 'zwcms' ),
+            'name' => 'Diana Pampols',
+            'email' => 'info@justforyou.pt',
+            'password' => Hash::make('jfypt'),
         ]);
     }
 }
@@ -45,10 +45,10 @@ class WebsiteSettingsTableSeeder extends Seeder
     public function run()
     {
         DB::table('website_settings')->insert([
-            'website_name' => 'zwcms',
-            'website_account_email' => 'zwcms@mail.com',
-            'website_legal_name' => 'zwcms',
-            'website_desc' => 'zwcms',
+            'website_name' => 'Just For you',
+            'website_account_email' => 'info@justforyou.pt',
+            'website_legal_name' => 'Just For You',
+            'website_desc' => 'Just For You',
         ]);
     }
 }

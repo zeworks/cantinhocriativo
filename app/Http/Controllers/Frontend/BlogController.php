@@ -21,12 +21,15 @@ class BlogController extends Controller
 
     function detail($slug){
         $blogs = Blog::where("slug",$slug)->with('Images')->get();
-
-        foreach($blogs as $blog){
-            $images = BlogImages::where("blog_id",$blog->images[0]->blog_id)->with('Images')->get();
+        if(empty($blogs[0]->status)){
+            return view('front.error');
+        }else{
+            foreach($blogs as $blog){
+                if(!empty($blog->images[0])){
+                    $images = BlogImages::where("blog_id",$blog->images[0]->blog_id)->with('Images')->get();
+                }
+            }
+            return view('front.blogDetail', compact('blogs','images'));
         }
-        
-        return view('front.blogDetail', compact('blogs','images'));
-
     }
 }
