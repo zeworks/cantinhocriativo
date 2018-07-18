@@ -50,6 +50,8 @@
 
 	<!-- inject:css -->
 	<link rel="stylesheet" href="{{ asset('assets/vendor.min.css') }}">
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css" />
 	<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
 	<!-- endinject -->
 </head>
@@ -295,6 +297,7 @@
 	<script id="dsq-count-scr" src="//teste-j3wyksvwj1.disqus.com/count.js" async></script>
 	<!-- inject:js -->
 	<script src="{{ asset('assets/vendor.min.js') }}" defer></script>
+	<script src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js" defer></script>
 	<script src="{{ asset('assets/js/app.js') }}" defer></script>
 	<!-- endinject -->
 </body>

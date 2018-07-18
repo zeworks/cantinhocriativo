@@ -21,7 +21,7 @@
                     </li>
                     <li>
                         @foreach($blogs as $blog)
-                            <a href="{{ $blog -> slug }}" title="{{ $blog -> title }}">{{ $blog -> title }}</a>
+                        <a href="{{ $blog -> slug }}" title="{{ $blog -> title }}">{{ $blog -> title }}</a>
                         @endforeach
                     </li>
                 </ul>
@@ -36,6 +36,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-5 col-sm-push-7">
+                @isset($images)
                 <div class="empty-space-20"></div>
                 <div class="owl-carousel owl-theme product-carousel">
                     @foreach($images as $key => $image)
@@ -53,6 +54,7 @@
                     </a>
                     @endforeach
                 </div>
+                @endisset
             </div>
             <div class="col-sm-7 col-sm-pull-5">
                 @foreach($blogs as $blog)
@@ -66,16 +68,10 @@
                     <br>
                     <br> {!! $blog->description !!}
                     <div class="share fright">
-                        <a href="#facebook" title class="share-item">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#pinterest" title class="share-item">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a>
-                        <a href="#googleplus" title class="share-item">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
+                        <div id="shareRoundIcons"></div>
                     </div>
+
+
                 </article>
                 @endforeach
             </div>

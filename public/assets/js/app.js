@@ -252,24 +252,24 @@ window.addEventListener('load', function (event) {
 
 
 });
-$('.menu__item__link, a.btn').click(function(e){
+$('.menu__item__link, a.btn').click(function (e) {
 	e.preventDefault();
 	$('.loading').addClass('leaving-page');
 	var eventLink = this.getAttribute('href');
-	setTimeout(function(){
+	setTimeout(function () {
 		// Go to requested page
 		window.location.href = eventLink;
 	}, 1000);
-	
+
 });
 $(document).ready(function () {
-	setTimeout(function(){
+	setTimeout(function () {
 		main();
-	},100);
-	setTimeout(function(){
+	}, 100);
+	setTimeout(function () {
 		$(".loading").addClass("loaded");
-	},900);
-	
+	}, 900);
+
 	cartActions();
 	updateCartItems();
 	showMore("[data-mh='product-item']", ".view-more", 12);
@@ -432,10 +432,25 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$(".open-modal").on("click", function(){
+	$(".open-modal").on("click", function () {
 		var target = $(this).attr("data-target");
 		$("body").addClass("in-modal");
 		$(target).addClass("modal-active");
+	});
+
+	$("#shareRoundIcons").jsSocials({
+		showLabel: false,
+		url: window.location.href,
+		shares: [{
+			share: "facebook",
+			logo: "fab fa-facebook-f"
+		}, {
+			share: "googleplus",
+			logo: "fab fa-google-plus-g"
+		}, {
+			share: "pinterest",
+			logo: "fab fa-pinterest-p"
+		}]
 	});
 });
 

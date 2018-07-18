@@ -202,18 +202,9 @@
                             <div>
                                 {!! $product->details !!}
                             </div>
-                            <div class="share">
-                                <p>Share this</p>
-                                <a href="#facebook" title class="share-item">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#pinterest" title class="share-item">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                                <a href="#googleplus" title class="share-item">
-                                    <i class="fab fa-google-plus-g"></i>
-                                </a>
-                            </div>
+                                <div class="share fright">
+                                    <div id="shareRoundIcons"></div>
+                                </div>
                             @endforeach
                         </div>
                         @if($settings[0]->website_mode_store == 'on')
