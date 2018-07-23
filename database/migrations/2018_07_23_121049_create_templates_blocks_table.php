@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBlockBlocsTable extends Migration
+class CreateTemplatesBlocksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateBlockBlocsTable extends Migration
      */
     public function up()
     {
-        Schema::create('block_blocs', function (Blueprint $table) {
+        Schema::create('templates_blocks', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('template_id');
+            $table->string('block_id');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateBlockBlocsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('block_blocs');
+        Schema::dropIfExists('templates_blocks');
     }
 }

@@ -11,6 +11,7 @@ use App\WebsiteSettings;
 use App\Templates;
 use App\TemplateType;
 use App\Blocks;
+use App\TemplatesBlocks;
 
 
 class TemplateController extends Controller
@@ -52,6 +53,7 @@ class TemplateController extends Controller
         if($request->file('upload_photo')){
             $filename = $request->file('upload_photo')->getClientOriginalName();
             $path = $request->file('upload_photo')->storeAs('public/images',$filename);
+            
             $data = [
                 "title" => $request -> input("title"),
                 "slug" => Str::slug($request->input('title')),
@@ -59,6 +61,30 @@ class TemplateController extends Controller
                 "template_id" => $request -> input("template_type"),
                 "featured_image" => $filename
             ];
+
+            $templateCreated = Templates::create($data)->id;
+            
+            foreach($request->file('upload_blockImage') as $key => $image_block_array){
+                $block_image = $request->file('upload_blockImage')[$key]->getClientOriginalName();
+                $block_path = $request->file('upload_blockImage')[$key]->storeAs('public/images/image_temp',$block_image);
+
+                $block = [
+                    "title" => $request -> input('title_bloc_page')[$key],
+                    "summary" => $request -> input('resum_bloc_item')[$key],
+                    "description" => $request -> input('desc_bloc_item')[$key],
+                    "image" => $block_image,
+                ];
+                
+                if( !empty($block) ){
+                    $blockCreated = Blocks::create($block)->id;
+                    TemplatesBlocks::create([
+                        "template_id" => $templateCreated,
+                        "block_id" => $blockCreated,
+                    ]);
+                }
+
+            }
+
         }else{
             // if there is not a file
             $data = [
@@ -66,12 +92,25 @@ class TemplateController extends Controller
                 "slug" => Str::slug($request->input('title')),
                 "status" => $request -> input("status_item"),
                 "template_id" => $request -> input("template_type")
-
             ];
+
+            $block = [
+                "title" => $request -> input('title_bloc_page'),
+                "summary" => $request -> input('resum_bloc_item'),
+                "description" => $request -> input('desc_bloc_item'),
+            ];
+
+            $templateCreated = Templates::create($data)->id;
+            
+            if( !empty($block) ){
+                $blockCreated = Blocks::create($block)->id;
+                TemplatesBlocks::create([
+                    "template_id" => $templateCreated,
+                    "block_id" => $blockCreated,
+                ]);
+            }
+
         }
-
-
-        Templates::create($data);
 
         return redirect()->back()->with("message","Inserido com sucesso!");
     }
@@ -83,11 +122,18 @@ class TemplateController extends Controller
         // to include template data
         $templatedata = Templates::find($id);
 
+        $template_blocs = Templates::where('id',$id)->with('Blocks')->get();
+ 
         $templatetype = TemplateType::get();
-
+        
+        foreach($template_blocs as $key => $tem){
+            if(!empty($tem->blocks[0])){
+                $blocks = TemplatesBlocks::where("template_id",$tem->template_id)->with('Blocks')->get();
+            }
+        }
 
         // returns to the view with the website settings compacted
-        return view('admin.templates.edit', compact('websitesettings','templatedata','templatetype'));
+        return view('admin.templates.edit', compact('websitesettings','templatedata','templatetype','blocks'));
     }
 
     function updateTemplate(Request $request,$id){

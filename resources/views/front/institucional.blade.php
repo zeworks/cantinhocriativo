@@ -30,48 +30,38 @@
 </section>
 <!-- /breadcrumb -->
 <!-- ABOUT -->
+@if($blocks)
 <section>
     <div class="empty-space-80"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-5">
-                <h1>Sobre Nós</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
+        @foreach($blocks as $key => $block)
+            <div class="row">
+                @if($key%2)
+                    <div class="col-sm-6 col-md-5 col-sm-push-7">
+                        <h1>{{$block->blocks->title}}</h1>
+                            {!! $block->blocks->description !!}    
+                    </div>
+                    <div class="col-sm-6 col-md-offset-1 col-sm-pull-6">
+                        <div class="bordered-image">
+                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$block->blocks->image),720,480,array('crop','')) }}" alt="">
+                        </div>
+                    </div>
+                @else
+                    <div class="col-sm-6 col-md-5">
+                        <h1>{{$block->blocks->title}}</h1>
+                        {!! $block->blocks->description !!}    
+                    </div>
+                    <div class="col-sm-6 col-md-offset-1">
+                        <div class="bordered-image">
+                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$block->blocks->image),720,480,array('crop','')) }}" alt="">
+                        </div>
+                    </div>
+                @endif
             </div>
-            <div class="col-sm-6 col-md-offset-1">
-                <div class="bordered-image">
-                    <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="empty-space-80"></div>
-        <div class="row">
-            <div class="col-sm-6 col-md-5 col-sm-push-7">
-                <h1>Nossa História</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo necessitatibus earum, aut odit temporibus doloribus
-                    soluta incidunt voluptates et quae. Eligendi quia ipsam aliquid tenetur voluptatibus earum et enim repudiandae?</p>
-            </div>
-            <div class="col-sm-6 col-md-offset-1 col-sm-pull-6">
-                <div class="bordered-image">
-                    <img class="img-responsive" src="https://dummyimage.com/720x480/000/fff" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="empty-space-80"></div>
+            <div class="empty-space-80"></div>
+        @endforeach
     </div>
 </section>
+@endif
 <!-- /ABOUT -->
 @endsection
