@@ -79,15 +79,14 @@
                         <input type="hidden" id="color_available">
                         <div class="available__items">
                             <?php
+                            
+                                $colors_array = explode(",", $product->colors); // explode the "array"
+                                $count = count($colors_array) - 1; // -1 because there is a , on the final.
 
-                                $length = str_word_count(implode(',', array($product->colors))); 
-
-                                $colors = explode(",", $product->colors);
-
-                                for ($i=0; $i < $length ; $i++) { 
-                                    echo "<button type='button' class='item' data-color=".$colors[$i]."></button>";
+                                for ($i=0; $i < $count; $i++) { 
+                                    echo "<button type='button' class='item' data-color=".$colors_array[$i]."></button>";
                                 }
-
+                                
                             ?>
                         </div>
                     </div>
@@ -202,9 +201,9 @@
                             <div>
                                 {!! $product->details !!}
                             </div>
-                                <div class="share fright">
-                                    <div id="shareRoundIcons"></div>
-                                </div>
+                            <div class="share fright">
+                                <div id="shareRoundIcons"></div>
+                            </div>
                             @endforeach
                         </div>
                         @if($settings[0]->website_mode_store == 'on')

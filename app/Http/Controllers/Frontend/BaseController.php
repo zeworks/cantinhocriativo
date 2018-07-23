@@ -15,7 +15,11 @@ class BaseController extends Controller
 
         // para me devolver dados do template
         if( Templates::where('slug',$slug)->where("status","on")->where("template_id",1)->get()->count() > 0){
-            $template = Templates::where('slug',$slug)->where("status","on")->where("template_id",1)->get();
+            $template = Templates::where('slug',$slug)
+            ->where("status","on")
+            ->where("template_id",1)
+            ->get();
+            
             return view('front.institucional', compact('template'));
         }else{
             return view("front.error");

@@ -45,17 +45,6 @@
                     <div class="text-ellipses">
                         {!! $blog->description !!}        
                     </div>
-                    <div class="share fright">
-                        <a href="#facebook" title class="share-item">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#pinterest" title class="share-item">
-                            <i class="fab fa-pinterest-p"></i>
-                        </a>
-                        <a href="#googleplus" title class="share-item">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </div>
                     @foreach($template as $templ)
                     <a href="{{$templ->slug.'/'.$blog->slug}}" class="btn btn-primary" title="{{$blog->title}}">Ver mais</a>
                     @endforeach
@@ -66,6 +55,5 @@
         </div>
     </div>
 </section>
-<div class="empty-space-80"></div>
 <!-- BLOG SECTION-->
 @endsection
