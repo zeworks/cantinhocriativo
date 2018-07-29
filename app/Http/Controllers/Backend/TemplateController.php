@@ -63,26 +63,28 @@ class TemplateController extends Controller
             ];
 
             $templateCreated = Templates::create($data)->id;
-            
-            foreach($request->file('upload_blockImage') as $key => $image_block_array){
-                $block_image = $request->file('upload_blockImage')[$key]->getClientOriginalName();
-                $block_path = $request->file('upload_blockImage')[$key]->storeAs('public/images/image_temp',$block_image);
 
-                $block = [
-                    "title" => $request -> input('title_bloc_page')[$key],
-                    "summary" => $request -> input('resum_bloc_item')[$key],
-                    "description" => $request -> input('desc_bloc_item')[$key],
-                    "image" => $block_image,
-                ];
-                
-                if( !empty($block) ){
-                    $blockCreated = Blocks::create($block)->id;
-                    TemplatesBlocks::create([
-                        "template_id" => $templateCreated,
-                        "block_id" => $blockCreated,
-                    ]);
+            if($request->file('upload_blockImage') != ""){
+                foreach($request->file('upload_blockImage') as $key => $image_block_array){
+                    $block_image = $request->file('upload_blockImage')[$key]->getClientOriginalName();
+                    $block_path = $request->file('upload_blockImage')[$key]->storeAs('public/images/image_temp',$block_image);
+    
+                    $block = [
+                        "title" => $request -> input('title_bloc_page')[$key],
+                        "summary" => $request -> input('resum_bloc_item')[$key],
+                        "description" => $request -> input('desc_bloc_item')[$key],
+                        "image" => $block_image,
+                    ];
+                    
+                    if( !empty($block) ){
+                        $blockCreated = Blocks::create($block)->id;
+                        TemplatesBlocks::create([
+                            "template_id" => $templateCreated,
+                            "block_id" => $blockCreated,
+                        ]);
+                    }
+    
                 }
-
             }
 
         }else{
@@ -93,12 +95,13 @@ class TemplateController extends Controller
                 "status" => $request -> input("status_item"),
                 "template_id" => $request -> input("template_type")
             ];
-
-            $block = [
-                "title" => $request -> input('title_bloc_page'),
-                "summary" => $request -> input('resum_bloc_item'),
-                "description" => $request -> input('desc_bloc_item'),
-            ];
+            if($request -> input('title_bloc_page') != ""){
+                $block = [
+                    "title" => $request -> input('title_bloc_page'),
+                    "summary" => $request -> input('resum_bloc_item'),
+                    "description" => $request -> input('desc_bloc_item'),
+                ];
+            }
 
             $templateCreated = Templates::create($data)->id;
             

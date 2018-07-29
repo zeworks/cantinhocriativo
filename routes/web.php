@@ -161,7 +161,7 @@ Route::get('produtos', 'Frontend\ProductController@index');
 Route::get('produtos/{slug}', 'Frontend\ProductController@detail');
 Route::get('contactos', 'Frontend\ContactController@index');
 Route::get('termos', 'Frontend\TermosController@index');
-
+Route::post('subscribe','Frontend\SubscribersController@index');
 
 Route::get('/{slug}', 'Frontend\BaseController@index');
 Route::get('/', 'Frontend\HomeController@home');

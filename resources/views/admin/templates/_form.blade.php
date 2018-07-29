@@ -11,36 +11,67 @@
     <br>
     <div class="table-items">
         <div class="bloc">
-            @foreach($blocks as $key => $block)
-            <div class="bloc-item clearfix">
-                <div class="col-xs-12">
-                    <a href="" class="link fright btn-delBloc">
-                        <i class="fa fa-trash"></i>
-                    </a>
-                    <p class="strong">Bloco</p>
-                    <div class="form-field">
-                        <label for="title_bloc_page_{{$key + 1}}">Título do Bloco</label>
-                        <input value="{{{ isset($blocks[$key]->blocks->title) ? $blocks[$key]->blocks->title : '' }}}" type="text" name="title_bloc_page[]" id="title_bloc_page_{{$key + 1}}" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-field">
-                        <label for="resum_bloc_item_{{$key + 1}}">Resumo do Bloco</label>
-                        <input value="{{{ isset($blocks[$key]->blocks->summary) ? $blocks[$key]->blocks->summary : '' }}}" type="text" name="resum_bloc_item[]" id="resum_bloc_item_{{$key + 1}}" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-field">
-                        <label for="desc_bloc_item_{{$key + 1}}">Descrição do Bloco</label>
-                        <textarea name="desc_bloc_item[]" id="desc_bloc_item_{{$key + 1}}" class="text-editor">{{ isset($blocks[$key]->blocks->description) ? $blocks[$key]->blocks->description : '' }}</textarea>
-                    </div>
-                    <br>
-                    <div class="buttons-top fleft">
-                        <img @isset($blocks[$key]->blocks->image) src="{{ asset('storage/images/image_temp/'.$blocks[$key]->blocks->image) }}" @endisset class="image-previewer">
-                        <input type="file" name="upload_blockImage[]" multiple id="upload_photo_{{$key + 1}}" class="hidden upload_photo">
-                        <a href="#" class="btn btn-default upload" data-target="upload_photo_{{$key + 1}}">Enviar Ficheiro</a>
+            @isset($blocks)
+                @foreach($blocks as $key => $block)
+                <div class="bloc-item clearfix">
+                    <div class="col-xs-12">
+                        <a href="" class="link fright btn-delBloc">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <p class="strong">Bloco</p>
+                        <div class="form-field">
+                            <label for="title_bloc_page_{{$key + 1}}">Título do Bloco</label>
+                            <input value="{{{ isset($blocks[$key]->blocks->title) ? $blocks[$key]->blocks->title : '' }}}" type="text" name="title_bloc_page[]" id="title_bloc_page_{{$key + 1}}" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <label for="resum_bloc_item_{{$key + 1}}">Resumo do Bloco</label>
+                            <input value="{{{ isset($blocks[$key]->blocks->summary) ? $blocks[$key]->blocks->summary : '' }}}" type="text" name="resum_bloc_item[]" id="resum_bloc_item_{{$key + 1}}" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <label for="desc_bloc_item_{{$key + 1}}">Descrição do Bloco</label>
+                            <textarea name="desc_bloc_item[]" id="desc_bloc_item_{{$key + 1}}" class="text-editor">{{ isset($blocks[$key]->blocks->description) ? $blocks[$key]->blocks->description : '' }}</textarea>
+                        </div>
+                        <br>
+                        <div class="buttons-top fleft">
+                            <img @isset($blocks[$key]->blocks->image) src="{{ asset('storage/images/image_temp/'.$blocks[$key]->blocks->image) }}" @endisset class="image-previewer">
+                            <input type="file" name="upload_blockImage[]" multiple id="upload_photo_{{$key + 1}}" class="hidden upload_photo">
+                            <a href="#" class="btn btn-default upload" data-target="upload_photo_{{$key + 1}}">Enviar Ficheiro</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            @endforeach
+                @endforeach
+            @else
+            <div class="bloc-item clearfix">
+                    <div class="col-xs-12">
+                        <a href="" class="link fright btn-delBloc">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                        <p class="strong">Bloco</p>
+                        <div class="form-field">
+                            <label for="title_bloc_page_1">Título do Bloco</label>
+                            <input type="text" name="title_bloc_page[]" id="title_bloc_page_1" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <label for="resum_bloc_item_1">Resumo do Bloco</label>
+                            <input type="text" name="resum_bloc_item[]" id="resum_bloc_item_1" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-field">
+                            <label for="desc_bloc_item_1">Descrição do Bloco</label>
+                            <textarea name="desc_bloc_item[]" id="desc_bloc_item_1" class="text-editor"></textarea>
+                        </div>
+                        <br>
+                        <div class="buttons-top fleft">
+                            <img src="" class="image-previewer">
+                            <input type="file" name="upload_blockImage[]" multiple id="upload_photo_1" class="hidden upload_photo">
+                            <a href="#" class="btn btn-default upload" data-target="upload_photo_1">Enviar Ficheiro</a>
+                        </div>
+                    </div>
+                </div>
+            @endisset
         </div>
         <button type="button" class="btn btn-default btn-addBloc">
             <i class="far fa-plus-square"></i> Adicionar Bloco</button>
