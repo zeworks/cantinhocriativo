@@ -251,9 +251,6 @@
 						<strong>Just FOR YOU</strong>
 					</small>
 					<form action="{{url('subscribe')}}" method="post" class="form validate-form inputs--inline clearfix">
-						@isset($input)
-						{{ $input }}
-						@endisset
 						<div class="form-field">
 							<input type="email" class="required-email form-control" placeholder="email@mail.com" name="email_newsletter" id="email_newsletter">
 						</div>

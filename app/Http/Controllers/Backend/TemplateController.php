@@ -75,6 +75,7 @@ class TemplateController extends Controller
                         "description" => $request -> input('desc_bloc_item')[$key],
                         "image" => $block_image,
                     ];
+
                     
                     if( !empty($block) ){
                         $blockCreated = Blocks::create($block)->id;
@@ -85,6 +86,7 @@ class TemplateController extends Controller
                     }
     
                 }
+
             }
 
         }else{

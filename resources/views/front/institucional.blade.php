@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-6 col-md-offset-1 col-sm-pull-6">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$block->blocks->image),720,480,array('crop','')) }}" alt="">
+                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$block->blocks->image),720,480,array('crop','')) }}" alt="">
                         </div>
                     </div>
                 @else
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-sm-6 col-md-offset-1">
                         <div class="bordered-image">
-                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/image_temp/'.$block->blocks->image),720,480,array('crop','')) }}" alt="">
+                            <img class="img-responsive" src="{{ Image::url(asset('storage/images/'.$block->blocks->image),720,480,array('crop','')) }}" alt="">
                         </div>
                     </div>
                 @endif

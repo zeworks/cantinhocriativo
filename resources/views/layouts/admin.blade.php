@@ -86,75 +86,75 @@
                     <!-- dashboard -->
                     <li class="{{ Request::is('admin/home*') ? 'active' : '' }}">
                         <a href="{{ route('home') }}" class="aside__link" title="{{ __('Dashboard') }}">
-                            <!-- <i class="fa fa-tachometer-alt"></i> -->
-                            DASHBOARD 
+                            <i class="fa fa-tachometer-alt"></i>
+                            Dashboard 
                         </a>
                     </li>
                     <!-- banners -->
                     <li class="{{ Request::is('admin/banners*') ? 'active' : '' }}">
                         <a href="{{ route('banners') }}" class="aside__link" title="{{ __('Banners Home') }}">
-                            <!-- <i class="fas fa-images"></i> -->
-                            BANNERS HOMEPAGE
+                            <i class="fas fa-images"></i>
+                            Banners homepage
                         </a>
                     </li>
                     <!-- templates -->
                     <li class="{{ Request::is('admin/templates*') ? 'active' : '' }}">
                         <a href="{{ route('templates') }}" class="aside__link" title="{{ __('Páginas') }}">
-                            <!-- <i class="far fa-file-alt"></i> -->
-                            PÁGINAS
+                            <i class="far fa-file-alt"></i>
+                            Páginas
                         </a>
                     </li>
                     <!-- blog -->
                     <li class="{{ Request::is('admin/blog*') ? 'active' : '' }}">
                         <a href="{{ route('admin_blog') }}" class="aside__link" title="{{ __('Blog') }}">
-                            <!-- <i class="fab fa-blogger-b"></i> -->
-                            BLOG
+                            <i class="fab fa-blogger-b"></i>
+                            Blog
                         </a>
                     </li>
                     @if($websitesettings[0]->website_mode_store)
                     <!-- costumers -->
                     <li class="{{ Request::is('admin/costumers*') ? 'active' : '' }}">
                         <a href="{{ route('costumers') }}" class="aside__link" title="{{ __('Clientes') }}">
-                            <!-- <i class="fas fa-users"></i> -->
-                            CLIENTES
+                            <i class="fas fa-users"></i>
+                            Clientes
                         </a>
                     </li>
                     @endif
                     <!-- products -->
                     <li class="{{ Request::is('admin/products*') ? 'active' : '' }}">
                         <a href="{{ route('products') }}" class="aside__link" title="{{ __('Produtos') }}">
-                            <!-- <i class="fas fa-dollar-sign"></i> -->
-                            PRODUTOS
+                            <i class="fas fa-dollar-sign"></i>
+                            Produtos
                         </a>
                     </li>
                     @if($websitesettings[0]->website_mode_store)
                     <!-- discounts -->
                     <li class="{{ Request::is('admin/discounts*') ? 'active' : '' }}">
                         <a href="{{ route('discounts') }}" class="aside__link" title="{{ __('Discontos') }}">
-                            <!-- <i class="fas fa-percent"></i> -->
-                            DISCONTOS
+                            <i class="fas fa-percent"></i>
+                            Discontos
                         </a>
                     </li>
                     <!-- orders -->
                     <li class="{{ Request::is('admin/orders*') ? 'active' : '' }}">
                         <a href="{{ route('orders') }}" class="aside__link" title="{{ __('Encomendas') }}">
-                            <!-- <i class="fas fa-cubes"></i> -->
-                            ENCOMENDAS
+                            <i class="fas fa-cubes"></i>
+                            Encomendas
                         </a>
                     </li>
                     <!-- shipping -->
                     <li class="{{ Request::is('admin/shipping*') ? 'active' : '' }}">
                         <a href="{{ route('shipping') }}" class="aside__link" title="{{ __('Envios') }}">
-                            <!-- <i class="fas fa-shipping-fast"></i> -->
-                            ENVIOS
+                            <i class="fas fa-shipping-fast"></i>
+                            Envios
                         </a>
                     </li>
                     <!-- notifications -->
                     @endif
                     <li class="{{ Request::is('admin/notifications*') ? 'active' : '' }}">
                         <a href="{{ route('notifications') }}" class="aside__link" title="{{ __('Notificações') }}">
-                            <!-- <i class="fas fa-envelope"></i> -->
-                            NOTIFICAÇÕES
+                            <i class="fas fa-envelope"></i>
+                            Notificações
                         </a>
                     </li>
                 </ul>
